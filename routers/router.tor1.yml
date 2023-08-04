@@ -1,0 +1,11 @@
+---
+- name: HIGHDEF-YMQ
+  asn: 4242421080
+  ipv6: fe80::123
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2607:5300:60:6e84::3
+    remote_port: 20207
+    public_key: YrlNsVP9bbTqNuNyQ/MVFzulZKNW5vMaDMzHVFNXSSE=

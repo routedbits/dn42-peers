@@ -1,0 +1,35 @@
+---
+- name: HIGHDEF-TYO
+  asn: 4242421080
+  ipv6: fe80::124
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2406:ef80:4:cc77::1
+    remote_port: 20207
+    public_key: iJXjwJGGrUTQy/P3OXmZ5lM4cjrDAd9K+vonZVUZjxY=
+
+- name: SUNNET-TYO1
+  asn: 4242423088
+  ipv6: fe80::3088:190
+  local_ipv6: fe80::abcd/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 45.66.128.152
+    remote_port: 20207
+    public_key: b3gUz8an2+wSCvXAwuxGR7AnxKDUqqQMd1+LASo93R0=
+
+- name: TECH9_JP-TYO01
+  asn: 4242421588
+  ipv4: 172.20.16.145
+  ipv6: fe80::1588
+  local_ipv6: fe80::100/64
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 202.182.101.118
+    remote_port: 55032
+    public_key: unTYSat5YjkY+BY31Q9xLSfFhTUBvn3CiDCSZxbINVM=

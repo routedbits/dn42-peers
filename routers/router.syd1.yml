@@ -1,0 +1,11 @@
+---
+- name: HIGHDEF-SYD
+  asn: 4242421080
+  ipv6: fe80::1080:125
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 103.73.64.178
+    remote_port: 20207
+    public_key: Xk9wCuwp3zK4WflTeAKBIjgIlr3+qUwIFCkF2uMyyF8=

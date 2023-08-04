@@ -1,0 +1,23 @@
+---
+- name: TECH9_US-QAS01
+  asn: 4242421588
+  ipv4: 172.20.16.143
+  ipv6: fe80::1588
+  local_ipv6: fe80::100/64
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 35.245.122.4
+    remote_port: 59162
+    public_key: itmJ4Z8V1aNN368P6kMzuQM+GdzWbBKZjJiXrgSeGlw=
+
+- name: YZGUY-AIL1
+  asn: 4242421669
+  ipv6: fe80::1669
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2601:985:4300:c194::2
+    remote_port: 50210
+    public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=

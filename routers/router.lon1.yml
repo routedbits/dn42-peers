@@ -1,0 +1,23 @@
+---
+- name: KIOUBIT-UK1
+  asn: 4242423914
+  ipv6: fe80::ade0
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 194.29.101.166
+    remote_port: 20207
+    public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
+
+- name: SUNNET-LON1
+  asn: 4242423088
+  ipv6: fe80::3088:197
+  local_ipv6: fe80::abcd/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2a04:92c7:e:6e4::2
+    remote_port: 20207
+    public_key: hYIX+Ea/2h0rL7OY0yahjN+DJZlOaokymoDG8UW1kyg=

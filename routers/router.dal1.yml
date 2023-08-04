@@ -1,0 +1,34 @@
+---
+- name: HIGHDEF-DAL
+  asn: 4242421080
+  ipv6: fe80::1080:33
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 23.94.3.72
+    remote_port: 20207
+    public_key: gTSNP0p+Ok3gaw0mcB1yhuZ2obaoOUxW+jPI2KxGAkc=
+
+- name: ONVOX-HOU1
+  asn: 4242422010
+  ipv6: fe80::2010
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 98.96.29.211
+    remote_port: 50207
+    public_key: 0GSNudioxk6PFrrFm3hDIAOoZvzourR6buMDv6QEnkc=
+
+- name: TECH9_US-DAL01
+  asn: 4242421588
+  ipv4: 172.20.16.140
+  ipv6: fe80::1588
+  local_ipv6: fe80::100/64
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 155.138.245.196
+    remote_port: 56736
+    public_key: iEZ71NPZge6wHKb6q4o2cvCopZ7PBDqn/b3FO56+Hkc=

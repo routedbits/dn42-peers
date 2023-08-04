@@ -1,0 +1,56 @@
+---
+- name: HIGHDEF-SJC
+  asn: 4242421080
+  ipv6: fe80::1080:34
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2607:1e40:0:120a::1
+    remote_port: 20207
+    public_key: Kz7mZN2ACCXSFKMiZDIVdVRmEPSnVfbEOqsxsDZ6hAw=
+
+- name: KIOUBIT-US3
+  asn: 4242423914
+  ipv6: fe80::ade0
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2a04:bdc7:100:4fee::1
+    remote_port: 20207
+    public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
+
+- name: KSKB-FMT
+  asn: 4242421817
+  ipv6: fe80::1817
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 208.99.48.123
+    remote_port: 20207
+    public_key: dZzVdXbQPnWPpHk8QfW/p+MfGzAkMBuWpxEIXzQCggY=
+
+- name: LIKI-FM1
+  asn: 4242420927
+  ipv4: 172.21.77.35
+  ipv6: fe80::927
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 174.137.51.245
+    remote_port: 42496
+    public_key: 3Fr6ubidGi0X5WZs2Hd9k+dLtjdEVrguM8r8f2ecU2g=
+
+- name: LUTOMA-LAX
+  asn: 64719
+  interface: wg4264719
+  ipv4: 172.22.119.11
+  ipv6: fe80::acab
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 198.52.125.186
+    remote_port: 42630
+    public_key: R6k4nj41gdCplmSnHLpEdp5p6iqMey7toCRxHjhPiGE=

@@ -1,0 +1,69 @@
+---
+- name: HIGHDEF-FRA
+  asn: 4242421080
+  ipv6: fe80::117
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2a0f:9441:47:70::1
+    remote_port: 20207
+    public_key: oiSSSOMYxiiM0eQP9p8klwEfNn34hkNNv4S289WUciU=
+
+- name: LUTOMA-FRA
+  asn: 64719
+  interface: wg4264719
+  ipv4: 172.22.119.1
+  ipv6: fe80::acab
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2603:c020:8001:ed42::42
+    remote_port: 43178
+    public_key: x8FhufXIjV9KrHcMYzOhhytLF3TFFSAMH7OClTxZxn0=
+
+- name: TECH9_DE-FRA02
+  asn: 4242421588
+  ipv4: 172.20.16.141
+  ipv6: fe80::1588
+  local_ipv6: fe80::100/64
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 95.179.251.165
+    remote_port: 55535
+    public_key: MD1EdVe9a0yycUdXCH3A61s3HhlDn17m5d07e4H33S0=
+
+- name: LARE-DE01
+  asn: 4242423035
+  ipv6: fe80::3035:130
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2a01:7e01::f03c:93ff:fef1:821b
+    remote_port: 20207
+    public_key: OL2LE2feDsFV+fOC4vo4u/1enuxf3m2kydwGRE2rKVs=
+
+- name: KIOUBIT-DE2
+  asn: 4242423914
+  ipv6: fe80::ade0
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2a01:4f8:c2c:3b65::1
+    remote_port: 20207
+    public_key: B1xSG/XTJRLd+GrWDsB06BqnIq8Xud93YVh/LYYYtUY=
+
+- name: SUNNET-FRA1
+  asn: 4242423088
+  ipv6: fe80::3088:195
+  local_ipv6: fe80::abcd/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2a0f:9441:47:88::2
+    remote_port: 20207
+    public_key: TWQhJYK+ynNz7A4GMAQSHAyUUKTnAYrBfWTzzjzhAFs=

@@ -1,0 +1,35 @@
+---
+- name: LUTOMA-NYC
+  asn: 64719
+  interface: wg4264719
+  ipv4: 172.22.119.10
+  ipv6: fe80::acab
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 23.95.146.112
+    remote_port: 42691
+    public_key: SODW7Q2gThSlNEnJrKJHSe8zd4nW8SHjxJuQ2YXyWE0=
+
+- name: KIOUBIT-US2
+  asn: 4242423914
+  ipv6: fe80::ade0
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 47.87.173.98
+    remote_port: 20207
+    public_key: 6Cylr9h1xFduAO+5nyXhFI1XJ0+Sw9jCpCDvcqErF1s=
+
+- name: SUNNET-NYC1
+  asn: 4242423088
+  ipv6: fe80::3088:194
+  local_ipv6: fe80::abcd/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 192.3.165.229
+    remote_port: 20207
+    public_key: wAI2D+0GeBnFUqm3xZsfvVlfGQ5iDWI/BykEBbkc62c=
