@@ -32,3 +32,12 @@
     remote_address: 155.138.245.196
     remote_port: 56736
     public_key: iEZ71NPZge6wHKb6q4o2cvCopZ7PBDqn/b3FO56+Hkc=
+
+- name: bad peer annotation test
+  asn: 1234
+  ipv6: 2001:db8::1/128
+  sessions: [ipv4]
+  wireguard:
+    remote_address: host.example.com
+    remote_port: -10
+    public_key: abcdefghijklmnop
