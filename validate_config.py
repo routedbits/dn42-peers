@@ -29,11 +29,25 @@ def main():
         peers = read_yaml(filename)
         file_count += 1
 
+        # collect and ensure peer addrs are unique per router
+        peer_ipv4_addrs = []
+        peer_ipv6_addrs = []
+
         if peers is not None:
             logging.info(f"Validating peers in: {filename}")
 
             for peer in peers:
-                peer_errors = validate(peer)
+                peer_errors = list(validate(peer))
+
+                if 'ipv4' in peer and peer['ipv4'] in peer_ipv4_addrs:
+                    peer_errors.append('ipv4 address must be unique per router')
+                elif 'ipv4' in peer:
+                    peer_ipv4_addrs.append(peer['ipv4'])
+
+                if 'ipv6' in peer and peer['ipv6'] in peer_ipv6_addrs:
+                    peer_errors.append('ipv6 address must be unique per router')
+                elif 'ipv6' in peer:
+                    peer_ipv6_addrs.append(peer['ipv6'])
 
                 for e in peer_errors:
                     post_annotation(e, filename, peer["__line__"])
@@ -109,7 +123,7 @@ def validate(peer):
         errors.append("sessions must exist")
 
     if "wireguard" in peer:
-        errors.append(validate_wireguard(peer["wireguard"]))
+        errors += validate_wireguard(peer["wireguard"])
     else:
         errors.append("wireguard must exist")
 
@@ -174,30 +188,34 @@ def validate_sessions(sessions, peer):
 
 
 def validate_wireguard(wg):
+    errors = []
+
     if not type(wg) is dict:
         return f"wireguard: '{wg}' must be type dictionary"
 
     if "remote_address" not in wg.keys():
-        return "wireguard.remote_address: must exist"
+        errors.append("wireguard.remote_address: must exist")
     else:
         try:
             ipaddress.ip_network(wg["remote_address"])
         except ValueError:
-            return "wireguard.remote_address is not a valid IPv4 or IPv6 address"
+            errors.append("wireguard.remote_address is not a valid IPv4 or IPv6 address")
 
     if "remote_port" not in wg.keys():
-        return "wireguard.remote_port: must exist"
+        errors.append("wireguard.remote_port: must exist")
     else:
         if not type(wg["remote_port"]) is int:
-            return "wireguard.remote_port: must be an integer"
-        if not 0 < wg["remote_port"] <= 65535:
-            return "wireguard.remote_port: must be between 0 and 65535"
+            errors.append("wireguard.remote_port: must be an integer")
+        elif not 0 < wg["remote_port"] <= 65535:
+            errors.append("wireguard.remote_port: must be between 0 and 65535")
 
     if "public_key" not in wg.keys():
-        return "wireguard.public_key: must exist"
+        errors.append("wireguard.public_key: must exist")
     else:
         if not re.match("^[A-Za-z0-9+/]{42}[AEIMQUYcgkosw480]=$", wg["public_key"]):
-            return "wireguard.public_key: is not a valid WireGuard public key"
+            errors.append("wireguard.public_key: is not a valid WireGuard public key")
+
+    return errors
 
 
 if __name__ == "__main__":
