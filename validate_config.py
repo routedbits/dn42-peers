@@ -29,11 +29,25 @@ def main():
         peers = read_yaml(filename)
         file_count += 1
 
+        # collect and ensure peer addrs are unique per router
+        peer_ipv4_addrs = []
+        peer_ipv6_addrs = []
+
         if peers is not None:
             logging.info(f"Validating peers in: {filename}")
 
             for peer in peers:
-                peer_errors = validate(peer)
+                peer_errors = list(validate(peer))
+
+                if 'ipv4' in peer and peer['ipv4'] in peer_ipv4_addrs:
+                    peer_errors.append('ipv4 address must be unique per router')
+                elif 'ipv4' in peer:
+                    peer_ipv4_addrs.append(peer['ipv4'])
+
+                if 'ipv6' in peer and peer['ipv6'] in peer_ipv6_addrs:
+                    peer_errors.append('ipv6 address must be unique per router')
+                elif 'ipv6' in peer:
+                    peer_ipv6_addrs.append(peer['ipv6'])
 
                 for e in peer_errors:
                     post_annotation(e, filename, peer["__line__"])
