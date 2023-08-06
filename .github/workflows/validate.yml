@@ -1,0 +1,28 @@
+---
+name: Validate
+
+on:
+  workflow_call:
+
+jobs:
+  validate:
+    name: Peer Configuration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install Python depdendencies
+        run: pip install -r requirements.txt
+
+      - name: Validate peer configuration
+        run: python3 validate_config.py

@@ -1,0 +1,17 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint
+    uses: ./.github/workflows/lint.yml
+    secrets: inherit
+
+  dry_run:
+    name: Validate
+    uses: ./.github/workflows/validate.yml
+    needs: [ lint ]
+    secrets: inherit
