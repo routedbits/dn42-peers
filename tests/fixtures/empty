@@ -1,0 +1,9 @@
+---
+peer: {}
+
+errors:
+  - name must exist
+  - asn must exist
+  - ipv4 or ipv6 must exist
+  - sessions must exist
+  - wireguard must exist

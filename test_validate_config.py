@@ -11,21 +11,13 @@ from validate_config import read_yaml, \
 class TestValidateConfig(TestCase):
 
     def test_validate(self):
-        empty_peer = {}
-        empty_peer_errors = [
-          'name must exist',
-          'asn must exist',
-          'ipv4 or ipv6 must exist',
-          'sessions must exist',
-          'wireguard must exist'
-        ]
-        self.assertEqual(list(validate(empty_peer)), empty_peer_errors)
-
-        test_cases = {}
-        for test_case in sorted(os.listdir('tests/fixtures')):
-            test_cases[test_case] = read_yaml(f'tests/fixtures/{test_case}')
-
-        self.assertEqual(list(validate(test_cases['valid_ext_nh'])), [])
+        # load all fixture files, test each
+        for fixture in sorted(os.listdir('tests/fixtures')):
+            test_case = read_yaml(f'tests/fixtures/{fixture}')
+            self.assertEqual(
+                list(validate(test_case['peer'])),
+                test_case['errors'],
+                f'test_case::{fixture}')
 
     def test_validate_unique_peers(self):
         not_unique = [
