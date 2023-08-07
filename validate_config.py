@@ -29,25 +29,22 @@ def main():
         peers = read_yaml(filename)
         file_count += 1
 
-        # collect and ensure peer addrs are unique per router
-        peer_ipv4_addrs = []
-        peer_ipv6_addrs = []
 
         if peers is not None:
             logging.info(f"Validating peers in: {filename}")
 
+            # collect and ensure peer addrs are unique per router
+            peer_ipv4_addrs = [peer['ipv4'] for peer in peers if 'ipv4' in peer]
+            peer_ipv6_addrs = [peer['ipv6'] for peer in peers if 'ipv6' in peer]
+
             for peer in peers:
                 peer_errors = list(validate(peer))
 
-                if 'ipv4' in peer and peer['ipv4'] in peer_ipv4_addrs:
+                if not validate_unique_peers(peer_ipv4_addrs):
                     peer_errors.append('ipv4 address must be unique per router')
-                elif 'ipv4' in peer:
-                    peer_ipv4_addrs.append(peer['ipv4'])
 
-                if 'ipv6' in peer and peer['ipv6'] in peer_ipv6_addrs:
+                if not validate_unique_peers(peer_ipv6_addrs):
                     peer_errors.append('ipv6 address must be unique per router')
-                elif 'ipv6' in peer:
-                    peer_ipv6_addrs.append(peer['ipv6'])
 
                 for e in peer_errors:
                     post_annotation(e, filename, peer["__line__"])
@@ -129,13 +126,18 @@ def validate(peer):
 
     return filter(None, errors)
 
+def validate_unique_peers(peer_ip_addrs):
+    if len(set(peer_ip_addrs)) < len(peer_ip_addrs):
+        return False
+
+    return True
 
 def validate_asn(number):
-    # Validate ASN is a number between 4242420000 and 4242429999
     if 64512 <= number <= 65534:
         logging.warning(f"private asn: '{number}' accepted")
         return
 
+    # Validate ASN is a number between 4242420000 and 4242429999
     if not 424242000 <= number <= 4242429999:
         return f"asn: '{number}' must a number between 4242420000 and 4242429999"
 
