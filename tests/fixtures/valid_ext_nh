@@ -1,11 +1,14 @@
 ---
-name: TEST-1
-asn: 424242000
-ipv6: fe80::1111
-multiprotocol: true
-extended_nexthop: true
-sessions: [ipv6]
-wireguard:
-  remote_address: 2001:db8::1
-  remote_port: 33333
-  public_key: vLfdP6SrkTfOnn/iYPM/ytMIU/vseZVNoAdgNbo1yV4=
+peer:
+  name: TEST-1
+  asn: 424242000
+  ipv6: fe80::1111
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2001:db8::1
+    remote_port: 33333
+    public_key: vLfdP6SrkTfOnn/iYPM/ytMIU/vseZVNoAdgNbo1yV4=
+
+errors: []
