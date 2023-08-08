@@ -10,6 +10,17 @@
     remote_port: 20207
     public_key: oiSSSOMYxiiM0eQP9p8klwEfNn34hkNNv4S289WUciU=
 
+- name: JK-NETWORK-FRA  # PeerID: 24014
+  asn: 4242422717
+  ipv6: fe80::2717
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 213.232.114.160
+    remote_port: 24014
+    public_key: rS+EVSpHhBW7nXv0m/Vw2I/tujwZUEyxZmV51k7Wkzw=
+
 - name: LUTOMA-FRA
   asn: 64719
   interface: wg4264719
