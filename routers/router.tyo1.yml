@@ -10,6 +10,17 @@
     remote_port: 20207
     public_key: iJXjwJGGrUTQy/P3OXmZ5lM4cjrDAd9K+vonZVUZjxY=
 
+- name: JK-NETWORK-TYO  # PeerID: 23709
+  asn: 4242422717
+  ipv6: fe80::2717
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2603:c021:8001:7faa:1515::2
+    remote_port: 23709
+    public_key: Fw+pNtP7sPbrUMI2YTFcf5Fr1vtuuJoAmSTDd/ak5TU=
+
 - name: SUNNET-TYO1
   asn: 4242423088
   ipv6: fe80::3088:190

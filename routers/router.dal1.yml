@@ -10,6 +10,17 @@
     remote_port: 20207
     public_key: gTSNP0p+Ok3gaw0mcB1yhuZ2obaoOUxW+jPI2KxGAkc=
 
+- name: JK-NETWORK-DAL  # PeerID: 23206
+  asn: 4242422717
+  ipv6: fe80::2717
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 47.87.197.102
+    remote_port: 23206
+    public_key: lhWFk53u42PlQ+P7QkBJt1+tXTc/H0EE/FwdBYkTcGY=
+
 - name: ONVOX-HOU1
   asn: 4242422010
   ipv6: fe80::2010
