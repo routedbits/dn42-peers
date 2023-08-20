@@ -36,7 +36,7 @@ Please allow some time for the process to complete.
   extended_nexthop: true  # Enable BGP Extended Nexthop Capability
   sessions: [ipv6]        # Protocol to use for session connection (ipv6)
   wireguard:
-    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (no DNS names)
+    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (or FQDN)
     remote_port: 20207                                         # Your WireGuard Listen Port
     public_key: abdcefabdcefabdcefabdcefabdcefabdcefabdcefg=   # Your WireGuard Public Key
 ```
@@ -51,7 +51,7 @@ Please allow some time for the process to complete.
   multiprotocol: true     # Send both IPv4 and IPv6 AFIs in the same BGP session
   sessions: [ipv6]        # Protocol to use for session connection (ipv4 or ipv6)
   wireguard:
-    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (no DNS names)
+    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (or FQDN)
     remote_port: 20207                                         # Your WireGuard Listen Port
     public_key: abdcefabdcefabdcefabdcefabdcefabdcefabdcefg=   # Your WireGuard Public Key
 ```
@@ -65,7 +65,7 @@ Please allow some time for the process to complete.
   ipv6: fe80::1234        # Your IPv6 tunnel address (Link-local preferred, /64 assumed unless specified)
   sessions: [ipv4,ipv6]   # Protocol to use for session connection (ipv4 and ipv6)
   wireguard:
-    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (no DNS names)
+    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (or FQDN)
     remote_port: 20207                                         # Your WireGuard Listen Port
     public_key: abdcefabdcefabdcefabdcefabdcefabdcefabdcefg=   # Your WireGuard Public Key
 ```
@@ -78,7 +78,7 @@ Please allow some time for the process to complete.
   ipv4: 172.20.0.1        # Your IPv4 tunnel/endpoint address
   sessions: [ipv4]        # Protocol to use for session connection (ipv4)
   wireguard:
-    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (no DNS names)
+    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (or FQDN)
     remote_port: 20207                                         # Your WireGuard Listen Port
     public_key: abdcefabdcefabdcefabdcefabdcefabdcefabdcefg=   # Your WireGuard Public Key
 ```
@@ -91,7 +91,7 @@ Please allow some time for the process to complete.
   ipv6: fe80::1234        # Your IPv6 tunnel address (Link-local preferred, /64 assumed unless specified)
   sessions: [ipv6]        # Protocol to use for session connection (ipv4 or ipv6)
   wireguard:
-    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (no DNS names)
+    remote_address: 2001:db8:abcd:ef::1                        # Your clear net/public IPv4 or IPv6 address (or FQDN)
     remote_port: 20207                                         # Your WireGuard Listen Port
     public_key: abdcefabdcefabdcefabdcefabdcefabdcefabdcefg=   # Your WireGuard Public Key
 ```

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import dns.resolver
 import github_action_utils as github
 import ipaddress
 import logging
@@ -29,22 +30,21 @@ def main():
         peers = read_yaml(filename)
         file_count += 1
 
-
         if peers is not None:
             logging.info(f"Validating peers in: {filename}")
 
             # collect and ensure peer addrs are unique per router
-            peer_ipv4_addrs = [peer['ipv4'] for peer in peers if 'ipv4' in peer]
-            peer_ipv6_addrs = [peer['ipv6'] for peer in peers if 'ipv6' in peer]
+            peer_ipv4_addrs = [peer["ipv4"] for peer in peers if "ipv4" in peer]
+            peer_ipv6_addrs = [peer["ipv6"] for peer in peers if "ipv6" in peer]
 
             for peer in peers:
                 peer_errors = list(validate(peer))
 
                 if not validate_unique_peers(peer_ipv4_addrs):
-                    peer_errors.append('ipv4 address must be unique per router')
+                    peer_errors.append("ipv4 address must be unique per router")
 
                 if not validate_unique_peers(peer_ipv6_addrs):
-                    peer_errors.append('ipv6 address must be unique per router')
+                    peer_errors.append("ipv6 address must be unique per router")
 
                 for e in peer_errors:
                     post_annotation(e, filename, peer["__line__"])
@@ -126,11 +126,13 @@ def validate(peer):
 
     return filter(None, errors)
 
+
 def validate_unique_peers(peer_ip_addrs):
     if len(set(peer_ip_addrs)) < len(peer_ip_addrs):
         return False
 
     return True
+
 
 def validate_asn(number):
     if 64512 <= number <= 65534:
@@ -201,7 +203,17 @@ def validate_wireguard(wg):
         try:
             ipaddress.ip_network(wg["remote_address"])
         except ValueError:
-            errors.append("wireguard.remote_address is not a valid IPv4 or IPv6 address")
+            try:
+                # if not an IP address; attempt to resolve AAAA record
+                dns.resolver.resolve(wg["remote_address"], "AAAA")
+            except dns.exception.DNSException:
+                try:
+                    # if no AAAA record; attempt to resolve A record
+                    dns.resolver.resolve(wg["remote_address"], "A")
+                except dns.exception.DNSException:
+                    errors.append(
+                        "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
+                    )
 
     if "remote_port" not in wg.keys():
         errors.append("wireguard.remote_port: must exist")
