@@ -168,10 +168,27 @@ class TestValidateConfig(TestCase):
         }
         self.assertIn("wireguard.remote_address: must exist", validate_wireguard(no_remote_address))
 
+        remote_address_invalid_msg = "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
+
         remote_address_not_ip = {
             'remote_address': 'foobar'
         }
-        self.assertIn("wireguard.remote_address is not a valid IPv4 or IPv6 address", validate_wireguard(remote_address_not_ip))
+        self.assertIn(remote_address_invalid_msg, validate_wireguard(remote_address_not_ip))
+
+        remote_address_valid_ip = {
+            'remote_address': '192.0.2.1'
+        }
+        self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_ip))
+
+        remote_address_invalid_fqdn = {
+            'remote_address': 'foobar.non_exist_tld'
+        }
+        self.assertIn(remote_address_invalid_msg, validate_wireguard(remote_address_invalid_fqdn))
+
+        remote_address_valid_fqdn = {
+            'remote_address': 'google.com'
+        }
+        self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_fqdn))
 
         no_remote_port = {
             'remote_address': '192.0.2.1',
