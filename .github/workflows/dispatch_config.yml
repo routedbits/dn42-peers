@@ -1,0 +1,18 @@
+name: Dispatch Configuration
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  dispatch:
+    name: Dispatch configuration job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch peer configuration workflow
+        run: |
+          curl -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
+          --request POST \
+          --data '{"event_type": "deploy_peers"}' \
+          ${{ secrets.DISPATCH_URL }}
