@@ -35,5 +35,5 @@ jobs:
           curl -H "Accept: application/vnd.github.everest-preview+json" \
           -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
           --request POST \
-          --data '{"event_type": "deploy_peers", "client_payload": {"limit": ${{ fromJson(needs.set-limit.outputs.limit) }}}}' \
+          --data '{"event_type": "deploy_peers", "client_payload": {"limit": "${{ needs.set-limit.outputs.limit }}"}' \
           ${{ secrets.DISPATCH_URL }}
