@@ -1,0 +1,35 @@
+name: Dispatch Configuration
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  set-limit:
+    name: Set changed routers limit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set limit
+        id: set-limit
+        run: |
+          echo "limit=$(curl -L -s \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.DISPATCH_TOKEN }}" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files | \
+          jq -c '.[] | {filename}[]' | grep -o '\(router\.[a-z0-9]\+\)' | tr '\n' ',')" \
+          >> $GITHUB_OUTPUT
+    outputs:
+      limit: ${{ steps.set-limit.outputs.limit }}
+
+  dispatch:
+    name: Dispatch configuration job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch peer configuration workflow
+        run: |
+          curl -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
+          --request POST \
+          --data '{"event_type": "deploy_peers", "client_payload": {"limit": ${{ fromJson(needs.set-limit.outputs.limit) }}}}' \
+          ${{ secrets.DISPATCH_URL }}
