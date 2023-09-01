@@ -1,11 +1,13 @@
 name: Dispatch Configuration
 
 on:
-  push:
+  pull_request:
     branches: [main]
+    types: [closed]
 
 jobs:
   set-limit:
+    if: ${{ github.event.pull_request.merged }}
     name: Set changed routers limit
     runs-on: ubuntu-latest
     steps:
@@ -24,6 +26,7 @@ jobs:
 
   dispatch:
     name: Dispatch configuration job
+    needs: set-limit
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch peer configuration workflow
