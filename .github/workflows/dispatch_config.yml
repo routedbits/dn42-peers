@@ -30,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch peer configuration workflow
+        if: ${{ needs.set-limit.outputs.limit != '' }}
         run: |
           curl -H "Accept: application/vnd.github.everest-preview+json" \
           -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
