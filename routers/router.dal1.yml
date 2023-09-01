@@ -28,7 +28,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: rt01.onvox.net
+    remote_address: 98.96.28.54
     remote_port: 50207
     public_key: 0GSNudioxk6PFrrFm3hDIAOoZvzourR6buMDv6QEnkc=
 
