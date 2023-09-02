@@ -67,6 +67,17 @@
     remote_port: 20207
     public_key: B1xSG/XTJRLd+GrWDsB06BqnIq8Xud93YVh/LYYYtUY=
 
+- name: PIVIPI-FRA
+  asn: 4242420129
+  ipv6: fe80::129:93
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: de-fra.inferior.network
+    remote_port: 20207
+    public_key: u7Pes8qR8m+/4kc4sNTYani90M2MEbaxRsnXKujqik4=
+
 - name: SUNNET-FRA1
   asn: 4242423088
   ipv6: fe80::3088:195
