@@ -1,4 +1,15 @@
 ---
+- name: EXABYTE-NJ
+  asn: 4242423340
+  ipv6: fe80::100
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: dn42-us-nj01.exabyte.network
+    remote_port: 51850
+    public_key: rtG17wOzI2RvbyrSggyWvTc4nuPNnm15+yIZ1eWHiHg=
+
 - name: LUTOMA-NYC
   asn: 64719
   interface: wg4264719
