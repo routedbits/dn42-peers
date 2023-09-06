@@ -7,8 +7,8 @@
   sessions: [ipv6]
   wireguard:
     remote_address: dn42-us-nj01.exabyte.network
-    remote_port: 51850
-    public_key: rtG17wOzI2RvbyrSggyWvTc4nuPNnm15+yIZ1eWHiHg=
+    remote_port: 51842
+    public_key: rIVfL4TgIRgwGgCZhPST+jR7LLTkMFsCHZgnWpE74GM=
 
 - name: LUTOMA-NYC
   asn: 64719
