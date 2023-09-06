@@ -6,6 +6,6 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2001:41d0:304:100::2b75
+    remote_address: fr1.g-load.eu
     remote_port: 20207
     public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
