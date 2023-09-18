@@ -1,7 +1,7 @@
 ---
 - name: BOOTL0ADER-TOR
   asn: 4242421838
-  ipv6: fe80::ca75/64
+  ipv6: fe80::ca75
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]
