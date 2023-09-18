@@ -1,4 +1,15 @@
 ---
+- name: BOOTL0ADER-TOR
+  asn: 4242421838
+  ipv6: fe80::ca75/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 159.203.6.197
+    remote_port: 51237
+    public_key: zsl4Clo0yrV73cJNyEhQzkusFzsTekME9QY/bMFAI0w=
+
 - name: HIGHDEF-YMQ
   asn: 4242421080
   ipv6: fe80::123
