@@ -1,4 +1,15 @@
 ---
+- name: HT1608-LON1
+  asn: 4242420722
+  ipv4: 172.21.110.192
+  ipv6: fd8e:8fd2:857d::1
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 185.241.225.140
+    remote_port: 20722
+    public_key: ZtxgzXxOvKYstNND2PdWBSyO5A68+iMvLkeXMeJF3lg=
+
 - name: KIOUBIT-UK1
   asn: 4242423914
   ipv6: fe80::ade0
