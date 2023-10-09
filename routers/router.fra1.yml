@@ -41,7 +41,7 @@
   multiprotocol: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 95.179.251.165
+    remote_address: de-fra02.dn42.tech9.io
     remote_port: 55535
     public_key: MD1EdVe9a0yycUdXCH3A61s3HhlDn17m5d07e4H33S0=
 

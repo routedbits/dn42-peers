@@ -7,7 +7,7 @@
   multiprotocol: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 35.245.122.4
+    remote_address: us-qas01.dn42.tech9.io
     remote_port: 59162
     public_key: itmJ4Z8V1aNN368P6kMzuQM+GdzWbBKZjJiXrgSeGlw=
 
