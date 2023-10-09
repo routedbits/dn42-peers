@@ -6,7 +6,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2406:ef80:4:cc77::1
+    remote_address: tyo.peer.highdef.network
     remote_port: 20207
     public_key: iJXjwJGGrUTQy/P3OXmZ5lM4cjrDAd9K+vonZVUZjxY=
 

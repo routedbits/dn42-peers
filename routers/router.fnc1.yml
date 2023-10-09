@@ -6,7 +6,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2607:1e40:0:120a::1
+    remote_address: sjc.peer.highdef.network
     remote_port: 20207
     public_key: Kz7mZN2ACCXSFKMiZDIVdVRmEPSnVfbEOqsxsDZ6hAw=
 

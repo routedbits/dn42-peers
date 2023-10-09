@@ -1,12 +1,12 @@
 ---
-- name: HIGHDEF-DAL
+- name: HIGHDEF-MCI
   asn: 4242421080
   ipv6: fe80::1080:33
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 23.94.3.72
+    remote_address: mci.peer.highdef.network
     remote_port: 20207
     public_key: gTSNP0p+Ok3gaw0mcB1yhuZ2obaoOUxW+jPI2KxGAkc=
 

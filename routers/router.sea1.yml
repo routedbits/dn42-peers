@@ -6,6 +6,6 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2606:6680:19:1::e92f:c868
+    remote_address: sea.peer.highdef.network
     remote_port: 20207
     public_key: ExN2xDiIoeWYIctUYBROqFwPQoaEWF/yZSsTcSgWVhY=

@@ -6,7 +6,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2602:ffc8:1:1a::32d:8da9
+    remote_address: chi.peer.highdef.network
     remote_port: 20207
     public_key: u4WJMAoCHIOeh/+6NWMytNygp+/wrMogB+rwyVzXoEg=
 
