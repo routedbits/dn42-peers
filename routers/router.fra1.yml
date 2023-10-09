@@ -78,6 +78,17 @@
     remote_port: 20207
     public_key: u7Pes8qR8m+/4kc4sNTYani90M2MEbaxRsnXKujqik4=
 
+- name: REJSIK-FRA
+  asn: 4242421170
+  ipv4: 172.22.135.160
+  ipv6: fe80::ade1
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: dn42.rejsik.eu
+    remote_port: 23859
+    public_key: TZ8fC97qZc+srECIbrJaqBa/2z+xQYdE3L/w0QmIQ14=
+
 - name: SUNNET-FRA1
   asn: 4242423088
   ipv6: fe80::3088:195
