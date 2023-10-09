@@ -17,7 +17,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 47.87.197.102
+    remote_address: us.vm.whojk.com
     remote_port: 23206
     public_key: lhWFk53u42PlQ+P7QkBJt1+tXTc/H0EE/FwdBYkTcGY=
 
