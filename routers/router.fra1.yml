@@ -6,7 +6,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2a0f:9441:47:70::1
+    remote_address: fra.peer.highdef.network
     remote_port: 20207
     public_key: oiSSSOMYxiiM0eQP9p8klwEfNn34hkNNv4S289WUciU=
 

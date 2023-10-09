@@ -6,7 +6,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2402:a7c0:8100:a015::3d8:3245
+    remote_address: sgp.peer.highdef.network
     remote_port: 20207
     public_key: X3m9VMzZYN4Oe2QUb7DcnmVymwKSLbPUCB5ElD8igjo=
 

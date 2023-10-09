@@ -6,6 +6,6 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 103.73.64.178
+    remote_address: syd.peer.highdef.network
     remote_port: 20207
     public_key: Xk9wCuwp3zK4WflTeAKBIjgIlr3+qUwIFCkF2uMyyF8=
