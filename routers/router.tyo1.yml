@@ -17,7 +17,7 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2603:c021:8001:7faa:1515::2
+    remote_address: jp.vm.whojk.com
     remote_port: 23709
     public_key: Fw+pNtP7sPbrUMI2YTFcf5Fr1vtuuJoAmSTDd/ak5TU=
 
