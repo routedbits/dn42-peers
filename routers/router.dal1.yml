@@ -40,6 +40,6 @@
   multiprotocol: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 155.138.245.196
+    remote_address: us-dal01.dn42.tech9.io
     remote_port: 56736
     public_key: iEZ71NPZge6wHKb6q4o2cvCopZ7PBDqn/b3FO56+Hkc=

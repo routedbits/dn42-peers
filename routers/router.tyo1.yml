@@ -41,6 +41,6 @@
   multiprotocol: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 202.182.101.118
+    remote_address: jp-tyo01.dn42.tech9.io
     remote_port: 55032
     public_key: unTYSat5YjkY+BY31Q9xLSfFhTUBvn3CiDCSZxbINVM=
