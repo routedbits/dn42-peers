@@ -1,1 +1,11 @@
 ---
+- name: B0782FA6AD-PEER   # Name your connection; please use capital letters and dashes only
+  asn: 4242422559         # Your DN42 ASN
+  ipv6: fe80::2575        # Your IPv6 tunnel address (Link-local preferred, /64 assumed unless specified)
+  multiprotocol: true     # Send both IPv4 and IPv6 AFIs in the same BGP session
+  extended_nexthop: true  # Enable BGP Extended Nexthop Capability
+  sessions: [ipv6]        # Protocol to use for session connection (ipv6)
+  wireguard:
+    remote_address: n2kiq.us.to                                # Your clear net/public IPv4 or IPv6 address (or FQDN)
+    remote_port: 22559                                         # Your WireGuard Listen Port
+    public_key: 067QS2yxFo5oSZRsDEWThSJIeaID4SSMRQZWpttezHw=   # Your WireGuard Public Key
