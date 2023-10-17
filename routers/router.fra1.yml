@@ -100,3 +100,14 @@
     remote_address: 2a0f:9441:47:88::2
     remote_port: 20207
     public_key: TWQhJYK+ynNz7A4GMAQSHAyUUKTnAYrBfWTzzjzhAFs=
+
+- name: IMLONGHAO-DE1
+  asn: 4242421888
+  ipv6: fe80::1888
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: de1.dn42.ni.sb
+    remote_port: 20207
+    public_key: k9F2akSTkbA/GiO59PNW/v0D65ioMYD4P1DqeKSL3FM=

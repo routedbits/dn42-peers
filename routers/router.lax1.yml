@@ -1,1 +1,11 @@
 ---
+- name: IMLONGHAO-US2
+  asn: 4242421888
+  ipv6: fe80::1888
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: us2.dn42.ni.sb
+    remote_port: 20207
+    public_key: lAs/L2XLEZALnTOJ6ZhHaKgYY+rzqRgPnmlC4v/SfQw=

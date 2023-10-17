@@ -21,3 +21,14 @@
     remote_address: sg-sin01.dn42.tech9.io
     remote_port: 52795
     public_key: 4qLIJ9zpc/Xgvy+uo90rGso75cSrT2F5tBEv+6aqDkY=
+
+- name: IMLONGHAO-SG1
+  asn: 4242421888
+  ipv6: fe80::1888
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: sg1.dn42.ni.sb
+    remote_port: 20207
+    public_key: vBcYFxMLwcsVScQ0LqkGDEIbbykskatmqWHlPGEUrE8=
