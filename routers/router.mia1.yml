@@ -9,3 +9,14 @@
     remote_address: n2kiq.us.to
     remote_port: 22559
     public_key: 067QS2yxFo5oSZRsDEWThSJIeaID4SSMRQZWpttezHw=
+
+- name: IMLONGHAO-US1
+  asn: 4242421888
+  ipv6: fe80::1888
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: us1.dn42.ni.sb
+    remote_port: 20207
+    public_key: uVIBY5keaBLtkT7oyD/W/TgEBiXerr/IPxtH+JO0amI=
