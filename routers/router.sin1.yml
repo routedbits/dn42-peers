@@ -32,3 +32,12 @@
     remote_address: sg1.dn42.ni.sb
     remote_port: 20207
     public_key: vBcYFxMLwcsVScQ0LqkGDEIbbykskatmqWHlPGEUrE8=
+
+- name: VENTILAAR-SIN05
+  asn: 4242422246
+  ipv6: fe80::2246
+  sessions: [ipv6]
+  wireguard:
+    remote_address: sin05.dn42.ventilaar.net
+    remote_port: 30207
+    public_key: h6h4yzNS/jMPvrNzD+er1zoAPcp7pOlPuWtnemrOZxQ=
