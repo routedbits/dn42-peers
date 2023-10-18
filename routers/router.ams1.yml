@@ -9,3 +9,12 @@
     remote_address: nl-eyg.inferior.network
     remote_port: 20207
     public_key: lBYpESYKv+3u/d4Van4EzgOngfPLiCTilAatIFT2gXk=
+
+- name: VENTILAAR-AMS01
+  asn: 4242422246
+  ipv6: fe80::2246
+  sessions: [ipv6]
+  wireguard:
+    remote_address: ams01.dn42.ventilaar.net
+    remote_port: 30207
+    public_key: 2VgphViJTNqQWlGII40Vfdjw+Uh6t/or1BHOQNDIS2A=

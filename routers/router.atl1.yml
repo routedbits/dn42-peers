@@ -9,3 +9,12 @@
     remote_address: atl.peer.highdef.network
     remote_port: 20207
     public_key: gbhhdvAIHVuv5e+tIG/m9T9fDaGoAGVgSUHq+rKTLyY=
+
+- name: VENTILAAR-ATL04
+  asn: 4242422246
+  ipv6: fe80::2246
+  sessions: [ipv6]
+  wireguard:
+    remote_address: atl04.dn42.ventilaar.net
+    remote_port: 30207
+    public_key: 3AE5m1TV6ht+laNTUUNRYEm+EgeHO5CePXp2eeOL+hE=
