@@ -9,3 +9,14 @@
     remote_address: sea.peer.highdef.network
     remote_port: 20207
     public_key: ExN2xDiIoeWYIctUYBROqFwPQoaEWF/yZSsTcSgWVhY=
+
+- name: KIYOMI-SEA
+  asn: 4242421350
+  ipv6: fe80::1350
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: sea.jvav.tech
+    remote_port: 20207
+    public_key: VCYdDHIKBDfHe+drn2CG6pw56HBzDeoRt6wAx6GUg0Y=
