@@ -12,6 +12,7 @@
 
 - name: KIYOMI-SEA
   asn: 4242421350
+  ipv4: 172.20.39.81
   ipv6: fe80::1350
   multiprotocol: true
   extended_nexthop: true
