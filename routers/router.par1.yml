@@ -1,4 +1,15 @@
 ---
+- name: JCAHILL-PAR01
+  asn: 4242422840
+  ipv6: fe80::cc82
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: par01.fr.dn42.jcx.ovh
+    remote_port: 54843
+    public_key: gMdwC+xpTJCVaEJ2ibmhPZBslaUPG+o0z0wy5Dey4xo=
+
 - name: KIOUBIT-FR1
   asn: 4242423914
   ipv6: fe80::ade0
