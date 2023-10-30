@@ -20,3 +20,14 @@
     remote_address: au1.dn42.ni.sb
     remote_port: 20207
     public_key: Syd/jYnhMvDrvp1POVCLuAlagWjV9X/A5DCbEBpdFBc=
+
+- name: HPG-AU
+  asn: 4242420965
+  ipv6: fe80::101
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: au-sydney.dn42.hpg.nz
+    remote_port: 20207
+    public_key: cQk3rnAfDl0XbRHBmedAP79MEgm0N28XDsWMMGyDOjk=
