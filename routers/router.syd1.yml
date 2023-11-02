@@ -36,7 +36,7 @@
   asn: 4242429999
   ipv4: 172.20.160.1
   ipv6: fe80::e5c4:1636:647e:68ec
-  sessions: [ipv4,ipv6]
+  sessions: [ipv4, ipv6]
   wireguard:
     remote_address: wlg1.dn42.line.nz
     remote_port: 13235
