@@ -31,3 +31,13 @@
     remote_address: au-sydney.dn42.hpg.nz
     remote_port: 20207
     public_key: cQk3rnAfDl0XbRHBmedAP79MEgm0N28XDsWMMGyDOjk=
+
+- name: LINE-NZ
+  asn: 4242429999
+  ipv4: 172.20.160.1
+  ipv6: fe80::e5c4:1636:647e:68ec
+  sessions: [ipv4, ipv6]
+  wireguard:
+    remote_address: wlg1.dn42.line.nz
+    remote_port: 13235
+    public_key: 5cQWNmR+aOw68grAh4wFuMOcknEEThCOwCN652R6MRM=
