@@ -11,13 +11,13 @@
     remote_port: 59162
     public_key: itmJ4Z8V1aNN368P6kMzuQM+GdzWbBKZjJiXrgSeGlw=
 
-- name: YZGUY-AIL1
+- name: YZGUY-IAD
   asn: 4242421669
   ipv6: fe80::1669
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: 2601:985:4300:c194::2
+    remote_address: rtr1.lab.yzguy.dev
     remote_port: 50210
     public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=
