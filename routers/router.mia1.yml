@@ -1,13 +1,14 @@
 ---
 - name: B0782FA6AD-PEER
   asn: 4242422559
+  ipv4: 172.21.77.129
   ipv6: fe80::2575
   multiprotocol: true
-  extended_nexthop: true
+  extended_nexthop: false
   sessions: [ipv6]
   wireguard:
     remote_address: n2kiq.us.to
-    remote_port: 22559
+    remote_port: 50207
     public_key: 067QS2yxFo5oSZRsDEWThSJIeaID4SSMRQZWpttezHw=
 
 - name: IMLONGHAO-US1
