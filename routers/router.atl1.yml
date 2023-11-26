@@ -14,8 +14,7 @@
   asn: 4242423136
   ipv4: 172.20.14.26
   ipv6: fe80::3136
-  multiprotocol: true
-  sessions: [ipv6]
+  sessions: [ipv4, ipv6]
   wireguard:
     remote_address: 98.180.237.138
     remote_port: 60207
