@@ -10,6 +10,17 @@
     remote_port: 20207
     public_key: gbhhdvAIHVuv5e+tIG/m9T9fDaGoAGVgSUHq+rKTLyY=
 
+- name: RADIANEXUS-CLE
+  asn: 4242423136
+  ipv4: 172.20.14.26
+  ipv6: fe80::3136
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 98.180.237.138
+    remote_port: 60207
+    public_key: ITamPVJR4LEp0KWq43zLeUXdPbC2Xd5cYAFjg1/k7Es=
+
 - name: VENTILAAR-ATL04
   asn: 4242422246
   ipv6: fe80::2246
