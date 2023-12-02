@@ -9,3 +9,14 @@
     remote_address: us2.dn42.ni.sb
     remote_port: 20207
     public_key: lAs/L2XLEZALnTOJ6ZhHaKgYY+rzqRgPnmlC4v/SfQw=
+
+- name: SERNET-US-LAX1
+  asn: 4242423947
+  ipv6: fe80::3947:4/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: us-lax1.dn42.sherpherd.top
+    remote_port: 20207
+    public_key: 2bQVZJjhIEaEelqwaQ+tbWDERbXjtXyidvYQL5COxyo=
