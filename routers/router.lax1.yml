@@ -12,7 +12,7 @@
 
 - name: SERNET-US-LAX1
   asn: 4242423947
-  ipv6: fe80::3947:4/64
+  ipv6: fe80::3947:4
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]

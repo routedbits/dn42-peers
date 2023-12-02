@@ -44,7 +44,7 @@
 
 - name: SERNET-HK1
   asn: 4242423947
-  ipv6: fe80::3947:1/64
+  ipv6: fe80::3947:1
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]

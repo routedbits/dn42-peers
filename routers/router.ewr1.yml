@@ -47,7 +47,7 @@
 
 - name: SERNET-US-NYC1
   asn: 4242423947
-  ipv6: fe80::3947:7/64
+  ipv6: fe80::3947:7
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]
