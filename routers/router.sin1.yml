@@ -41,3 +41,14 @@
     remote_address: sin05.dn42.ventilaar.net
     remote_port: 30207
     public_key: h6h4yzNS/jMPvrNzD+er1zoAPcp7pOlPuWtnemrOZxQ=
+
+- name: SERNET-HK1
+  asn: 4242423947
+  ipv6: fe80::3947:1/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 47.242.165.101
+    remote_port: 20207
+    public_key: Lz/SPcnKfbp4Z6LW7gysFxhyJXfyoett18r3kvlZcBY=

@@ -44,3 +44,14 @@
     remote_address: 192.3.165.229
     remote_port: 20207
     public_key: wAI2D+0GeBnFUqm3xZsfvVlfGQ5iDWI/BykEBbkc62c=
+
+- name: SERNET-US-NYC1
+  asn: 4242423947
+  ipv6: fe80::3947:7/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: us-nyc1.dn42.sherpherd.top
+    remote_port: 20207
+    public_key: PXkGrHooCFnB6N8bD6isgVjhl9GvzD2CLqlA+e2XikM=
