@@ -47,7 +47,7 @@
 
 - name: SERNET-KR-SEL1
   asn: 4242423947
-  ipv6: fe80::3947:5/64
+  ipv6: fe80::3947:5
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]
