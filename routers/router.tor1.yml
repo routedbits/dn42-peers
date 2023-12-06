@@ -20,3 +20,12 @@
     remote_address: ymq.peer.highdef.network
     remote_port: 20207
     public_key: YrlNsVP9bbTqNuNyQ/MVFzulZKNW5vMaDMzHVFNXSSE=
+
+- name: TOZTECH-CA
+  asn: 4242421812
+  ipv4: 172.23.34.254
+  sessions: [ipv4]
+  wireguard:
+    remote_address: dn42.toztech.com
+    remote_port: 20207
+    public_key: BCf9UhL6ANrtHyKAzfFhrrT27SBh7CCUkpOXZ9CrlBM=
