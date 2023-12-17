@@ -12,9 +12,10 @@
 
 - name: RADIANEXUS-CLE
   asn: 4242423136
-  ipv4: 172.20.14.18
   ipv6: fe80::3136
-  sessions: [ipv4, ipv6]
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
   wireguard:
     remote_address: 98.180.237.138
     remote_port: 50207
