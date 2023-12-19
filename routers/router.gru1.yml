@@ -1,1 +1,11 @@
 ---
+- name: GUFE23-GRU
+  asn: 4242420790
+  ipv4: 172.23.240.161
+  ipv6: fe80::3471:5231:161
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 2603:c021:c002:200:c99f:df16:fe23:57b2
+    remote_port: 52161
+    public_key: AU7XEXiurn5ebqj73Fe6IDx0nwVAz6HXykE699xyBRw=
