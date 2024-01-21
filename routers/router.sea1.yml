@@ -1,14 +1,14 @@
 ---
-- name: HIGHDEF-SEA
+- name: HIGHDEF-YVR
   asn: 4242421080
-  ipv6: fe80::114
+  ipv6: fe80::1080:35
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: sea.peer.highdef.network
+    remote_address: yvr.peer.highdef.network
     remote_port: 20207
-    public_key: ExN2xDiIoeWYIctUYBROqFwPQoaEWF/yZSsTcSgWVhY=
+    public_key: O4qWRgbJVdOM8ktyUQyT1s11WkR16JTgtnn42m9A2R8=
 
 - name: KIYOMI-SEA
   asn: 4242421350
