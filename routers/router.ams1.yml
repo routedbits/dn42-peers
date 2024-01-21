@@ -1,4 +1,15 @@
 ---
+- name: HIGHDEF-AMS
+  asn: 4242421080
+  ipv6: fe80::118
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: ams.peer.highdef.network
+    remote_port: 20207
+    public_key: EdWVXZMdujdL/jX5FZDjkPQPVaLoWt4C8FowNRbuaTU=
+
 - name: PIVIPI-AMS
   asn: 4242420129
   ipv6: fe80::129:92
