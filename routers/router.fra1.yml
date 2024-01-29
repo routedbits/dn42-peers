@@ -45,17 +45,6 @@
     remote_port: 55535
     public_key: MD1EdVe9a0yycUdXCH3A61s3HhlDn17m5d07e4H33S0=
 
-- name: LARE-DE01
-  asn: 4242423035
-  ipv6: fe80::3035:130
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: 2a01:7e01::f03c:93ff:fef1:821b
-    remote_port: 20207
-    public_key: OL2LE2feDsFV+fOC4vo4u/1enuxf3m2kydwGRE2rKVs=
-
 - name: KIOUBIT-DE2
   asn: 4242423914
   ipv6: fe80::ade0
@@ -77,17 +66,6 @@
     remote_address: de-fra.inferior.network
     remote_port: 20207
     public_key: u7Pes8qR8m+/4kc4sNTYani90M2MEbaxRsnXKujqik4=
-
-- name: REJSIK-FRA
-  asn: 4242421170
-  ipv4: 172.22.135.160
-  ipv6: fe80::ade1
-  multiprotocol: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: dn42.rejsik.eu
-    remote_port: 23859
-    public_key: TZ8fC97qZc+srECIbrJaqBa/2z+xQYdE3L/w0QmIQ14=
 
 - name: SUNNET-FRA1
   asn: 4242423088

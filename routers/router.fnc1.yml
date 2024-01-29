@@ -10,17 +10,6 @@
     remote_port: 20207
     public_key: Kz7mZN2ACCXSFKMiZDIVdVRmEPSnVfbEOqsxsDZ6hAw=
 
-- name: LEMONRFX-SCZ
-  asn: 4242421320
-  ipv4: 172.20.132.145
-  ipv6: fe80::1320:1
-  multiprotocol: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: luminous.lemonrfx.com
-    remote_port: 20207
-    public_key: srHoaUCPH6VcTmlDf0htiiGQnkcw3rgkc0MTGlMCVW8=
-
 - name: KIOUBIT-US3
   asn: 4242423914
   ipv6: fe80::ade0
