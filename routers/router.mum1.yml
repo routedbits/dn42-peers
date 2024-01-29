@@ -1,1 +1,11 @@
 ---
+- name: STRYKAR-MUM
+  asn: 4242422174
+  ipv6: fe80::cafe:0001:dead::1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: dn42.4v1.in
+    remote_port: 43786
+    public_key: n9w0dmF4+pHM/BzUaydQYs1xqZqDei0zugW77b5Gzhc=
