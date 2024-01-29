@@ -4,6 +4,7 @@
   ipv6: fe80::2174
   multiprotocol: true
   extended_nexthop: true
+  sessions: [ipv6]
   wireguard:
     remote_address: dn42.4v1.in
     remote_port: 51820
