@@ -9,3 +9,14 @@
     remote_address: 2603:c021:c002:200:c99f:df16:fe23:57b2
     remote_port: 52161
     public_key: AU7XEXiurn5ebqj73Fe6IDx0nwVAz6HXykE699xyBRw=
+
+- name: HIGHDEF-GRU
+  asn: 4242421080
+  ipv6: fe80::1080:32
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: sao.peer.highdef.network
+    remote_port: 20207
+    public_key: wjPMwWlkSaxPsxAYl1GIa3ozN95WJdqjALhdUxEvF2U=
