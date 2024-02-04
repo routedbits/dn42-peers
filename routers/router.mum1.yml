@@ -1,9 +1,10 @@
 ---
 - name: STRYKAR-MUM
   asn: 4242422174
-  ipv4: 172.23.240.224
   ipv6: fe80::2174
-  sessions: [ipv4, ipv6]
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
   wireguard:
     remote_address: mum1.dn42.4v1.in
     remote_port: 20207
