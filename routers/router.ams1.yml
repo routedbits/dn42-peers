@@ -23,14 +23,12 @@
 
 - name: PIVIPI-AMS
   asn: 4242420129
-  ipv6: fe80::129:92
+  ipv6: fe80::129:c9db
   multiprotocol: true
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: nl-eyg.inferior.network
-    remote_port: 20207
-    public_key: lBYpESYKv+3u/d4Van4EzgOngfPLiCTilAatIFT2gXk=
+    public_key: ifW+1tgOE6Ss4cjin/HV/CBTk62NrTZkPXWF0/aAmRU=
 
 - name: VENTILAAR-AMS01
   asn: 4242422246
