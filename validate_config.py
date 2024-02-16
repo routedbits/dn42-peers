@@ -78,6 +78,8 @@ def read_yaml(filename):
 def validate(peer):
     errors = []
 
+    print(f"Validating peer: {peer.get('name', '<missing>')}...", end="")
+
     if "name" in peer:
         errors.append(validate_name(peer["name"]))
     else:
@@ -123,6 +125,11 @@ def validate(peer):
         errors += validate_wireguard(peer["wireguard"])
     else:
         errors.append("wireguard must exist")
+
+    if len(list(filter(None, errors))):
+        print('\033[91m FAIL \033[0m')
+    else:
+        print('\033[92m ok \033[0m')
 
     return filter(None, errors)
 
@@ -197,9 +204,10 @@ def validate_wireguard(wg):
     if not type(wg) is dict:
         return f"wireguard: '{wg}' must be type dictionary"
 
-    if "remote_address" not in wg.keys():
-        errors.append("wireguard.remote_address: must exist")
-    else:
+    if "remote_address" in wg.keys():
+        if "remote_port" not in wg.keys():
+            errors.append("wireguard.remote_port: must exist when remote_address defined")
+
         try:
             ipaddress.ip_network(wg["remote_address"])
         except ValueError:
@@ -215,9 +223,9 @@ def validate_wireguard(wg):
                         "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
                     )
 
-    if "remote_port" not in wg.keys():
-        errors.append("wireguard.remote_port: must exist")
-    else:
+    if "remote_port" in wg.keys():
+        if "remote_address" not in wg.keys():
+            errors.append("wireguard.remote_address: must exist when remote_port defined")
         if not type(wg["remote_port"]) is int:
             errors.append("wireguard.remote_port: must be an integer")
         elif not 0 < wg["remote_port"] <= 65535:
