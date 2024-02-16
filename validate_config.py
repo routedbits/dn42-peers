@@ -78,6 +78,8 @@ def read_yaml(filename):
 def validate(peer):
     errors = []
 
+    print(f"Validating peer: {peer.get('name', '<missing>')}...", end="")
+
     if "name" in peer:
         errors.append(validate_name(peer["name"]))
     else:
@@ -123,6 +125,11 @@ def validate(peer):
         errors += validate_wireguard(peer["wireguard"])
     else:
         errors.append("wireguard must exist")
+
+    if len(list(filter(None, errors))):
+        print('\033[91m FAIL \033[0m')
+    else:
+        print('\033[92m ok \033[0m')
 
     return filter(None, errors)
 
