@@ -163,10 +163,11 @@ class TestValidateConfig(TestCase):
         not_dict = []
         self.assertEqual(validate_wireguard(not_dict), f"wireguard: '{not_dict}' must be type dictionary")
 
-        no_remote_address = {
-            'foo': 'bar'
-        }
-        self.assertIn("wireguard.remote_address: must exist", validate_wireguard(no_remote_address))
+        # allow dynamic peers (no remote address)
+        # no_remote_address = {
+        #     'foo': 'bar'
+        # }
+        # self.assertIn("wireguard.remote_address: must exist", validate_wireguard(no_remote_address))
 
         remote_address_invalid_msg = "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
 
@@ -190,10 +191,15 @@ class TestValidateConfig(TestCase):
         }
         self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_fqdn))
 
-        no_remote_port = {
+        no_remote_port_with_address = {
             'remote_address': '192.0.2.1',
         }
-        self.assertIn("wireguard.remote_port: must exist", validate_wireguard(no_remote_port))
+        self.assertIn("wireguard.remote_port: must exist when remote_address defined", validate_wireguard(no_remote_port_with_address))
+
+        no_address_with_remote_port = {
+            'remote_port': 50001,
+        }
+        self.assertIn("wireguard.remote_address: must exist when remote_port defined", validate_wireguard(no_address_with_remote_port))
 
         remote_port_not_int = {
             'remote_address': '192.0.2.1',

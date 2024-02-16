@@ -197,9 +197,10 @@ def validate_wireguard(wg):
     if not type(wg) is dict:
         return f"wireguard: '{wg}' must be type dictionary"
 
-    if "remote_address" not in wg.keys():
-        errors.append("wireguard.remote_address: must exist")
-    else:
+    if "remote_address" in wg.keys():
+        if "remote_port" not in wg.keys():
+            errors.append("wireguard.remote_port: must exist when remote_address defined")
+
         try:
             ipaddress.ip_network(wg["remote_address"])
         except ValueError:
@@ -215,9 +216,9 @@ def validate_wireguard(wg):
                         "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
                     )
 
-    if "remote_port" not in wg.keys():
-        errors.append("wireguard.remote_port: must exist")
-    else:
+    if "remote_port" in wg.keys():
+        if "remote_address" not in wg.keys():
+            errors.append("wireguard.remote_address: must exist when remote_port defined")
         if not type(wg["remote_port"]) is int:
             errors.append("wireguard.remote_port: must be an integer")
         elif not 0 < wg["remote_port"] <= 65535:
