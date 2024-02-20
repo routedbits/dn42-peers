@@ -10,6 +10,17 @@
     remote_port: 20207
     public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
 
+- name: LIBECHO-UK1
+  asn: 4242421604
+  ipv6: fe80::1604
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: uk1.vm.libecho.top
+    remote_port: 20207
+    public_key: 9U407vEN9S4jZ+MEEFYnYtMpb6H6VyQVMgJIK6oDUVo=
+
 - name: SUNNET-LON1
   asn: 4242423088
   ipv6: fe80::3088:197
