@@ -9,3 +9,12 @@
     remote_address: us1.dn42.ni.sb
     remote_port: 20207
     public_key: uVIBY5keaBLtkT7oyD/W/TgEBiXerr/IPxtH+JO0amI=
+
+- name: TOMPKEN-SRQ
+  asn: 4242421893
+  ipv4: 172.23.248.65
+  sessions: [ipv4]
+  wireguard:
+    remote_address: srq.db42.tompaw.net
+    remote_port: 50001
+    public_key: pd5m47t3o55KeWyLb05z6dI0DgP99+LYH3d4IBtIxzM=
