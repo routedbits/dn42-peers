@@ -22,6 +22,17 @@
     remote_port: 52795
     public_key: 4qLIJ9zpc/Xgvy+uo90rGso75cSrT2F5tBEv+6aqDkY=
 
+- name: LIBECHO-HK1
+  asn: 4242421604
+  ipv6: fe80::1604
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: hk1.vm.libecho.top
+    remote_port: 20207
+    public_key: hQgRGnAP4xBHym+R/jf7ScjGbBDz5RXi5gF6CF7RiWg=
+
 - name: IMLONGHAO-SG1
   asn: 4242421888
   ipv6: fe80::1888
