@@ -10,6 +10,17 @@
     remote_port: 20207
     public_key: gbhhdvAIHVuv5e+tIG/m9T9fDaGoAGVgSUHq+rKTLyY=
 
+- name: SC-DUR
+  asn: 4242420662
+  ipv4: 172.22.155.65
+  ipv6: fd7e:ad65:45c4::1
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 38.45.67.114
+    remote_port: 20207
+    public_key: fmQUwPBnpi/jN+uS1V1RXfGUGYyzJrPRlep0zsFUijc=
+
 - name: VENTILAAR-ATL04
   asn: 4242422246
   ipv6: fe80::2246
