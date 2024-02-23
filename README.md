@@ -3,17 +3,23 @@
 This repository contains the peering configuration for each of our
 DN42 routers.
 
-## Requesting Peering
+## Requesting/Managing Peering
 
 Pull-requests are welcomed by users requesting peering to one or
 more locations. Information about nodes and configuration information about
 each location can be found on our [site](https://dn42.routedbits.com/nodes).
+You may also modify your peering by submitting additional pull requests with
+your desired changes.
 
 Please note that prefixes are subject to the following:
 
 * Must be within DN42 IPv4 or IPv6 [address space](https://dn42.eu/howto/Address-Space)
 * Must not be RPKI invalid (properly configured in the registry, see 
-[getting started](https://dn42.eu/howto/Getting-Started))
+[Getting Started](https://dn42.eu/howto/Getting-Started))
+
+#### Alternative Method
+
+You can [click here](https://forms.gle/rt9YZ8AoFfX5YmE8A) to submit a peering request via Google Form. This is an easier method for users that do not wish to interact with Git or GitHub.
 
 ### Steps
 
@@ -21,7 +27,7 @@ Please note that prefixes are subject to the following:
 2. Update the appropriate [router](routers/) with your peering information
 3. Create a PR
 
-Once approved and merged, your configuration will be distributed to our network.
+Once approved and merged, we automatically distribute your configuration to the routers in our network.
 Please allow some time for the process to complete.
 
 ### Examples
