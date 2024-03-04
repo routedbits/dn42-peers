@@ -38,3 +38,14 @@
     remote_address: ams01.dn42.ventilaar.net
     remote_port: 30207
     public_key: 2VgphViJTNqQWlGII40Vfdjw+Uh6t/or1BHOQNDIS2A=
+
+- name: RAOULBROUNS-AMS01
+  asn: 4242421612
+  ipv6: fe80::5400:04ff:fecb:5ff1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: dn24bgp.raoulbrouns.nl
+    remote_port: 51821
+    public_key: wR6/EisJIMiDa0v+akDxBOkAo7tDOLsiIPhQAnEQzVo=
