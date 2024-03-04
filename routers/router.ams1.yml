@@ -46,6 +46,6 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: dn24bgp.raoulbrouns.nl
+    remote_address: dn42bgp.raoulbrouns.nl
     remote_port: 51821
     public_key: wR6/EisJIMiDa0v+akDxBOkAo7tDOLsiIPhQAnEQzVo=
