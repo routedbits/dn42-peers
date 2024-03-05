@@ -18,6 +18,4 @@
   extended_nexthop: true
   sessions: [ipv6]
   wireguard:
-    remote_address: rtr1.lab.yzguy.dev
-    remote_port: 50210
     public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=
