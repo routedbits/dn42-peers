@@ -1,1 +1,11 @@
 ---
+- name: DP-NETWORKS-PT
+  asn: 4242422096
+  ipv4: 172.23.6.146
+  ipv6: fe80::fafe
+  multiprotocol: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: vpn.diogopassos.pt
+    remote_port: 22097
+    public_key: czJoGDj8855EvO0nwqVLH1Bv/I6quSaD1mddFE408nE=
