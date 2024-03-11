@@ -54,3 +54,14 @@
     remote_address: 198.52.125.186
     remote_port: 42630
     public_key: R6k4nj41gdCplmSnHLpEdp5p6iqMey7toCRxHjhPiGE=
+
+- name: NOREINX-SFO
+  asn: 4242421580
+  ipv6: fe80::1580:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: sfo.dn42.noreinx.me
+    remote_port: 20207
+    public_key: uUKad5JFD+Zfx/sApOcqJVrrsRS25en9ac6Tri/cZQk=
