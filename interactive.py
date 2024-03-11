@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import yaml
@@ -229,7 +229,7 @@ def main(args):
         peers = [peer]
         output.ok('--- Generated Configuration ---')
         output.print(f'# routers/{router}.yml', lines_after=1)
-        output.print(yaml.dump(peers, sort_keys=False))
+        output.print(yaml.dump(peers, Dumper=IndentDumper, sort_keys=False))
     else:
         # Write YAML to selected router
         peers = load_router_peers(router)
