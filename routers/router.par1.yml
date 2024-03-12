@@ -4,7 +4,8 @@
   ipv6: fe80::cc82
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: par01.fr.dn42.jcx.ovh
     remote_port: 54843
@@ -15,7 +16,8 @@
   ipv6: fe80::ade0
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: fr1.g-load.eu
     remote_port: 20207

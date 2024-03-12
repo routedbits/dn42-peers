@@ -4,7 +4,8 @@
   ipv6: fe80::1888
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: us2.dn42.ni.sb
     remote_port: 20207
@@ -15,7 +16,8 @@
   ipv6: fe80::3947:4
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: us-lax1.dn42.sherpherd.top
     remote_port: 20207

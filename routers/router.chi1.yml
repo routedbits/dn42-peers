@@ -4,7 +4,8 @@
   ipv6: fe80::113
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: chi.peer.highdef.network
     remote_port: 20207
@@ -15,7 +16,8 @@
   ipv6: fe80::3136
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 98.180.237.138
     remote_port: 50207
@@ -27,7 +29,8 @@
   ipv6: fe80::1588
   local_ipv6: fe80::100/64
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: us-chi01.dn42.tech9.io
     remote_port: 58438

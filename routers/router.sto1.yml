@@ -4,7 +4,8 @@
   ipv6: fe80::1525
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: se1.alemal.se
     remote_port: 50207

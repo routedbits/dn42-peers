@@ -4,11 +4,48 @@
   ipv6: fe80::1080:39
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: sgp.peer.highdef.network
     remote_port: 20207
     public_key: X3m9VMzZYN4Oe2QUb7DcnmVymwKSLbPUCB5ElD8igjo=
+
+- name: IMLONGHAO-SG1
+  asn: 4242421888
+  ipv6: fe80::1888
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: sg1.dn42.ni.sb
+    remote_port: 20207
+    public_key: vBcYFxMLwcsVScQ0LqkGDEIbbykskatmqWHlPGEUrE8=
+
+- name: LIBECHO-HK1
+  asn: 4242421604
+  ipv6: fe80::1604
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: hk1.vm.libecho.top
+    remote_port: 20207
+    public_key: hQgRGnAP4xBHym+R/jf7ScjGbBDz5RXi5gF6CF7RiWg=
+
+- name: SERNET-HK1
+  asn: 4242423947
+  ipv6: fe80::3947:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 47.242.165.101
+    remote_port: 20207
+    public_key: Lz/SPcnKfbp4Z6LW7gysFxhyJXfyoett18r3kvlZcBY=
 
 - name: TECH9_SG-SIN01
   asn: 4242421588
@@ -16,50 +53,19 @@
   ipv6: fe80::1588
   local_ipv6: fe80::100/64
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: sg-sin01.dn42.tech9.io
     remote_port: 52795
     public_key: 4qLIJ9zpc/Xgvy+uo90rGso75cSrT2F5tBEv+6aqDkY=
 
-- name: LIBECHO-HK1
-  asn: 4242421604
-  ipv6: fe80::1604
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: hk1.vm.libecho.top
-    remote_port: 20207
-    public_key: hQgRGnAP4xBHym+R/jf7ScjGbBDz5RXi5gF6CF7RiWg=
-
-- name: IMLONGHAO-SG1
-  asn: 4242421888
-  ipv6: fe80::1888
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: sg1.dn42.ni.sb
-    remote_port: 20207
-    public_key: vBcYFxMLwcsVScQ0LqkGDEIbbykskatmqWHlPGEUrE8=
-
 - name: VENTILAAR-SIN05
   asn: 4242422246
   ipv6: fe80::2246
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: sin05.dn42.ventilaar.net
     remote_port: 30207
     public_key: h6h4yzNS/jMPvrNzD+er1zoAPcp7pOlPuWtnemrOZxQ=
-
-- name: SERNET-HK1
-  asn: 4242423947
-  ipv6: fe80::3947:1
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: 47.242.165.101
-    remote_port: 20207
-    public_key: Lz/SPcnKfbp4Z6LW7gysFxhyJXfyoett18r3kvlZcBY=

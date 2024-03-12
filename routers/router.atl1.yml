@@ -4,7 +4,8 @@
   ipv6: fe80::1080:119
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: atl.peer.highdef.network
     remote_port: 20207
@@ -15,7 +16,8 @@
   ipv4: 172.22.155.65
   ipv6: fd7e:ad65:45c4::1
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 38.45.67.114
     remote_port: 20207
@@ -24,7 +26,8 @@
 - name: VENTILAAR-ATL04
   asn: 4242422246
   ipv6: fe80::2246
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: atl04.dn42.ventilaar.net
     remote_port: 30207
