@@ -56,7 +56,7 @@
     remote_port: 20207
     public_key: PXkGrHooCFnB6N8bD6isgVjhl9GvzD2CLqlA+e2XikM=
 
-  name: STARSTORM-NYC1
+- name: STARSTORM-NYC1
   asn: 4242420275
   ipv6: fe80::2926
   multiprotocol: true
