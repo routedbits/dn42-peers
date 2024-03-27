@@ -4,7 +4,8 @@
   ipv6: fe80::ade0
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: uk1.g-load.eu
     remote_port: 20207
@@ -15,7 +16,8 @@
   ipv6: fe80::1604
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: uk1.vm.libecho.top
     remote_port: 20207
@@ -27,7 +29,8 @@
   local_ipv6: fe80::abcd/64
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 2a04:92c7:e:6e4::2
     remote_port: 20207

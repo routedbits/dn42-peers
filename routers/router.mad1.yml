@@ -1,22 +1,24 @@
 ---
-- name: DP-NETWORKS-PT
-  asn: 4242422096
-  ipv4: 172.23.6.146
-  ipv6: fe80::fafe
-  multiprotocol: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: vpn.diogopassos.pt
-    remote_port: 22097
-    public_key: czJoGDj8855EvO0nwqVLH1Bv/I6quSaD1mddFE408nE=
-
 - name: ARFNET
   asn: 4242423269
   ipv4: 172.20.196.63
   ipv6: fe80::caca
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 2.59.235.35
     remote_port: 51821
     public_key: IgblQAQmXTOGz6Co4lMtucwrxmb9N9i5e1CkfpYiXQA=
+
+- name: DP-NETWORKS-PT
+  asn: 4242422096
+  ipv4: 172.23.6.146
+  ipv6: fe80::fafe
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: vpn.diogopassos.pt
+    remote_port: 22097
+    public_key: czJoGDj8855EvO0nwqVLH1Bv/I6quSaD1mddFE408nE=

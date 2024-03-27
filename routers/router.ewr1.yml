@@ -4,11 +4,24 @@
   ipv6: fe80::100
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: dn42-us-nj01.exabyte.network
     remote_port: 51842
     public_key: rIVfL4TgIRgwGgCZhPST+jR7LLTkMFsCHZgnWpE74GM=
+
+- name: KIOUBIT-US2
+  asn: 4242423914
+  ipv6: fe80::ade0
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us2.g-load.eu
+    remote_port: 20207
+    public_key: 6Cylr9h1xFduAO+5nyXhFI1XJ0+Sw9jCpCDvcqErF1s=
 
 - name: LUTOMA-NYC
   asn: 64719
@@ -16,41 +29,20 @@
   ipv4: 172.22.119.10
   ipv6: fe80::acab
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 23.95.146.112
     remote_port: 42691
     public_key: SODW7Q2gThSlNEnJrKJHSe8zd4nW8SHjxJuQ2YXyWE0=
-
-- name: KIOUBIT-US2
-  asn: 4242423914
-  ipv6: fe80::ade0
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: us2.g-load.eu
-    remote_port: 20207
-    public_key: 6Cylr9h1xFduAO+5nyXhFI1XJ0+Sw9jCpCDvcqErF1s=
-
-- name: SUNNET-NYC1
-  asn: 4242423088
-  ipv6: fe80::3088:194
-  local_ipv6: fe80::abcd/64
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: 192.3.165.229
-    remote_port: 20207
-    public_key: wAI2D+0GeBnFUqm3xZsfvVlfGQ5iDWI/BykEBbkc62c=
 
 - name: SERNET-US-NYC1
   asn: 4242423947
   ipv6: fe80::3947:7
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: us-nyc1.dn42.sherpherd.top
     remote_port: 20207
@@ -61,8 +53,22 @@
   ipv6: fe80::2926
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: router.gcbbs.net
     remote_port: 21845
     public_key: MZHb2cL0jNZyH1uM01ic3ut3cUZEXC+hiJMthR7s0Ww=
+
+- name: SUNNET-NYC1
+  asn: 4242423088
+  ipv6: fe80::3088:194
+  local_ipv6: fe80::abcd/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 192.3.165.229
+    remote_port: 20207
+    public_key: wAI2D+0GeBnFUqm3xZsfvVlfGQ5iDWI/BykEBbkc62c=

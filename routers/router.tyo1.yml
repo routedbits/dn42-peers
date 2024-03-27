@@ -4,18 +4,20 @@
   ipv6: fe80::124
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: tyo.peer.highdef.network
     remote_port: 20207
     public_key: iJXjwJGGrUTQy/P3OXmZ5lM4cjrDAd9K+vonZVUZjxY=
 
-- name: JK-NETWORK-TYO  # PeerID: 23709
+- name: JK-NETWORK-TYO
   asn: 4242422717
   ipv6: fe80::2717
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: jp.vm.whojk.com
     remote_port: 23709
@@ -26,11 +28,24 @@
   ipv6: fe80::1772
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 45.39.70.216
     remote_port: 40207
     public_key: 3QqjBrblQr+QreDdghxr5dc8Hv9uxG5Px6Zc9cCbNQQ=
+
+- name: SERNET-KR-SEL1
+  asn: 4242423947
+  ipv6: fe80::3947:5
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 158.247.200.238
+    remote_port: 20207
+    public_key: 8yPUQU9Vg6rmZ03F+JyQjGUzIIZnt8AA6xqTmbBxClg=
 
 - name: SUNNET-TYO1
   asn: 4242423088
@@ -38,7 +53,8 @@
   local_ipv6: fe80::abcd/64
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 45.66.128.152
     remote_port: 20207
@@ -50,19 +66,9 @@
   ipv6: fe80::1588
   local_ipv6: fe80::100/64
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: jp-tyo01.dn42.tech9.io
     remote_port: 55032
     public_key: unTYSat5YjkY+BY31Q9xLSfFhTUBvn3CiDCSZxbINVM=
-
-- name: SERNET-KR-SEL1
-  asn: 4242423947
-  ipv6: fe80::3947:5
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: 158.247.200.238
-    remote_port: 20207
-    public_key: 8yPUQU9Vg6rmZ03F+JyQjGUzIIZnt8AA6xqTmbBxClg=

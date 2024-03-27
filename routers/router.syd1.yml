@@ -4,51 +4,57 @@
   ipv6: fe80::1080:125
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: syd.peer.highdef.network
     remote_port: 20207
     public_key: Xk9wCuwp3zK4WflTeAKBIjgIlr3+qUwIFCkF2uMyyF8=
-
-- name: IMLONGHAO-AU1
-  asn: 4242421888
-  ipv6: fe80::1888
-  multiprotocol: true
-  extended_nexthop: true
-  sessions: [ipv6]
-  wireguard:
-    remote_address: au1.dn42.ni.sb
-    remote_port: 20207
-    public_key: Syd/jYnhMvDrvp1POVCLuAlagWjV9X/A5DCbEBpdFBc=
 
 - name: HPG-AU
   asn: 4242420965
   ipv6: fe80::101
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: au-sydney.dn42.hpg.nz
     remote_port: 20207
     public_key: cQk3rnAfDl0XbRHBmedAP79MEgm0N28XDsWMMGyDOjk=
 
-- name: LINE-NZ
-  asn: 4242429999
-  ipv4: 172.20.160.1
-  ipv6: fe80::e5c4:1636:647e:68ec
-  sessions: [ipv4, ipv6]
+- name: IMLONGHAO-AU1
+  asn: 4242421888
+  ipv6: fe80::1888
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
   wireguard:
-    remote_address: wlg1.dn42.line.nz
-    remote_port: 13235
-    public_key: 5cQWNmR+aOw68grAh4wFuMOcknEEThCOwCN652R6MRM=
+    remote_address: au1.dn42.ni.sb
+    remote_port: 20207
+    public_key: Syd/jYnhMvDrvp1POVCLuAlagWjV9X/A5DCbEBpdFBc=
 
 - name: JACK-SYD01
   asn: 4242422971
   ipv4: 172.23.159.65
   ipv6: fe80::2971:1
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: syd01.dn42.jackscott.xyz
     remote_port: 50207
     public_key: 5b/QZxY2406E+it3M7k1r7jOzs7a0sogz47faHfCblc=
+
+- name: LINE-NZ
+  asn: 4242429999
+  ipv4: 172.20.160.1
+  ipv6: fe80::e5c4:1636:647e:68ec
+  sessions:
+    - ipv4
+    - ipv6
+  wireguard:
+    remote_address: wlg1.dn42.line.nz
+    remote_port: 13235
+    public_key: 5cQWNmR+aOw68grAh4wFuMOcknEEThCOwCN652R6MRM=

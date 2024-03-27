@@ -4,7 +4,8 @@
   ipv6: fe80::1888
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: us1.dn42.ni.sb
     remote_port: 20207
@@ -13,7 +14,8 @@
 - name: TOMPKEN-SRQ
   asn: 4242421893
   ipv4: 172.23.248.65
-  sessions: [ipv4]
+  sessions:
+    - ipv4
   wireguard:
     remote_address: srq.db42.tompaw.net
     remote_port: 50001

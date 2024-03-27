@@ -159,8 +159,9 @@ def validate_boolean(attrib):
 def validate_name(name):
     # Validate format: must be all uppercase, start with letter,
     # only '-' and '_' separators allowed
-    if not re.match("^[A-Z][A-Z0-9-_]+$", name):
-        return f"name: '{name}' is not in a valid format"
+    required_format = "^[A-Z][A-Z0-9-_]+$"
+    if not re.match(required_format, name):
+        return f"name: '{name}' is not in a valid format, must match {required_format}"
 
 
 def validate_ip(addr, af, attrib):

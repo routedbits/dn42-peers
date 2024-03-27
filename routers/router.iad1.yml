@@ -5,7 +5,8 @@
   ipv6: fe80::1588
   local_ipv6: fe80::100/64
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: us-qas01.dn42.tech9.io
     remote_port: 59162
@@ -16,6 +17,7 @@
   ipv6: fe80::1669
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=

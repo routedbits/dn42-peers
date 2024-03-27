@@ -4,7 +4,8 @@
   ipv6: fe80::1080:34
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: sjc.peer.highdef.network
     remote_port: 20207
@@ -15,7 +16,8 @@
   ipv6: fe80::ade0
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: us3.g-load.eu
     remote_port: 20207
@@ -26,7 +28,8 @@
   ipv6: fe80::1817
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 208.99.48.123
     remote_port: 20207
@@ -37,7 +40,8 @@
   ipv4: 172.21.77.35
   ipv6: fe80::927
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 174.137.51.245
     remote_port: 42496
@@ -49,7 +53,8 @@
   ipv4: 172.22.119.11
   ipv6: fe80::acab
   multiprotocol: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: 198.52.125.186
     remote_port: 42630
@@ -60,7 +65,8 @@
   ipv6: fe80::1580:1
   multiprotocol: true
   extended_nexthop: true
-  sessions: [ipv6]
+  sessions:
+    - ipv6
   wireguard:
     remote_address: sfo.dn42.noreinx.me
     remote_port: 20207
