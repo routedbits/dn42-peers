@@ -21,6 +21,17 @@
     remote_port: 20207
     public_key: EdWVXZMdujdL/jX5FZDjkPQPVaLoWt4C8FowNRbuaTU=
 
+- name: MARSHALL-AMS1
+  asn: 4242420694
+  ipv6: fe80::124
+  multiprotocol: true
+  extended_nexthop: true
+  sessions: [ipv6]
+  wireguard:
+    remote_address: 95.165.102.26
+    remote_port: 50694
+    public_key: kNcRVZ3Ohke+AG3Fcel7FXHeVjj/AcfLBCYOyxrFBAs=
+
 - name: PIVIPI-AMS
   asn: 4242420129
   ipv6: fe80::129:c9db
