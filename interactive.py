@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import cmd
 import yaml
 import validate_config as validations
 
@@ -33,8 +34,12 @@ class output:
 
     def choices(question, options, status=str(), lines_before=0, lines_after=0):
         output.print(question, lines_after=1)
-        for idx, option in enumerate(options):
-            output.print(f'\t{idx+1}. {option}')
+
+        # https://stackoverflow.com/a/59627245
+        cmd.Cmd().columnize(
+            [f'\t{idx+1}. {option}' for idx, option in enumerate(options)],
+            displaywidth=80
+        )
 
         try:
             return int(output.ask('Selection: '))
