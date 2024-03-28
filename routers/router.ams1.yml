@@ -25,7 +25,7 @@
 
 - name: MARSHALL-AMS1
   asn: 4242420694
-  ipv6: fe80::124
+  ipv6: fc00:0:0:20::1/64
   multiprotocol: true
   extended_nexthop: true
   sessions:

@@ -179,8 +179,8 @@ def validate_ip(addr, af, attrib):
     if af == "ipv6":
         if ip.version != 6:
             return f"{attrib}: '{addr}' is not an IPv6 address"
-        if not ip.is_link_local and not ip.subnet_of(ipaddress.ip_network("fd00::/8")):
-            return f"{attrib}: '{addr}' is not within fe80::/10 or fd00::/8"
+        if not ip.is_link_local and not ip.subnet_of(ipaddress.ip_network("fc00::/7")):
+            return f"{attrib}: '{addr}' is not within fe80::/10 or fc00::/7"
 
 
 def validate_sessions(sessions, peer):
