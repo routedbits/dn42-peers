@@ -63,7 +63,7 @@ class TestValidateConfig(TestCase):
             'ABC-abc', # not all uppercase
         ]
         for name_case in invalid_name_cases:
-            self.assertEqual(validate_name(name_case), f"name: '{name_case}' is not in a valid format")
+            self.assertEqual(validate_name(name_case), f"name: '{name_case}' is not in a valid format, must match ^[A-Z][A-Z0-9-_]+$")
 
         valid_name_cases = [
             'ABC', # all uppercase',
