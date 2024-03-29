@@ -58,3 +58,15 @@
     remote_address: wlg1.dn42.line.nz
     remote_port: 13235
     public_key: 5cQWNmR+aOw68grAh4wFuMOcknEEThCOwCN652R6MRM=
+
+- name: RIVENSBANE-AKL0
+  asn: 4242421815
+  ipv6: fe80::1815/128
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: server1.rivensbane.com
+    remote_port: 20207
+    public_key: SzxSzCLbWGpzPeYtnSXHJCVJmrjjCcJR1L13KVFTKW8=
