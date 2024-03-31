@@ -14,7 +14,7 @@
 
 - name: YZGUY-IAD
   asn: 4242421669
-  ipv6: fe80::1669
+  ipv6: fe80::1770
   multiprotocol: true
   extended_nexthop: true
   sessions:
