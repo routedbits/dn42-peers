@@ -1,0 +1,48 @@
+name: Comment Deployment Started
+
+on:
+  pull_request:
+    branches: [main]
+    types: [closed]
+
+jobs:
+  set-limit:
+    if: ${{ github.event.pull_request.merged }}
+    name: Collect routers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            routers/**
+          write_output_files: true
+
+      - id: set-limit
+        run: |
+          echo "limit=$(cat .github/outputs/all_changed_files.txt | grep -E -o '([a-z]{3}[0-9]{1})' | jq -Rcn '[inputs]')" >> $GITHUB_OUTPUT
+    outputs:
+      limit: ${{ steps.set-limit.outputs.limit }}
+
+  comment_on_pr:
+    name: Comment on Pull Request
+    needs: set-limit
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        limit: ${{ fromJson(needs.set-limit.outputs.limit) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: |
+          echo "POP_UPPERCASE=$(echo ${{ matrix.limit }} | tr '[:lower:]' '[:upper:]')" >> $GITHUB_ENV
+          echo "POP_LOWERCASE=$(echo ${{ matrix.limit }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "PULL_REQUEST_ID=${{ github.event.number }}" >> $GITHUB_ENV
+
+      - run: envsubst < .github/templates/deploy_started.tmpl > .github/deploy_started.txt
+
+      - uses: thollander/actions-comment-pull-request@v2
+        with: 
+          filePath: .github/deploy_started.txt
+          comment_tag: ${{ matrix.limit }}
+          pr_number: ${{ github.event.number }}
+
