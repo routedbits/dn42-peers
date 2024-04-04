@@ -50,9 +50,9 @@
 
 - name: STARSTORM-NYC1
   asn: 4242420275
+  ipv4: 172.20.159.98
   ipv6: fe80::2926
   multiprotocol: true
-  extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
