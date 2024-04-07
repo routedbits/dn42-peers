@@ -59,6 +59,18 @@
     remote_port: 13235
     public_key: 5cQWNmR+aOw68grAh4wFuMOcknEEThCOwCN652R6MRM=
 
+- name: MWD2-SYD1
+  asn: 4242420002
+  ipv6: fe80::2:0
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: syd1.dn42.michaeldale.com.au
+    remote_port: 20207
+    public_key: Jcm1aWOwNR806xj6bjiyrfyTp6Sto8etYBsdQ2OnAGQ=
+
 - name: RIVENSBANE-AKL0
   asn: 4242421815
   ipv6: fe80::1815/128
