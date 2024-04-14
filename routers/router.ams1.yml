@@ -1,16 +1,4 @@
 ---
-- name: AS4242421216_AMS1
-  asn: 4242421216
-  ipv6: fe80::1216
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: one.sakurano.date
-    remote_port: 20207
-    public_key: rZplEr9wAbCW8GU8bAQ9OsDX1Y009W6pNkiLhw7aWls=
-
 - name: H3XNET-RED-NL
   asn: 4242422592
   ipv6: fe80::2592
@@ -69,6 +57,18 @@
     remote_address: dn42bgp.raoulbrouns.nl
     remote_port: 51821
     public_key: wR6/EisJIMiDa0v+akDxBOkAo7tDOLsiIPhQAnEQzVo=
+
+- name: SIRAYUKI-AMS1
+  asn: 4242421216
+  ipv6: fe80::1216
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: one.sakurano.date
+    remote_port: 20207
+    public_key: rZplEr9wAbCW8GU8bAQ9OsDX1Y009W6pNkiLhw7aWls=
 
 - name: VENTILAAR-AMS01
   asn: 4242422246
