@@ -1,4 +1,14 @@
 ---
+- name: DGZMN-DAL
+  asn: 4242422724
+  ipv6: fe80::254
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: ZqQUTDUXPHW0Q94CO1irTe+TnVnrRAnlf5WmmFGXp3w=
+
 - name: HIGHDEF-MCI
   asn: 4242421080
   ipv6: fe80::1080:33
