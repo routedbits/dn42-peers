@@ -1,4 +1,16 @@
 ---
+- name: HIGHDEF-TPA
+  asn: 4242421080
+  ipv6: fe80::1080:119
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: tpa.peer.highdef.network
+    remote_port: 20207
+    public_key: gbhhdvAIHVuv5e+tIG/m9T9fDaGoAGVgSUHq+rKTLyY=
+
 - name: IMLONGHAO-US1
   asn: 4242421888
   ipv6: fe80::1888
