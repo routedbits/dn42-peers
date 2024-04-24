@@ -1,1 +1,13 @@
 ---
+- name: NETZR-TLV
+  asn: 215751
+  ipv6: fe80::5751
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv4
+    - ipv6
+  wireguard:
+    remote_address: dn42.dns.kolo.dev
+    remote_port: 19942
+    public_key: ErycvglJBtn4auI7D4/wrNLUSz5q3ERLBor4VVvTLGM=
