@@ -5,7 +5,6 @@
   multiprotocol: true
   extended_nexthop: true
   sessions:
-    - ipv4
     - ipv6
   wireguard:
     remote_address: dn42.dns.kolo.dev
