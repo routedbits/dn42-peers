@@ -9,6 +9,7 @@ import re
 import yaml
 
 from yaml.loader import SafeLoader
+from registry import Registry
 
 
 class SafeLineLoader(SafeLoader):
@@ -18,6 +19,7 @@ class SafeLineLoader(SafeLoader):
         mapping["__line__"] = node.start_mark.line + 1
         return mapping
 
+valid_asns = []
 
 def main():
     errors = []
@@ -142,14 +144,13 @@ def validate_unique_peers(peer_ip_addrs):
 
 
 def validate_asn(number):
-    if 64512 <= number <= 65534:
-        logging.warning(f"private asn: '{number}' accepted")
-        return
+    # Build ASN cache
+    global valid_asns
+    if not valid_asns:
+        valid_asns = Registry().asns()
 
-    # Validate ASN is a number between 4242420000 and 4242429999
-    if not 424242000 <= number <= 4242429999:
-        return f"asn: '{number}' must a number between 4242420000 and 4242429999"
-
+    if f'AS{number}' not in valid_asns:
+        return f"asn: '{number}' must exist in the DN42 registry"
 
 def validate_boolean(attrib):
     if not isinstance(attrib, bool):
