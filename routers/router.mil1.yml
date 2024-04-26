@@ -1,8 +1,8 @@
 ---
 - name: NETZR-TLV
   asn: 215751
-  ipv6: fe80::5751
   ipv4: 172.20.237.195
+  ipv6: fe80::5751
   sessions:
     - ipv4
     - ipv6
