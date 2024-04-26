@@ -1,1 +1,12 @@
 ---
+- name: NETZR-TLV
+  asn: 215751
+  ipv4: 172.20.237.195
+  ipv6: fe80::5751
+  sessions:
+    - ipv4
+    - ipv6
+  wireguard:
+    remote_address: tlv.wg.dn42.dns.kolo.dev
+    remote_port: 19942
+    public_key: cXdrHUgercJJXLxfkCCjrY9Zg0kK8FW8MXAyTAsTbUw=
