@@ -22,3 +22,13 @@
     remote_address: fr1.g-load.eu
     remote_port: 20207
     public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
+
+- name: SNAILZ-PAR
+  asn: 4242420284
+  ipv4: 172.20.177.98
+  sessions:
+    - ipv4
+  wireguard:
+    remote_address: 82.65.188.203
+    remote_port: 15232
+    public_key: +mRaCRlWOjcvDTDxoNd6nTgTMoeaPoLj04tVS7MZAA0=
