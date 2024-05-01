@@ -22,3 +22,13 @@
     remote_address: sao.peer.highdef.network
     remote_port: 20207
     public_key: wjPMwWlkSaxPsxAYl1GIa3ozN95WJdqjALhdUxEvF2U=
+
+- name: PATERNOT-GRU
+  asn: 4242423073
+  ipv6: fd22:ad17:8e8d:10::12
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42.shiva.eti.br
+    remote_port: 20207
+    public_key: X83k35Isa6hio5YQfwXiV2uxTuE/p5gpt2+rx55YAhM=
