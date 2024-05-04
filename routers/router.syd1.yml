@@ -82,3 +82,15 @@
     remote_address: server1.rivensbane.com
     remote_port: 20207
     public_key: SzxSzCLbWGpzPeYtnSXHJCVJmrjjCcJR1L13KVFTKW8=
+
+- name: WEITI-AU
+  asn: 4242423905
+  ipv4: 172.20.175.195
+  ipv6: fe80::42
+  sessions:
+    - ipv4
+    - ipv6
+  wireguard:
+    remote_address: dn42-au01.weiti.org
+    remote_port: 20207
+    public_key: m/dQKF/Kr2fTELYcNprueeAT4IwH3IM5UGMIwTNDKVE=
