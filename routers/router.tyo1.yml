@@ -1,4 +1,16 @@
 ---
+- name: COLBY-TYO1
+  asn: 4242422558
+  ipv6: fe80::2558:6002
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: jp-tyo1.dn42.derix.au
+    remote_port: 20207
+    public_key: bx1/IAZAsKOghvXHpVGrSJVqpH4oeLvwYvS+Lyrgyx0=
+
 - name: HIGHDEF-TYO
   asn: 4242421080
   ipv6: fe80::124

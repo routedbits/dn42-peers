@@ -11,6 +11,18 @@
     remote_port: 51237
     public_key: zsl4Clo0yrV73cJNyEhQzkusFzsTekME9QY/bMFAI0w=
 
+- name: COLBY-MTL1
+  asn: 4242422558
+  ipv6: fe80::2558:6007
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: ca-mtl1.dn42.derix.au
+    remote_port: 20207
+    public_key: dMdZQvF2yosvWDHuQgfrshTs/AH50ylZbPBNHQll8xQ=
+
 - name: HIGHDEF-YMQ
   asn: 4242421080
   ipv6: fe80::123

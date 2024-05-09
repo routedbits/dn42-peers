@@ -1,4 +1,16 @@
 ---
+- name: COLBY-NYC1
+  asn: 4242422558
+  ipv6: fe80::2558:3
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us-nyc1.dn42.derix.au
+    remote_port: 20207
+    public_key: UILRrlUwHZE4NWdV7RvF5Jit5G1eLwZ2V5p3sFYbk3M=
+
 - name: EXABYTE-NJ
   asn: 4242423340
   ipv6: fe80::100
