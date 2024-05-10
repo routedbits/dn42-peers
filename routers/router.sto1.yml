@@ -26,8 +26,6 @@
 - name: COLBY-HEL1
   asn: 4242422558
   ipv6: fe80::2558:6010
-  multiprotocol: true
-  extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
