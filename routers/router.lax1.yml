@@ -1,4 +1,16 @@
 ---
+- name: COLBY-LAX1
+  asn: 4242422558
+  ipv6: fe80::2558:7
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us-lax1.dn42.derix.au
+    remote_port: 20207
+    public_key: s3IVH2xJ3oRekd4x4Bc2H2pb0YZD11FT7Unxttc7GCU=
+
 - name: IMLONGHAO-US2
   asn: 4242421888
   ipv6: fe80::1888

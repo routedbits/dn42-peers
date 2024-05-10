@@ -1,4 +1,16 @@
 ---
+- name: COLBY-BHX1
+  asn: 4242422558
+  ipv6: fe80::2558:5
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: uk-bhx1.dn42.derix.au
+    remote_port: 20207
+    public_key: pmJ4rrY1jei9Z4gvbuiiIp8RRqVh/fBStpYt6X11NRM=
+
 - name: KIOUBIT-UK1
   asn: 4242423914
   ipv6: fe80::ade0

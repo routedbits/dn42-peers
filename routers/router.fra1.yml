@@ -1,4 +1,16 @@
 ---
+- name: COLBY-FSN1
+  asn: 4242422558
+  ipv6: fe80::2558:6009
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: de-fsn1.dn42.derix.au
+    remote_port: 20207
+    public_key: dUUYY/hJIeHpk8KvtwmHTRxf1ZLHgzLxLHBr8AXQyzk=
+
 - name: HIGHDEF-FRA
   asn: 4242421080
   ipv6: fe80::117

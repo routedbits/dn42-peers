@@ -1,4 +1,16 @@
 ---
+- name: COLBY-GRA1
+  asn: 4242422558
+  ipv6: fe80::2558:6008
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: fr-gra1.dn42.derix.au
+    remote_port: 20207
+    public_key: qvIjUZ8L1YIu4VFdesQG5L6JttdrE+QQPVzdTRCa0lI=
+
 - name: JCAHILL-PAR01
   asn: 4242422840
   ipv6: fe80::cc82

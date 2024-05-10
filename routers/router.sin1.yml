@@ -1,4 +1,16 @@
 ---
+- name: COLBY-SIN1
+  asn: 4242422558
+  ipv6: fe80::2558:6003
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: sg-sin1.dn42.derix.au
+    remote_port: 20207
+    public_key: v7QTxS85pDHQ2cmNCaRiiztVeA5w9g+LnuYGglLyqT8=
+
 - name: HIGHDEF-SGP
   asn: 4242421080
   ipv6: fe80::1080:39

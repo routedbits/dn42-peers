@@ -1,4 +1,16 @@
 ---
+- name: COLBY-AMS1
+  asn: 4242422558
+  ipv6: fe80::2558:4
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: nl-ams1.dn42.derix.au
+    remote_port: 20207
+    public_key: aEnSuSUB3ZCrryPAIJxBtH6ZcNgCSeW+dMEceEbiflo=
+
 - name: H3XNET-RED-NL
   asn: 4242422592
   ipv6: fe80::2592
