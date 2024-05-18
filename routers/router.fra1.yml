@@ -119,3 +119,15 @@
     remote_address: de-fra02.dn42.tech9.io
     remote_port: 55535
     public_key: MD1EdVe9a0yycUdXCH3A61s3HhlDn17m5d07e4H33S0=
+
+- name: XENO-FR
+  asn: 4242421882
+  ipv6: fe80::129
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: vpn.xenot.fr
+    remote_port: 58104
+    public_key: MDOUBkJTxNHMZq2Bt0pYa6VOzVz+rzN1HKkUo9UADgk=
