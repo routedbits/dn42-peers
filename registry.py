@@ -24,10 +24,28 @@ class Registry(object):
         resp.raise_for_status()
         return resp
 
+    def _transform_response(self, resp):
+        '''
+        Transform response from a list of lists
+        to a dictionary
+
+        [['as-name', 'ABC-AS'], ['descr', 'ABCs AS']]
+
+        to
+
+        {'as-name': 'ABC-AS', 'descr': 'ABCs AS'}
+        '''
+        data = {}
+        for elem in resp:
+            data[elem[0]] = elem[1]
+
+        return data
+
     def asns(self):
         path = '/aut-num'
         return self._request('GET', path).json()['aut-num']
 
     def asn(self, asn):
-        path = f'/aut-num/AS{asn}'
-        return self._request('GET', path).json()
+        path = f'/aut-num/AS{asn}?raw'
+        resp = self._request('GET', path).json()[f'aut-num/AS{asn}']
+        return self._transform_response(resp)
