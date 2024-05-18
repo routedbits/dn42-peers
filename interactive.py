@@ -111,8 +111,8 @@ def main(args):
     if args.registry:
         r_asn = registry.asn(asn)
         output.table({
-            'AS-NAME': r_asn['as-name'],
-            'Description': r_asn['descr']
+            'AS-NAME': r_asn.get('as-name', ''),
+            'Description': r_asn.get('descr', '')
         }, status=output.OK)
 
     # Name
