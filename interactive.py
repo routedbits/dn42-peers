@@ -7,6 +7,7 @@ import validate_config as validations
 
 from os import listdir
 from pathlib import Path
+from registry import Registry
 from validate_config import validate
 
 class output:
@@ -46,6 +47,12 @@ class output:
         except ValueError:
             output.fail('ERROR: Not a valid selection, try again')
 
+    def table(data, status=str(), lines_before=0, lines_after=0):
+        print('\n' * lines_before)
+        for key, val in data.items():
+            output.print(f'{key}:\t{val}', status=status)
+        print('\n' * lines_after)
+
 class IndentDumper(yaml.Dumper):
     def increase_indent(self, flow=False, indentless=False):
         return super(IndentDumper, self).increase_indent(flow, False)
@@ -76,6 +83,7 @@ def save_router_peers(router, peers):
 
 def main(args):
     peer = {}
+    registry = Registry()
 
     # Router
     router = None
@@ -89,14 +97,6 @@ def main(args):
         except (IndexError, TypeError, ValueError):
             output.fail('ERROR: Not a valid selection, try again')
 
-    # Name
-    while True:
-        peer_name = output.ask('Peer Name: ')
-        if not (error := validations.validate_name(peer_name)):
-            break
-        output.fail(error)
-    peer['name'] = peer_name
-
     # ASN
     while True:
         try:
@@ -106,8 +106,24 @@ def main(args):
             output.fail(error)
         except ValueError:
             output.fail('ERROR: Not an valid ASN number')
-    peer['asn'] = asn
 
+    # Print ASN data from registry
+    if args.registry:
+        r_asn = registry.asn(asn)
+        output.table({
+            'AS-NAME': r_asn['as-name'],
+            'Description': r_asn['descr']
+        }, status=output.OK)
+
+    # Name
+    while True:
+        peer_name = output.ask('Peer Name: ')
+        if not (error := validations.validate_name(peer_name)):
+            break
+        output.fail(error)
+
+    peer['name'] = peer_name
+    peer['asn'] = asn
 
     # Type of BGP Peering
     peering_types = {
@@ -246,5 +262,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate dn42-peers configuration')
     parser.add_argument('--stdout', action=argparse.BooleanOptionalAction,
             help='Output peer configuration to stdout')
+    parser.add_argument('--registry', action=argparse.BooleanOptionalAction,
+            help='Output registry data during questions')
     args = parser.parse_args()
     main(args)
