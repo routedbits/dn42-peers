@@ -11,6 +11,18 @@
     remote_port: 20207
     public_key: aEnSuSUB3ZCrryPAIJxBtH6ZcNgCSeW+dMEceEbiflo=
 
+- name: HEXXNET-AMS1
+  asn: 4242420225
+  ipv6: fe80::0225:0207
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42peering.sarkoziadam.hu
+    remote_port: 40234
+    public_key: zajOi1myXS0VZeYdNKcK3W1ROIcGSQtQ1Ie17ZrNxiI=
+
 - name: HIGHDEF-AMS
   asn: 4242421080
   ipv6: fe80::118
