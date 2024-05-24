@@ -11,18 +11,6 @@
     remote_port: 20207
     public_key: aEnSuSUB3ZCrryPAIJxBtH6ZcNgCSeW+dMEceEbiflo=
 
-- name: H3XNET-RED-NL
-  asn: 4242422592
-  ipv6: fe80::2592
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: nl-dro01.net.h3xco.de
-    remote_port: 20207
-    public_key: HWjDZhdwgM6BPXDFmZH1+PskdvnP87EpazZUnV6cwwk=
-
 - name: HIGHDEF-AMS
   asn: 4242421080
   ipv6: fe80::118
