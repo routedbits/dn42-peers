@@ -43,9 +43,9 @@ class TestValidateConfig(TestCase):
         ]
 
         for asn_case in asn_cases:
-            self.assertEqual(validate_asn(asn_case), f"asn: '{asn_case}' must a number between 4242420000 and 4242429999")
+            self.assertEqual(validate_asn(asn_case), f"asn: '{asn_case}' must exist in the DN42 registry")
 
-        valid_asn = 424242000
+        valid_asn = 4242420207
         self.assertEqual(validate_asn(valid_asn), None)
 
     def test_validate_boolean(self):
@@ -109,7 +109,7 @@ class TestValidateConfig(TestCase):
             'af': 'ipv6',
             'attrib': 'test'         
         }
-        self.assertEqual(validate_ip(**ipv6_address_not_in_range), f"{ipv6_address_not_in_range['attrib']}: '{ipv6_address_not_in_range['addr']}' is not within fe80::/10 or fd00::/8")
+        self.assertEqual(validate_ip(**ipv6_address_not_in_range), f"{ipv6_address_not_in_range['attrib']}: '{ipv6_address_not_in_range['addr']}' is not within fe80::/10 or fc00::/7")
 
         valid_addresses_or_prefixes = [
             { 'addr': '172.20.1.1', 'af': 'ipv4', 'attrib': 'test'}, # IPv4 address

@@ -1,7 +1,7 @@
 ---
 peer:
   name: TEST-1
-  asn: 424242000
+  asn: 4242420207
   ipv6: fe80::1111
   multiprotocol: true
   extended_nexthop: true
