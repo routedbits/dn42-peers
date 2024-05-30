@@ -35,6 +35,18 @@
     remote_port: 20207
     public_key: 9U407vEN9S4jZ+MEEFYnYtMpb6H6VyQVMgJIK6oDUVo=
 
+- name: SFS-UK
+  asn: 4242421780
+  ipv6: fe80::102
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: uk.dn42.sfsarfe.com
+    remote_port: 20207
+    public_key: 73cKStIwW3HrDepdmix6hbLPBNb2/XM92AVBv78f+FQ=
+
 - name: SUNNET-LON1
   asn: 4242423088
   ipv6: fe80::3088:197
@@ -47,14 +59,3 @@
     remote_address: 2a04:92c7:e:6e4::2
     remote_port: 20207
     public_key: hYIX+Ea/2h0rL7OY0yahjN+DJZlOaokymoDG8UW1kyg=
-- name: SFS-UK
-  asn: 4242421780
-  ipv6: fe80::102
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: uk.dn42.sfsarfe.com
-    remote_port: 20207
-    public_key: 73cKStIwW3HrDepdmix6hbLPBNb2/XM92AVBv78f+FQ=
