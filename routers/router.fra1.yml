@@ -1,4 +1,16 @@
 ---
+- name: CDUBS-FRA
+  asn: 4242420566
+  ipv6: fe80::566
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn15.de.surgebytes.com
+    remote_port: 30207
+    public_key: GPF8SHMwiSgXCoNNsDu2NwbBv26hokzfsKZo2ch82Gw=
+
 - name: COLBY-FSN1
   asn: 4242422558
   ipv6: fe80::2558:6009
