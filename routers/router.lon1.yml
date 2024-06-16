@@ -1,5 +1,5 @@
 ---
-- name: CDUBS
+- name: CDUBS-LON
   asn: 4242420566
   ipv6: fe80::566
   multiprotocol: true
