@@ -1,4 +1,16 @@
 ---
+- name: CDUBS
+  asn: 4242420566
+  ipv6: fe80::566
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn10.uk.surgebytes.com
+    remote_port: 30207
+    public_key: 4I0Lwgj9/dp6e9bIIdJDpkTN2HoAEz5+/pkl8zTd01g=
+
 - name: COLBY-BHX1
   asn: 4242422558
   ipv6: fe80::2558:5
