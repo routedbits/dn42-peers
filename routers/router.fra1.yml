@@ -82,18 +82,6 @@
     remote_port: 43178
     public_key: x8FhufXIjV9KrHcMYzOhhytLF3TFFSAMH7OClTxZxn0=
 
-- name: PIVIPI-FRA
-  asn: 4242420129
-  ipv6: fe80::129:93
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: de-fra.inferior.network
-    remote_port: 20207
-    public_key: u7Pes8qR8m+/4kc4sNTYani90M2MEbaxRsnXKujqik4=
-
 - name: SERNET-DE-FRA1
   asn: 4242423947
   ipv6: fe80::3947:6
