@@ -9,7 +9,7 @@
   wireguard:
     remote_address: dn10.uk.surgebytes.com
     remote_port: 30207
-    public_key: cHGD2aC5xkDW5n6L3EX35tqWaRPAktTQqbFETBNueS8= 
+    public_key: cHGD2aC5xkDW5n6L3EX35tqWaRPAktTQqbFETBNueS8=
 
 - name: COLBY-BHX1
   asn: 4242422558
