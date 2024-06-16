@@ -2,6 +2,8 @@
 - name: CDUBS-SEA
   asn: 4242420566
   ipv6: fe80::566
+  multiprotocol: true
+  extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
