@@ -1,4 +1,16 @@
 ---
+- name: ANTIBUILDING-DE1
+  asn: 4242421403
+  ipv6: fe80::1920:3289
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: de1.routedbits.antibuild.ing
+    remote_port: 57319
+    public_key: M8bVyo017UF2ScBpucLnOOJ8dpX4o78O5mIjy1O3aB0=
+
 - name: CDUBS-FRA
   asn: 4242420566
   ipv6: fe80::566
