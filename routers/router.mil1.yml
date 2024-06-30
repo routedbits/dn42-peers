@@ -10,3 +10,15 @@
     remote_address: tlv.wg.dn42.dns.kolo.dev
     remote_port: 19942
     public_key: cXdrHUgercJJXLxfkCCjrY9Zg0kK8FW8MXAyTAsTbUw=
+
+- name: RIVENSBANE-CH0
+  asn: 4242421815
+  ipv6: fe80::1815/128
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: ch0.rivensbane.com
+    remote_port: 20207
+    public_key: 59+xbn5n90x+bD7PxT5eozxR1CV02TrR9XhdlMn/4jg=
