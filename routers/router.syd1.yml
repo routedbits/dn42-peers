@@ -85,7 +85,7 @@
 
 - name: RIVENSBANE-AU1
   asn: 4242421815
-  ipv6: fe80::1815/128
+  ipv6: fe80::1815
   multiprotocol: true
   extended_nexthop: true
   sessions:
