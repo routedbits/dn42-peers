@@ -83,17 +83,17 @@
     remote_port: 20207
     public_key: Jcm1aWOwNR806xj6bjiyrfyTp6Sto8etYBsdQ2OnAGQ=
 
-- name: RIVENSBANE-AKL0
+- name: RIVENSBANE-AU1
   asn: 4242421815
-  ipv6: fe80::1815/128
+  ipv6: fe80::1815
   multiprotocol: true
   extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
-    remote_address: server1.rivensbane.com
+    remote_address: au1.rivensbane.com
     remote_port: 20207
-    public_key: SzxSzCLbWGpzPeYtnSXHJCVJmrjjCcJR1L13KVFTKW8=
+    public_key: R5fOFXqd3bvfCt42oe3+qaqGY7gbsYpK8wLBc1o6/Ec=
 
 - name: WEITI-AU
   asn: 4242423905
