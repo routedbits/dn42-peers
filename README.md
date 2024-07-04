@@ -30,22 +30,14 @@ You can [click here](https://forms.gle/rt9YZ8AoFfX5YmE8A) to submit a peering re
     cd dn42-peers
     ```
 
-2. Install dependencies
-
-    ```
-    python -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    ```
-
-2. Run the `interactive.py` script and provide the requested information
+2. Run the `Makefile` target and provide the requested information
     * Alternatively, you can manually update the appropriate [router](routers/) with your peering information
 
     ```
-    python interactive.py
+    make peering
     ```
 
-3. Create a PR
+3. Create a pull request
 
     ```
     git checkout -b AS123456789_LON1
