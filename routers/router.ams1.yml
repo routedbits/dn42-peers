@@ -48,6 +48,18 @@
     remote_port: 50694
     public_key: kNcRVZ3Ohke+AG3Fcel7FXHeVjj/AcfLBCYOyxrFBAs=
 
+- name: OLDSCHOOL-AMS
+  asn: 4242422706
+  ipv6: fe80::8121
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: oldschool.dynv6.net
+    remote_port: 8121
+    public_key: ffbFzOwXfvdcMYaa6Sf6UWNLDT8m4wSHFQ4d1397YSQ=
+
 - name: PIVIPI-AMS
   asn: 4242420129
   ipv6: fe80::129:c9db
