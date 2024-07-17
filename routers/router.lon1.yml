@@ -47,6 +47,18 @@
     remote_port: 20207
     public_key: 9U407vEN9S4jZ+MEEFYnYtMpb6H6VyQVMgJIK6oDUVo=
 
+- name: BITRAF-TRYGVIS-LON1
+  asn: 4242423538
+  ipv6: fe80:fc91:da95:dc6b:621b:7ccf:ff44:c42c
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: lon1.dn42.trygvis.io
+    remote_port: 51009
+    public_key: x/cvEG6uyatJEao1ob2aPGi7QGqY+2ShdtB/FTGlmAs=
+
 - name: SFS-UK
   asn: 4242421780
   ipv6: fe80::102
