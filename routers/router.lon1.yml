@@ -49,7 +49,7 @@
 
 - name: BITRAF-TRYGVIS-LON1
   asn: 4242423538
-  ipv6: fe80:fc91:da95:dc6b:621b:7ccf:ff44:c42c
+  ipv6: fe80::621b:7ccf:ff44:c42c
   multiprotocol: true
   extended_nexthop: true
   sessions:
