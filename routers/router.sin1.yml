@@ -1,4 +1,14 @@
 ---
+- name: CMCC-HK
+  asn: 4242421686
+  ipv6: fe80::1686
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: ocG/0wXtmuXA9OF5pMVolBIsFfE1K3JILX3MC3J5pGI=
+
 - name: COLBY-SIN1
   asn: 4242422558
   ipv6: fe80::2558:6003
@@ -79,13 +89,3 @@
     remote_address: sin05.dn42.ventilaar.net
     remote_port: 30207
     public_key: h6h4yzNS/jMPvrNzD+er1zoAPcp7pOlPuWtnemrOZxQ=
-
-- name: CMCC-HK
-  asn: 4242421686
-  ipv6: fe80::1686
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    public_key: ocG/0wXtmuXA9OF5pMVolBIsFfE1K3JILX3MC3J5pGI=
