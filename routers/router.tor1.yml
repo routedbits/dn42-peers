@@ -9,6 +9,18 @@
     remote_port: 51237
     public_key: zsl4Clo0yrV73cJNyEhQzkusFzsTekME9QY/bMFAI0w=
 
+- name: CCCIHL-HAM1
+  asn: 4242422451
+  ipv6: fe80::2071
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 38.69.142.52
+    remote_port: 50207
+    public_key: IInxetX7cU8xPQ/yYil0fX67oyOn7th7VdIQAwkiqmM=
+
 - name: COLBY-MTL1
   asn: 4242422558
   ipv6: fe80::2558:6007
