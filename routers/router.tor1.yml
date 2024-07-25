@@ -11,7 +11,7 @@
 
 - name: CCCIHL-HAM1
   asn: 4242422451
-  ipv6: fe80::2071/128
+  ipv6: fe80::2071
   multiprotocol: true
   extended_nexthop: true
   sessions:
