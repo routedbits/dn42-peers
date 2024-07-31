@@ -1,4 +1,16 @@
 ---
+- name: LUKASBECKERIT-YXE
+  asn: 4242423372
+  ipv6: fe80::3372/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 204.83.118.148
+    remote_port: 23372
+    public_key: tho82WN6bcm89uOo00GJwHOSA2HFtB2eSWAQpykrBk0=
+
 - name: CDUBS-SEA
   asn: 4242420566
   ipv6: fe80::566
