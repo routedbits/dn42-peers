@@ -21,6 +21,18 @@
     remote_port: 20207
     public_key: lAs/L2XLEZALnTOJ6ZhHaKgYY+rzqRgPnmlC4v/SfQw=
 
+- name: KEMONOTELECOM-SJC
+  asn: 4242420358
+  ipv6: fe80::358
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: sjc.us.dn42.kemonos.net
+    remote_port: 20207
+    public_key: 7HzHyeA2M7yo/zVmc+e0zG+I7j2SnIx+7ZpXOca93mg=
+
 - name: SERNET-US-LAX1
   asn: 4242423947
   ipv6: fe80::3947:4
