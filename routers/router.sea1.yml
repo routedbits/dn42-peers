@@ -7,9 +7,9 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: 204.83.118.148
-    remote_port: 23372
-    public_key: tho82WN6bcm89uOo00GJwHOSA2HFtB2eSWAQpykrBk0=
+    remote_address: yxe.beckerit.cc
+    remote_port: 20207
+    public_key: okxcWYCduqtZfKfZVTLc4cCMxOXBYvUEkl8OLzxe3hQ=
 
 - name: CDUBS-SEA
   asn: 4242420566
