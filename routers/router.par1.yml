@@ -9,6 +9,18 @@
     remote_port: 20207
     public_key: qvIjUZ8L1YIu4VFdesQG5L6JttdrE+QQPVzdTRCa0lI=
 
+- name: GALPHANET
+  asn: 4242421585
+  ipv6: fe80:0207::2575:6/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42-qls.galphanet.ch
+    remote_port: 20207
+    public_key: hUmRerZ52zFlRK8N082GtvIIB67j2+CnD+zBnXQGAQU=
+
 - name: JCAHILL-PAR01
   asn: 4242422840
   ipv6: fe80::cc82
