@@ -45,6 +45,18 @@
     remote_port: 20207
     public_key: YrlNsVP9bbTqNuNyQ/MVFzulZKNW5vMaDMzHVFNXSSE=
 
+- name: SIDEREAL-TOR1
+  asn: 4242422016
+  ipv6: fe80::2016
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42.tor1.sidereal.ca
+    remote_port: 20207
+    public_key: 5gReh4Xjyp2spGGabBQVUBVS/IGSrIHPMNaMG5AK2Q0=
+
 - name: TOZTECH-CA
   asn: 4242421812
   ipv4: 172.23.34.254
