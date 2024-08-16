@@ -15,7 +15,7 @@ class TestValidateConfig(TestCase):
         for fixture in sorted(os.listdir('tests/fixtures')):
             test_case = read_yaml(f'tests/fixtures/{fixture}')
             self.assertEqual(
-                list(validate(test_case['peer'])),
+                list(validate(test_case['peer'])[0]),
                 test_case['errors'],
                 f'test_case::{fixture}')
 
@@ -174,64 +174,64 @@ class TestValidateConfig(TestCase):
         remote_address_not_ip = {
             'remote_address': 'foobar'
         }
-        self.assertIn(remote_address_invalid_msg, validate_wireguard(remote_address_not_ip))
+        self.assertIn(remote_address_invalid_msg, validate_wireguard(remote_address_not_ip)[0])
 
         remote_address_valid_ip = {
             'remote_address': '192.0.2.1'
         }
-        self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_ip))
+        self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_ip)[0])
 
         remote_address_invalid_fqdn = {
             'remote_address': 'foobar.non_exist_tld'
         }
-        self.assertIn(remote_address_invalid_msg, validate_wireguard(remote_address_invalid_fqdn))
+        self.assertIn(remote_address_invalid_msg, validate_wireguard(remote_address_invalid_fqdn)[0])
 
         remote_address_valid_fqdn = {
             'remote_address': 'google.com'
         }
-        self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_fqdn))
+        self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_fqdn)[0])
 
         no_remote_port_with_address = {
             'remote_address': '192.0.2.1',
         }
-        self.assertIn("wireguard.remote_port: must exist when remote_address defined", validate_wireguard(no_remote_port_with_address))
+        self.assertIn("wireguard.remote_port: must exist when remote_address defined", validate_wireguard(no_remote_port_with_address)[0])
 
         no_address_with_remote_port = {
             'remote_port': 50001,
         }
-        self.assertIn("wireguard.remote_address: must exist when remote_port defined", validate_wireguard(no_address_with_remote_port))
+        self.assertIn("wireguard.remote_address: must exist when remote_port defined", validate_wireguard(no_address_with_remote_port)[0])
 
         remote_port_not_int = {
             'remote_address': '192.0.2.1',
             'remote_port': 'abc123'
         }
-        self.assertIn("wireguard.remote_port: must be an integer", validate_wireguard(remote_port_not_int))
+        self.assertIn("wireguard.remote_port: must be an integer", validate_wireguard(remote_port_not_int)[0])
 
         remote_port_out_of_range = [
             {'remote_address': '192.0.2.1', 'remote_port': -1}, # below range
             {'remote_address': '192.0.2.1', 'remote_port': 100000}, # above range           
         ]
         for remote_port in remote_port_out_of_range:
-            self.assertIn("wireguard.remote_port: must be between 0 and 65535", validate_wireguard(remote_port))
+            self.assertIn("wireguard.remote_port: must be between 0 and 65535", validate_wireguard(remote_port)[0])
 
         no_public_key = {
             'remote_address': '192.0.2.1',
             'remote_port': 30000
         }
-        self.assertIn("wireguard.public_key: must exist", validate_wireguard(no_public_key))
+        self.assertIn("wireguard.public_key: must exist", validate_wireguard(no_public_key)[0])
 
         public_key_not_valid = {
             'remote_address': '192.0.2.1',
             'remote_port': 30000,
             'public_key': 'abc123'
         }
-        self.assertIn("wireguard.public_key: is not a valid WireGuard public key", validate_wireguard(public_key_not_valid))
+        self.assertIn("wireguard.public_key: is not a valid WireGuard public key", validate_wireguard(public_key_not_valid)[0])
 
         wireguard_valid = {
             'remote_address': '192.0.2.1',
             'remote_port': 30000,
             'public_key': 'vLfdP6SrkTfOnn/iYPM/ytMIU/vseZVNoAdgNbo1yV4='
         }
-        self.assertEqual(validate_wireguard(wireguard_valid), [])
+        self.assertEqual(validate_wireguard(wireguard_valid)[0], [])
 
 
