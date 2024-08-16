@@ -44,3 +44,15 @@
     remote_address: us-lax1.dn42.sherpherd.top
     remote_port: 20207
     public_key: 2bQVZJjhIEaEelqwaQ+tbWDERbXjtXyidvYQL5COxyo=
+
+- name: MOECHS-US01
+  asn: 4242421522
+  ipv6: fe80::1522
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us01.myftp.org
+    remote_port: 23009
+    public_key: JtesX7JLjlYmZWbeMvK2Hx0Vpo5Fhr9VILlTcuonlWQ=
