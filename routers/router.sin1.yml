@@ -89,3 +89,15 @@
     remote_address: sin05.dn42.ventilaar.net
     remote_port: 30207
     public_key: h6h4yzNS/jMPvrNzD+er1zoAPcp7pOlPuWtnemrOZxQ=
+
+- name: MOECHS-HK01
+  asn: 4242421522
+  ipv6: fe80::1522
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: hk01.zapto.org
+    remote_port: 23009
+    public_key: McL3+qMK+YrKJHQB5GvDUcUKecsLPaDMFNzlVjjSdDo=
