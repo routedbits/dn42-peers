@@ -32,3 +32,15 @@
     remote_address: dn42.shiva.eti.br
     remote_port: 20207
     public_key: X83k35Isa6hio5YQfwXiV2uxTuE/p5gpt2+rx55YAhM=
+
+- name: SLIRYA-GRU
+  asn: 4242422608
+  ipv4: 172.21.105.1
+  ipv6: fe80::2608
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 64.181.170.30
+    remote_port: 20207
+    public_key: Stu420ttmPnHE3agY2aOExrvN8uj2bPgd26ypsKdlk0=
