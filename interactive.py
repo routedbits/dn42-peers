@@ -184,10 +184,8 @@ def main(args):
     # Multi-protocol (IPv4 and IPv6)
     elif peering_type == 'mp-bgp':
         session = session_address_family()
-        if 'ipv4' in session:
-            ipv4_tunnel_address()
-        if 'ipv6' in session:
-            ipv6_tunnel_address()
+        ipv4_tunnel_address()
+        ipv6_tunnel_address()
         peer['multiprotocol'] = True
         peer['sessions'] = session
 
