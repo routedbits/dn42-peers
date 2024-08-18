@@ -45,6 +45,18 @@
     remote_port: 20207
     public_key: YrlNsVP9bbTqNuNyQ/MVFzulZKNW5vMaDMzHVFNXSSE=
 
+- name: MAIYUN-CA04
+  asn: 4242420893
+  ipv6: fe80::893
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: ca04.dn42.maiyun.me
+    remote_port: 24207
+    public_key: JNeDKA835kWWa0UIF5mHgeI7jX4hA42SbHMFQug9wSk=
+
 - name: SIDEREAL-TOR1
   asn: 4242422016
   ipv6: fe80::2016

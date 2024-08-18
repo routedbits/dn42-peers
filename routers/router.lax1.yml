@@ -33,17 +33,15 @@
     remote_port: 20207
     public_key: 7HzHyeA2M7yo/zVmc+e0zG+I7j2SnIx+7ZpXOca93mg=
 
-- name: SERNET-US-LAX1
-  asn: 4242423947
-  ipv6: fe80::3947:4
+- name: MAIYUN-AB06
+  asn: 4242420893
+  ipv6: fe80::893
   multiprotocol: true
   extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
-    remote_address: us-lax1.dn42.sherpherd.top
-    remote_port: 20207
-    public_key: 2bQVZJjhIEaEelqwaQ+tbWDERbXjtXyidvYQL5COxyo=
+    public_key: UyNSBSItFrMl46v5WI1Uj5VwZCzzCpGQz31AeLxbZxQ=
 
 - name: MOECHS-US01
   asn: 4242421522
@@ -56,3 +54,15 @@
     remote_address: us01.myftp.org
     remote_port: 23009
     public_key: JtesX7JLjlYmZWbeMvK2Hx0Vpo5Fhr9VILlTcuonlWQ=
+
+- name: SERNET-US-LAX1
+  asn: 4242423947
+  ipv6: fe80::3947:4
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us-lax1.dn42.sherpherd.top
+    remote_port: 20207
+    public_key: 2bQVZJjhIEaEelqwaQ+tbWDERbXjtXyidvYQL5COxyo=
