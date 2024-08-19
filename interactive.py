@@ -8,6 +8,7 @@ import validate_config as validations
 from os import listdir
 from pathlib import Path
 from registry import Registry
+from routedbits import RoutedBits
 from validate_config import validate
 
 class output:
@@ -84,15 +85,16 @@ def save_router_peers(router, peers):
 def main(args):
     peer = {}
     registry = Registry()
+    nodes = RoutedBits().nodes(minimal=True)
 
     # Router
     router = None
     while True:
-        question = 'What router would you like to peer at?'
-        routers = sorted([Path(router).stem for router in listdir('routers')])
+        question = 'Which RoutedBits endpoint would you like to peer with?'
+        endpoints = [f"{node['city']} ({node['name'].upper()})" for node in nodes]
 
         try:
-            router = routers[output.choices(question, routers)-1]
+            router = nodes[output.choices(question, endpoints)-1]['hostname']
             break
         except (IndexError, TypeError, ValueError):
             output.fail('ERROR: Not a valid selection, try again')
