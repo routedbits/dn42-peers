@@ -23,6 +23,7 @@ valid_asns = []
 
 def main():
     errors = []
+    warnings = []
     file_count = 0
 
     logging.basicConfig(level=logging.FATAL)
@@ -40,7 +41,7 @@ def main():
             peer_ipv6_addrs = [peer["ipv6"] for peer in peers if "ipv6" in peer]
 
             for peer in peers:
-                peer_errors = list(validate(peer))
+                peer_errors, peer_warnings = list(validate(peer))
 
                 if not validate_unique_peers(peer_ipv4_addrs):
                     peer_errors.append("ipv4 address must be unique per router")
@@ -49,11 +50,19 @@ def main():
                     peer_errors.append("ipv6 address must be unique per router")
 
                 for e in peer_errors:
-                    post_annotation(e, filename, peer["__line__"])
-                    errors.append(f"{filename}:{peer['__line__']} {e}")
+                    post_annotation(e, filename, peer["__line__"], level='error')
+                    errors.append(f"{filename}:{peer['__line__']} ERROR: {e}")
+
+                for w in peer_warnings:
+                    post_annotation(w, filename, peer["__line__"], level='warning')
+                    warnings.append(f"{filename}:{peer['__line__']} WARNING: {peer['name']}: {w}")
 
         else:
             logging.debug("No peers found")
+
+    if len(warnings):
+        for w in warnings:
+            print(w)
 
     if len(errors):
         for e in errors:
@@ -63,9 +72,12 @@ def main():
         exit(0)
 
 
-def post_annotation(error, file, line):
+def post_annotation(msg, file, line, level='error'):
     if os.getenv("GITHUB_ACTIONS") == "true" and os.getenv("GITHUB_WORKFLOW"):
-        github.error(error, title="Validation Error", file=file, line=line)
+        if level == 'error':
+            github.error(msg, title="Validation Error", file=file, line=line)
+        else:
+            github.warning(msg, title="Validation Warning", file=file, line=line)
 
 
 def read_yaml(filename):
@@ -79,6 +91,7 @@ def read_yaml(filename):
 
 def validate(peer):
     errors = []
+    warnings = []
 
     print(f"Validating peer: {peer.get('name', '<missing>')}...", end="")
 
@@ -124,16 +137,20 @@ def validate(peer):
         errors.append("sessions must exist")
 
     if "wireguard" in peer:
-        errors += validate_wireguard(peer["wireguard"])
+        wg_errors, wg_warnings = validate_wireguard(peer["wireguard"])
+        errors += wg_errors
+        warnings += wg_warnings
     else:
         errors.append("wireguard must exist")
 
     if len(list(filter(None, errors))):
         print('\033[91m FAIL \033[0m')
+    elif len(list(filter(None, warnings))):
+        print('\33[33m warning \033[0m')
     else:
         print('\033[92m ok \033[0m')
 
-    return filter(None, errors)
+    return filter(None, errors), filter(None, warnings)
 
 
 def validate_unique_peers(peer_ip_addrs):
@@ -202,6 +219,7 @@ def validate_sessions(sessions, peer):
 
 def validate_wireguard(wg):
     errors = []
+    warnings = []
 
     if not type(wg) is dict:
         return f"wireguard: '{wg}' must be type dictionary"
@@ -213,17 +231,26 @@ def validate_wireguard(wg):
         try:
             ipaddress.ip_network(wg["remote_address"])
         except ValueError:
+            query = wg["remote_address"]
+            result = None
+
             try:
                 # if not an IP address; attempt to resolve AAAA record
-                dns.resolver.resolve(wg["remote_address"], "AAAA")
+                result = dns.resolver.resolve(query, "AAAA")
+                
             except dns.exception.DNSException:
                 try:
                     # if no AAAA record; attempt to resolve A record
-                    dns.resolver.resolve(wg["remote_address"], "A")
+                    result = dns.resolver.resolve(query, "A")
+
                 except dns.exception.DNSException:
                     errors.append(
                         "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
                     )
+
+            # generate a warning if using a CNAME
+            if result and result.qname != result.canonical_name:
+                warnings.append(f"CNAME {query} resolves to {result.canonical_name}")
 
     if "remote_port" in wg.keys():
         if "remote_address" not in wg.keys():
@@ -239,7 +266,7 @@ def validate_wireguard(wg):
         if not re.match("^[A-Za-z0-9+/]{42}[AEIMQUYcgkosw480]=$", wg["public_key"]):
             errors.append("wireguard.public_key: is not a valid WireGuard public key")
 
-    return errors
+    return errors, warnings
 
 
 if __name__ == "__main__":
