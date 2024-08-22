@@ -1,6 +1,5 @@
-from unittest import TestCase
-
 import os
+import unittest
 
 from validate_config import read_yaml, \
         validate,  validate_unique_peers, \
@@ -8,14 +7,15 @@ from validate_config import read_yaml, \
         validate_name, validate_ip, \
         validate_sessions, validate_wireguard
 
-class TestValidateConfig(TestCase):
+class TestValidateConfig(unittest.TestCase):
 
     def test_validate(self):
         # load all fixture files, test each
         for fixture in sorted(os.listdir('tests/fixtures')):
             test_case = read_yaml(f'tests/fixtures/{fixture}')
+            node_type = test_case.get('node_type', 'dual-stack')
             self.assertEqual(
-                list(validate(test_case['peer'])),
+                list(validate(node_type, test_case['peer'])),
                 test_case['errors'],
                 f'test_case::{fixture}')
 
@@ -234,4 +234,21 @@ class TestValidateConfig(TestCase):
         }
         self.assertEqual(validate_wireguard(wireguard_valid), [])
 
+        require_ipv4_error = "wireguard.remote_address must be an IPv4 address or have a valid DNS A record for an IPv4 only router"
+        require_ipv4_test_cases = [
+            { 'remote_address': '192.0.2.1', 'result': [] },
+            { 'remote_address': '2001:db8::1', 'result': [require_ipv4_error] },
+            { 'remote_address': 'one.one.one.one', 'result': [] }, # DNS that has both AAAA and A records
+            { 'remote_address': 'ip6only.me', 'result': [require_ipv4_error] }, # DNS that only has AAAA record
+        ]
 
+        for require_ipv4_test_case in require_ipv4_test_cases:
+            require_ipv4_wireguard = {
+                'remote_address': require_ipv4_test_case['remote_address'],
+                'remote_port': 30000,
+                'public_key': 'vLfdP6SrkTfOnn/iYPM/ytMIU/vseZVNoAdgNbo1yV4='
+            }
+            self.assertEqual(validate_wireguard(require_ipv4_wireguard, require_ipv4=True), require_ipv4_test_case['result'])
+
+if __name__ == '__main__':
+    unittest.main()
