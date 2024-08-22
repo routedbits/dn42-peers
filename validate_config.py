@@ -10,6 +10,7 @@ import yaml
 
 from yaml.loader import SafeLoader
 from registry import Registry
+from routedbits import RoutedBits
 
 
 class SafeLineLoader(SafeLoader):
@@ -27,20 +28,25 @@ def main():
 
     logging.basicConfig(level=logging.FATAL)
 
+    node_types = { node["hostname"]: node["type"] for node in RoutedBits().nodes(minimal=True) }
+
     for yaml_file in sorted(os.listdir("routers")):
         filename = f"routers/{yaml_file}"
+        router = yaml_file[:-4]
         peers = read_yaml(filename)
         file_count += 1
 
         if peers is not None:
             logging.info(f"Validating peers in: {filename}")
 
+            node_type = node_types[router]
+
             # collect and ensure peer addrs are unique per router
             peer_ipv4_addrs = [peer["ipv4"] for peer in peers if "ipv4" in peer]
             peer_ipv6_addrs = [peer["ipv6"] for peer in peers if "ipv6" in peer]
 
             for peer in peers:
-                peer_errors = list(validate(peer))
+                peer_errors = list(validate(node_type, peer))
 
                 if not validate_unique_peers(peer_ipv4_addrs):
                     peer_errors.append("ipv4 address must be unique per router")
@@ -77,7 +83,7 @@ def read_yaml(filename):
             exit(1)
 
 
-def validate(peer):
+def validate(node_type, peer):
     errors = []
 
     print(f"Validating peer: {peer.get('name', '<missing>')}...", end="")
@@ -124,7 +130,7 @@ def validate(peer):
         errors.append("sessions must exist")
 
     if "wireguard" in peer:
-        errors += validate_wireguard(peer["wireguard"])
+        errors += validate_wireguard(peer["wireguard"], require_ipv4=(node_type=="ipv4"))
     else:
         errors.append("wireguard must exist")
 
@@ -200,7 +206,7 @@ def validate_sessions(sessions, peer):
     return errors
 
 
-def validate_wireguard(wg):
+def validate_wireguard(wg, require_ipv4=False):
     errors = []
 
     if not type(wg) is dict:
@@ -210,10 +216,20 @@ def validate_wireguard(wg):
         if "remote_port" not in wg.keys():
             errors.append("wireguard.remote_port: must exist when remote_address defined")
 
+        require_ipv4_error = "wireguard.remote_address must be an IPv4 address or have a valid DNS A record for an IPv4 only router"
         try:
-            ipaddress.ip_network(wg["remote_address"])
+            # test if value is already an IP address
+            remote_address = ipaddress.ip_address(wg["remote_address"])
+
+            #  if require_ipv4 address must be IPv4 address
+            if require_ipv4 and not isinstance(remote_address, ipaddress.IPv4Address):
+                errors.append(require_ipv4_error)
         except ValueError:
             try:
+                # skip resolving AAAA record if we require an IPv4
+                if require_ipv4:
+                    raise dns.exception.DNSException
+
                 # if not an IP address; attempt to resolve AAAA record
                 dns.resolver.resolve(wg["remote_address"], "AAAA")
             except dns.exception.DNSException:
@@ -222,7 +238,8 @@ def validate_wireguard(wg):
                     dns.resolver.resolve(wg["remote_address"], "A")
                 except dns.exception.DNSException:
                     errors.append(
-                        "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
+                        require_ipv4_error if require_ipv4
+                        else "wireguard.remote_address is not a valid IPv4/IPv6 address or no DNS A/AAAA record found"
                     )
 
     if "remote_port" in wg.keys():

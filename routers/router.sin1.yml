@@ -55,6 +55,18 @@
     remote_port: 20207
     public_key: hQgRGnAP4xBHym+R/jf7ScjGbBDz5RXi5gF6CF7RiWg=
 
+- name: MOECHS-HK01
+  asn: 4242421522
+  ipv6: fe80::1522
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: hk01.zapto.org
+    remote_port: 23009
+    public_key: McL3+qMK+YrKJHQB5GvDUcUKecsLPaDMFNzlVjjSdDo=
+
 - name: SERNET-HK1
   asn: 4242423947
   ipv6: fe80::3947:1
@@ -89,15 +101,3 @@
     remote_address: sin05.dn42.ventilaar.net
     remote_port: 30207
     public_key: h6h4yzNS/jMPvrNzD+er1zoAPcp7pOlPuWtnemrOZxQ=
-
-- name: MOECHS-HK01
-  asn: 4242421522
-  ipv6: fe80::1522
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: hk01.zapto.org
-    remote_port: 23009
-    public_key: McL3+qMK+YrKJHQB5GvDUcUKecsLPaDMFNzlVjjSdDo=
