@@ -1,1 +1,12 @@
 ---
+- name: CDUBS-IN
+  asn: 4242420566
+  ipv6: fe80::566:20
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn20.in.surgebytes.com
+    remote_port: 30207
+    public_key: tDYc6/7gZCW9gFOVI64dBC5g72qd6fhocNYKe1MbiiI=
