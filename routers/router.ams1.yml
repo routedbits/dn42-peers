@@ -60,18 +60,6 @@
     remote_port: 8121
     public_key: ffbFzOwXfvdcMYaa6Sf6UWNLDT8m4wSHFQ4d1397YSQ=
 
-- name: PIVIPI-AMS
-  asn: 4242420129
-  ipv6: fe80::129:c9db
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: nl-ams.420129.xyz
-    remote_port: 20207
-    public_key: 5iGqF1Cs0r7dvHV6Juarb5ZkFDu7Mc2ke1mgQGVbEXU=
-
 - name: RAOULBROUNS-AMS01
   asn: 4242421612
   ipv6: fe80::5400:04ff:fecb:5ff1
