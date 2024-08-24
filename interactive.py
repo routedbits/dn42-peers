@@ -99,6 +99,8 @@ def main(args):
         except (IndexError, TypeError, ValueError):
             output.fail('ERROR: Not a valid selection, try again')
 
+    node_type = next(node['type'] for node in nodes if node['hostname'] == router)
+
     # ASN
     while True:
         try:
@@ -231,7 +233,7 @@ def main(args):
         if public_key:
             wireguard['public_key'] = public_key
 
-        if not (errors := validations.validate_wireguard(wireguard)):
+        if not (errors := validations.validate_wireguard(wireguard, require_ipv4=(node_type=='ipv4'))):
             break
 
         for error in errors:
@@ -241,7 +243,7 @@ def main(args):
     print()
 
     # Final validation as a whole
-    peer_errors = list(validate(peer))
+    peer_errors = list(validate(node_type, peer))
     for peer_error in peer_errors:
         output.fail(peer_error)
 
