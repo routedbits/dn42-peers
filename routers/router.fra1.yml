@@ -106,6 +106,18 @@
     remote_port: 20207
     public_key: KCd+kXNhe48hwOWng77V9E94PszQBqQvJW42c1P+6nk=
 
+- name: SIDEREAL-FSN1
+  asn: 4242422016
+  ipv6: fe80::2016
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: fsn1.dn42.sidereal.ca
+    remote_port: 20207
+    public_key: Lqmjk6hqNdReob93K6iYnzwvbWadJKaT/cL96ij2Fm4=
+
 - name: SUNNET-FRA1
   asn: 4242423088
   ipv6: fe80::3088:195

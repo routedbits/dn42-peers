@@ -79,6 +79,18 @@
     remote_port: 20207
     public_key: Lz/SPcnKfbp4Z6LW7gysFxhyJXfyoett18r3kvlZcBY=
 
+- name: SIDEREAL-SIN1
+  asn: 4242422016
+  ipv6: fe80::2016
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: sin1.dn42.sidereal.ca
+    remote_port: 20207
+    public_key: V9+Lxlqn3scNI7hkULY3NsHbI/s1weObxLy0R2SLQjI=
+
 - name: TECH9_SG-SIN01
   asn: 4242421588
   ipv4: 172.20.16.142

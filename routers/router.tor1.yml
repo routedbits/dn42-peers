@@ -65,7 +65,7 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: dn42.tor1.sidereal.ca
+    remote_address: tor1.dn42.sidereal.ca
     remote_port: 20207
     public_key: 5gReh4Xjyp2spGGabBQVUBVS/IGSrIHPMNaMG5AK2Q0=
 
