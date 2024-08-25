@@ -1,1 +1,12 @@
 ---
+- name: SIDEREAL-PHX1
+  asn: 4242422016
+  ipv6: fe80::2016
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: phx1.dn42.sidereal.ca
+    remote_port: 20207
+    public_key: 3hy0FIf64sxSVLY6/CwhtMfCmQEkG5hsyKxM/Dttvz0=

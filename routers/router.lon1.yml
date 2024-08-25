@@ -71,6 +71,18 @@
     remote_port: 20207
     public_key: 73cKStIwW3HrDepdmix6hbLPBNb2/XM92AVBv78f+FQ=
 
+- name: SIDEREAL-LON1
+  asn: 4242422016
+  ipv6: fe80::2016
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: lon1.dn42.sidereal.ca
+    remote_port: 20207
+    public_key: IsuXPz73qeUi+HfGlkkJnPxSqQKd5drx2dkjuHuuL1k=
+
 - name: SUNNET-LON1
   asn: 4242423088
   ipv6: fe80::3088:197
