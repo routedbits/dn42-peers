@@ -13,7 +13,7 @@ jobs:
     name: Determine Limit
     runs-on: ubuntu-latest
     steps:
-      - uses: tj-actions/changed-files@v44
+      - uses: tj-actions/changed-files@v45
         with:
           files: |
             routers/**
