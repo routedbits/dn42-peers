@@ -113,3 +113,15 @@
     remote_address: sin05.dn42.ventilaar.net
     remote_port: 30207
     public_key: h6h4yzNS/jMPvrNzD+er1zoAPcp7pOlPuWtnemrOZxQ=
+
+- name: TATK-SG
+  asn: 4242423152
+  ipv6: fe80::3152:5
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt0.sg.tatk.network
+    remote_port: 20207
+    public_key: pLGYi/kSldLPEpQ6RyyxQMUJCSbXxh3e3IySbcGrLDg=

@@ -95,3 +95,15 @@
     remote_address: 2a04:92c7:e:6e4::2
     remote_port: 20207
     public_key: hYIX+Ea/2h0rL7OY0yahjN+DJZlOaokymoDG8UW1kyg=
+
+- name: TATK-LON
+  asn: 4242423152
+  ipv6: fe80::3152:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt0.uk.tatk.network
+    remote_port: 20207
+    public_key: jvng3/Q+uAlmk64ol9gDHImR1GvGVMvkOmYO7USMYX0=
