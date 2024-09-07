@@ -93,3 +93,15 @@
     remote_address: ams01.dn42.ventilaar.net
     remote_port: 30207
     public_key: 2VgphViJTNqQWlGII40Vfdjw+Uh6t/or1BHOQNDIS2A=
+
+- name: TATK-AMS
+  asn: 4242423152
+  ipv6: fe80::3152:2
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt0.nl.tatk.network
+    remote_port: 20207
+    public_key: Q0F7kpVSjIOSzah/heFxLKUub72xNBS3+dpj2qSPnDU=

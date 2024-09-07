@@ -84,3 +84,15 @@
     remote_address: 192.3.165.229
     remote_port: 20207
     public_key: wAI2D+0GeBnFUqm3xZsfvVlfGQ5iDWI/BykEBbkc62c=
+
+- name: TATK-NYC1
+  asn: 4242423152
+  ipv6: fe80::3152:4
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt0.us.tatk.network
+    remote_port: 20207
+    public_key: 54tB3QacxF+NIfAZlXzwPsUuu23Z45TgQNmZMiuDFWo=
