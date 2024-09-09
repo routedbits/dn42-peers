@@ -45,6 +45,18 @@
     remote_port: 20207
     public_key: YrlNsVP9bbTqNuNyQ/MVFzulZKNW5vMaDMzHVFNXSSE=
 
+- name: LUKASBECKERIT-YYZ
+  asn: 4242423372
+  ipv6: fe80::3372/64
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 140.238.130.35
+    remote_port: 20207
+    public_key: okxcWYCduqtZfKfZVTLc4cCMxOXBYvUEkl8OLzxe3hQ=
+
 - name: MAIYUN-CA04
   asn: 4242420893
   ipv6: fe80::893
