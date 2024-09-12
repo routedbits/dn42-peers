@@ -23,6 +23,18 @@
     remote_port: 20207
     public_key: wjPMwWlkSaxPsxAYl1GIa3ozN95WJdqjALhdUxEvF2U=
 
+- name: LUKASBECKERIT-GRU
+  asn: 4242423372
+  ipv6: fe80::3372
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: gru.beckerit.cc
+    remote_port: 20207
+    public_key: okxcWYCduqtZfKfZVTLc4cCMxOXBYvUEkl8OLzxe3hQ=
+
 - name: PATERNOT-GRU
   asn: 4242423073
   ipv6: fd22:ad17:8e8d:10::12
