@@ -72,16 +72,6 @@
     remote_port: 20207
     public_key: rZplEr9wAbCW8GU8bAQ9OsDX1Y009W6pNkiLhw7aWls=
 
-- name: VENTILAAR-AMS01
-  asn: 4242422246
-  ipv6: fe80::2246
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: ams01.dn42.ventilaar.net
-    remote_port: 30207
-    public_key: 2VgphViJTNqQWlGII40Vfdjw+Uh6t/or1BHOQNDIS2A=
-
 - name: TATK-AMS
   asn: 4242423152
   ipv6: fe80::3152:2
@@ -93,3 +83,25 @@
     remote_address: rt0.nl.tatk.network
     remote_port: 20207
     public_key: Q0F7kpVSjIOSzah/heFxLKUub72xNBS3+dpj2qSPnDU=
+
+- name: THIJN-AMS1
+  asn: 4242420655
+  ipv6: fe80::655
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: home.thijn.ovh
+    remote_port: 51825
+    public_key: b/UGRDWNns3KMkiDh6pldwgx2vaythTzDnF/gB4ulEc=
+
+- name: VENTILAAR-AMS01
+  asn: 4242422246
+  ipv6: fe80::2246
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: ams01.dn42.ventilaar.net
+    remote_port: 30207
+    public_key: 2VgphViJTNqQWlGII40Vfdjw+Uh6t/or1BHOQNDIS2A=
