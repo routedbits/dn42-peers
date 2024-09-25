@@ -11,6 +11,18 @@
     remote_port: 57319
     public_key: M8bVyo017UF2ScBpucLnOOJ8dpX4o78O5mIjy1O3aB0=
 
+- name: BARAGOON
+  asn: 215887
+  ipv4: 172.20.194.224
+  ipv6: fe80::e170:10ce:8ebe:2be1
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: chr-ky01.as215887.net
+    remote_port: 13340
+    public_key: 4XAQzo6+K+FxtkSy+OM2CTUTj2YiIwXhgr0vpg4xrSM=
+
 - name: CDUBS-FRA
   asn: 4242420566
   ipv6: fe80::566
