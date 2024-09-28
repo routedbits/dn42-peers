@@ -23,6 +23,18 @@
     remote_port: 20207
     public_key: pEgl/q/fxrcdnqEur25ZKrIkOvoISDVBrU80R86jY1Q=
 
+- name: FMEPNET-SEA0
+  asn: 4242423703
+  ipv4: 172.20.159.235
+  ipv6: fe80::3703:235
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us-sea0.fmepnet.org
+    remote_port: 51823
+    public_key: vSbQKeo8VCL+8j3060zh9cvhCTf2pakOkcndeW0TBjY=
+
 - name: HIGHDEF-YVR
   asn: 4242421080
   ipv6: fe80::1080:35
