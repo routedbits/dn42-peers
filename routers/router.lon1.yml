@@ -1,5 +1,5 @@
 ---
-- name: BARAGOON
+- name: BARAGOON-LON
   asn: 4242421732
   ipv4: 172.23.32.129
   ipv6: fe80::b3af:9581:a43f:183f
