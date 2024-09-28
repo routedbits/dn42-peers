@@ -1,4 +1,16 @@
 ---
+- name: BARAGOON-LON
+  asn: 4242421732
+  ipv4: 172.23.32.129
+  ipv6: fe80::b3af:9581:a43f:183f
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: chr-lo01.as215887.net
+    remote_port: 20207
+    public_key: s6+VgaQ/GD/DwokuS9Uug/DAvXUoXVhSF2LRwDCh3k4=
+
 - name: BITRAF-TRYGVIS-LON1
   asn: 4242423538
   ipv6: fe80::621b:7ccf:ff44:c42c
