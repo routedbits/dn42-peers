@@ -21,6 +21,16 @@
     remote_port: 20207
     public_key: gTSNP0p+Ok3gaw0mcB1yhuZ2obaoOUxW+jPI2KxGAkc=
 
+- name: IVANG-DAL
+  asn: 4242420490
+  ipv4: 172.21.78.130
+  ipv6: fddd:ad1b:404e::2
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: MIRqOB3q6s3dVWleObTM2jaGECBZDZwJwrrBu8MJVgQ=
+
 - name: JK-NETWORK-DAL
   asn: 4242422717
   ipv6: fe80::2717
