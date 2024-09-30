@@ -71,3 +71,15 @@
     remote_address: sfo.dn42.noreinx.me
     remote_port: 20207
     public_key: uUKad5JFD+Zfx/sApOcqJVrrsRS25en9ac6Tri/cZQk=
+
+- name: TATK-SFO
+  asn: 4242423152
+  ipv6: fe80::3152:6
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt1.us.tatk.network
+    remote_port: 20207
+    public_key: UYgfyVQQAEJp1/uNRBwduFFG+f/iubredlpCWPDy7Qw=

@@ -167,3 +167,15 @@
     remote_address: vpn.xenot.fr
     remote_port: 58104
     public_key: MDOUBkJTxNHMZq2Bt0pYa6VOzVz+rzN1HKkUo9UADgk=
+
+- name: TATK-FRA
+  asn: 4242423152
+  ipv6: fe80::3152:3
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt0.de.tatk.network
+    remote_port: 20207
+    public_key: So3HOmzdnLlXcrIrk7lpP+KmoCHPlXNvbXLg73gI5CQ=
