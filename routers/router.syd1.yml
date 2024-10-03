@@ -73,9 +73,10 @@
 
 - name: MWD2-SYD1
   asn: 4242420002
+  ipv4: 172.23.227.1
   ipv6: fe80::2:0
   multiprotocol: true
-  extended_nexthop: true
+  extended_nexthop: false
   sessions:
     - ipv6
   wireguard:
