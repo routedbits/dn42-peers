@@ -105,3 +105,14 @@
     remote_address: ams01.dn42.ventilaar.net
     remote_port: 30207
     public_key: 2VgphViJTNqQWlGII40Vfdjw+Uh6t/or1BHOQNDIS2A=
+
+- name: BARAGOON-AMS
+  asn: 4242421732
+  ipv6: fe80::dc60:59f7:985f:6bc4
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: chr-am02.as215887.net
+    remote_port: 20207
+    public_key: 3GBZ95hfa8TObNlFc7OZ+EiQ/sCSiRicuFHVHxjEFwA=
