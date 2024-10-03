@@ -1,4 +1,16 @@
 ---
+- name: DNSENSE-SFO
+  asn: 4242423117
+  ipv6: fe80::3117:0207/128
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 6.dnsense.pub
+    remote_port: 20207
+    public_key: UVm6W75mp6R8yw+C9yICPW8F5j7tUzerh2Ecmqgt0B4=
+
 - name: HIGHDEF-SJC
   asn: 4242421080
   ipv6: fe80::1080:34
