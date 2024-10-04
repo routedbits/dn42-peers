@@ -109,6 +109,7 @@
 - name: BARAGOON-AMS
   asn: 4242421732
   ipv6: fe80::dc60:59f7:985f:6bc4
+  ipv4: 172.23.32.152
   multiprotocol: true
   sessions:
     - ipv6
