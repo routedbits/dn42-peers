@@ -11,6 +11,18 @@
     remote_port: 20207
     public_key: aEnSuSUB3ZCrryPAIJxBtH6ZcNgCSeW+dMEceEbiflo=
 
+- name: BARAGOON-AMS
+  asn: 4242421732
+  ipv4: 172.23.32.152
+  ipv6: fe80::dc60:59f7:985f:6bc4
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: chr-am02.as215887.net
+    remote_port: 20207
+    public_key: 3GBZ95hfa8TObNlFc7OZ+EiQ/sCSiRicuFHVHxjEFwA=
+
 - name: HEXXNET-AMS1
   asn: 4242420225
   ipv6: fe80::0225:0207
