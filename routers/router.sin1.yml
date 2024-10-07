@@ -19,18 +19,6 @@
     remote_port: 20207
     public_key: v7QTxS85pDHQ2cmNCaRiiztVeA5w9g+LnuYGglLyqT8=
 
-- name: HIGHDEF-SGP
-  asn: 4242421080
-  ipv6: fe80::1080:39
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: sgp.peer.highdef.network
-    remote_port: 20207
-    public_key: X3m9VMzZYN4Oe2QUb7DcnmVymwKSLbPUCB5ElD8igjo=
-
 - name: IMLONGHAO-SG1
   asn: 4242421888
   ipv6: fe80::1888

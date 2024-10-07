@@ -47,31 +47,6 @@
     remote_port: 20207
     public_key: EdWVXZMdujdL/jX5FZDjkPQPVaLoWt4C8FowNRbuaTU=
 
-- name: MARSHALL-AMS1
-  asn: 4242420694
-  ipv6: fc00:0:0:20::2
-  local_ipv6: fc00:0:0:20::1/64
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 95.165.102.26
-    remote_port: 50694
-    public_key: kNcRVZ3Ohke+AG3Fcel7FXHeVjj/AcfLBCYOyxrFBAs=
-
-- name: RAOULBROUNS-AMS01
-  asn: 4242421612
-  ipv6: fe80::5400:04ff:fecb:5ff1
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: dn42bgp.raoulbrouns.nl
-    remote_port: 51821
-    public_key: wR6/EisJIMiDa0v+akDxBOkAo7tDOLsiIPhQAnEQzVo=
-
 - name: SIRAYUKI-AMS1
   asn: 4242421216
   ipv6: fe80::1216

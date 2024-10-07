@@ -9,18 +9,6 @@
     remote_port: 20207
     public_key: ZepzPTIEwT+kBceqwQhFt9fxyZc6pEOpn8QK6++LEDw=
 
-- name: HIGHDEF-TPA
-  asn: 4242421080
-  ipv6: fe80::1080:119
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: tpa.peer.highdef.network
-    remote_port: 20207
-    public_key: gbhhdvAIHVuv5e+tIG/m9T9fDaGoAGVgSUHq+rKTLyY=
-
 - name: IMLONGHAO-US1
   asn: 4242421888
   ipv6: fe80::1888
@@ -32,13 +20,3 @@
     remote_address: us1.dn42.ni.sb
     remote_port: 20207
     public_key: uVIBY5keaBLtkT7oyD/W/TgEBiXerr/IPxtH+JO0amI=
-
-- name: TOMPKEN-SRQ
-  asn: 4242421893
-  ipv4: 172.23.248.65
-  sessions:
-    - ipv4
-  wireguard:
-    remote_address: srq.db42.tompaw.net
-    remote_port: 50001
-    public_key: pd5m47t3o55KeWyLb05z6dI0DgP99+LYH3d4IBtIxzM=
