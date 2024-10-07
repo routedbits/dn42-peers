@@ -33,18 +33,6 @@
     remote_port: 23709
     public_key: Fw+pNtP7sPbrUMI2YTFcf5Fr1vtuuJoAmSTDd/ak5TU=
 
-- name: REX-TYO1
-  asn: 4242421772
-  ipv6: fe80::1772
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 45.39.70.216
-    remote_port: 40207
-    public_key: 3QqjBrblQr+QreDdghxr5dc8Hv9uxG5Px6Zc9cCbNQQ=
-
 - name: SERNET-KR-SEL1
   asn: 4242423947
   ipv6: fe80::3947:5
