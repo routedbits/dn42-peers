@@ -70,15 +70,3 @@
     remote_address: yxe.beckerit.cc
     remote_port: 20207
     public_key: okxcWYCduqtZfKfZVTLc4cCMxOXBYvUEkl8OLzxe3hQ=
-
-- name: MIKEHU44
-  asn: 4242420464
-  ipv4: 172.21.84.173
-  ipv6: fd43:38f0:88d5::173
-  sessions:
-    - ipv4
-    - ipv6
-  wireguard:
-    remote_address: dn42.ytcodecs.com
-    remote_port: 51824
-    public_key: ruwWowxUX1njR0ZsntRXDNhJ9/h0aAGgghkLobw2uCQ=
