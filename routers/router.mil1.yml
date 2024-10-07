@@ -17,9 +17,9 @@
     - ipv6
   multiprotocol: true
   wireguard:
-    remote_address: dn42.kolo.dev
-    remote_port: 13232
-    public_key: dVY7TKgdf2XGvd4SD1GBza10rwf3A7symtuUk68wnj8=
+    remote_address: tlv.dn42.kolo.dev
+    remote_port: 10207
+    public_key: FeuGGxrYAimEdDPyPz96t74PxoTv/QNCW1UT0Bi37nA=
 
 - name: RIVENSBANE-CH0
   asn: 4242421815
