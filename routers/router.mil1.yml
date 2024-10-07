@@ -1,4 +1,14 @@
 ---
+- name: BAO-SWITZ
+  asn: 4242422114
+  ipv4: 172.21.115.65
+  ipv6: fe80::2114
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: 1pT6AuQJkQdoASgXi84gWSlu6cCZI/tMH+kUYSd3v0I=
+
 - name: NETZR-TLV
   asn: 215751
   ipv4: 172.20.237.193
