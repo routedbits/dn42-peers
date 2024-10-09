@@ -13,15 +13,15 @@
 
 - name: CDUBS-FRA
   asn: 4242420566
-  ipv6: fe80::566
+  ipv6: fe80::566:14
   multiprotocol: true
   extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
-    remote_address: dn15.de.surgebytes.com
+    remote_address: dn14.de.surgebytes.com
     remote_port: 30207
-    public_key: GPF8SHMwiSgXCoNNsDu2NwbBv26hokzfsKZo2ch82Gw=
+    public_key: 5bPq2lxiqdLuNPFK3YPthCFp7QxV+R0HAOosfSR4PTE=
 
 - name: HIGHDEF-FRA
   asn: 4242421080
