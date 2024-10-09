@@ -84,6 +84,16 @@
     remote_port: 43178
     public_key: x8FhufXIjV9KrHcMYzOhhytLF3TFFSAMH7OClTxZxn0=
 
+- name: PIVIPI-DE1
+  asn: 4242420129
+  ipv6: fe80::129:2
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: de1.420129.xyz
+    remote_port: 20207
+    public_key: N9rGceoiFcc/obnHrqMAmVlrb/E2Br55+doekTKwNF8=
+
 - name: SERNET-DE-FRA1
   asn: 4242423947
   ipv6: fe80::3947:6
@@ -121,6 +131,18 @@
     remote_port: 20207
     public_key: TWQhJYK+ynNz7A4GMAQSHAyUUKTnAYrBfWTzzjzhAFs=
 
+- name: TATK-FRA
+  asn: 4242423152
+  ipv6: fe80::3152:3
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt0.de.tatk.network
+    remote_port: 20207
+    public_key: So3HOmzdnLlXcrIrk7lpP+KmoCHPlXNvbXLg73gI5CQ=
+
 - name: TECH9_DE-FRA02
   asn: 4242421588
   ipv4: 172.20.16.141
@@ -145,15 +167,3 @@
     remote_address: vpn.xenot.fr
     remote_port: 58104
     public_key: MDOUBkJTxNHMZq2Bt0pYa6VOzVz+rzN1HKkUo9UADgk=
-
-- name: TATK-FRA
-  asn: 4242423152
-  ipv6: fe80::3152:3
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: rt0.de.tatk.network
-    remote_port: 20207
-    public_key: So3HOmzdnLlXcrIrk7lpP+KmoCHPlXNvbXLg73gI5CQ=
