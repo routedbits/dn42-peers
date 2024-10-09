@@ -1,16 +1,4 @@
 ---
-- name: COLBY-AMS1
-  asn: 4242422558
-  ipv6: fe80::2558:4
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: nl-ams1.dn42.derix.au
-    remote_port: 20207
-    public_key: aEnSuSUB3ZCrryPAIJxBtH6ZcNgCSeW+dMEceEbiflo=
-
 - name: BARAGOON-AMS
   asn: 4242421732
   ipv4: 172.23.32.152
@@ -22,6 +10,18 @@
     remote_address: chr-am02.as215887.net
     remote_port: 20207
     public_key: 3GBZ95hfa8TObNlFc7OZ+EiQ/sCSiRicuFHVHxjEFwA=
+
+- name: COLBY-AMS1
+  asn: 4242422558
+  ipv6: fe80::2558:4
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: nl-ams1.dn42.derix.au
+    remote_port: 20207
+    public_key: aEnSuSUB3ZCrryPAIJxBtH6ZcNgCSeW+dMEceEbiflo=
 
 - name: HEXXNET-AMS1
   asn: 4242420225
@@ -46,6 +46,16 @@
     remote_address: ams.peer.highdef.network
     remote_port: 20207
     public_key: EdWVXZMdujdL/jX5FZDjkPQPVaLoWt4C8FowNRbuaTU=
+
+- name: PIVIPI-NL1
+  asn: 4242420129
+  ipv6: fe80::129:1
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: nl1.420129.xyz
+    remote_port: 20207
+    public_key: iZfLBtF6BiQvdKXx4Yl02u+OL6ls35gSpWCRmB9q4lU=
 
 - name: SIRAYUKI-AMS1
   asn: 4242421216
