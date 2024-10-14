@@ -10,3 +10,13 @@
     remote_address: dn20.in.surgebytes.com
     remote_port: 30207
     public_key: tDYc6/7gZCW9gFOVI64dBC5g72qd6fhocNYKe1MbiiI=
+
+- name: ANAX-IN
+  asn: 4242422457
+  ipv6: fe80::2457
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: aF9C1F3r3uu+Gv1mI61y4vHqgUIJe3yPmhzbq2mIeAQ=

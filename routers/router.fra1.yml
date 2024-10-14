@@ -1,17 +1,5 @@
 ---
-- name: ANTIBUILDING-DE1
-  asn: 4242421403
-  ipv6: fe80::1920:3289
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: de1.routedbits.antibuild.ing
-    remote_port: 57319
-    public_key: M8bVyo017UF2ScBpucLnOOJ8dpX4o78O5mIjy1O3aB0=
-
-- name: BARAGOON
+- name: BARAGOON-CHR
   asn: 215887
   ipv4: 172.20.194.224
   ipv6: fe80::e170:10ce:8ebe:2be1
@@ -25,25 +13,15 @@
 
 - name: CDUBS-FRA
   asn: 4242420566
-  ipv6: fe80::566
+  ipv6: fe80::566:14
   multiprotocol: true
   extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
-    remote_address: dn15.de.surgebytes.com
+    remote_address: dn14.de.surgebytes.com
     remote_port: 30207
-    public_key: GPF8SHMwiSgXCoNNsDu2NwbBv26hokzfsKZo2ch82Gw=
-
-- name: COLBY-FSN1
-  asn: 4242422558
-  ipv6: fe80::2558:6009
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: de-fsn1.dn42.derix.au
-    remote_port: 20207
-    public_key: dUUYY/hJIeHpk8KvtwmHTRxf1ZLHgzLxLHBr8AXQyzk=
+    public_key: 5bPq2lxiqdLuNPFK3YPthCFp7QxV+R0HAOosfSR4PTE=
 
 - name: HIGHDEF-FRA
   asn: 4242421080
@@ -106,6 +84,16 @@
     remote_port: 43178
     public_key: x8FhufXIjV9KrHcMYzOhhytLF3TFFSAMH7OClTxZxn0=
 
+- name: PIVIPI-DE1
+  asn: 4242420129
+  ipv6: fe80::129:2
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: de1.420129.xyz
+    remote_port: 20207
+    public_key: N9rGceoiFcc/obnHrqMAmVlrb/E2Br55+doekTKwNF8=
+
 - name: SERNET-DE-FRA1
   asn: 4242423947
   ipv6: fe80::3947:6
@@ -143,6 +131,18 @@
     remote_port: 20207
     public_key: TWQhJYK+ynNz7A4GMAQSHAyUUKTnAYrBfWTzzjzhAFs=
 
+- name: TATK-FRA
+  asn: 4242423152
+  ipv6: fe80::3152:3
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: rt0.de.tatk.network
+    remote_port: 20207
+    public_key: So3HOmzdnLlXcrIrk7lpP+KmoCHPlXNvbXLg73gI5CQ=
+
 - name: TECH9_DE-FRA02
   asn: 4242421588
   ipv4: 172.20.16.141
@@ -167,15 +167,3 @@
     remote_address: vpn.xenot.fr
     remote_port: 58104
     public_key: MDOUBkJTxNHMZq2Bt0pYa6VOzVz+rzN1HKkUo9UADgk=
-
-- name: TATK-FRA
-  asn: 4242423152
-  ipv6: fe80::3152:3
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: rt0.de.tatk.network
-    remote_port: 20207
-    public_key: So3HOmzdnLlXcrIrk7lpP+KmoCHPlXNvbXLg73gI5CQ=

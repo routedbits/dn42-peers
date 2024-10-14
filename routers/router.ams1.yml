@@ -1,4 +1,16 @@
 ---
+- name: BARAGOON-AMS
+  asn: 4242421732
+  ipv4: 172.23.32.152
+  ipv6: fe80::dc60:59f7:985f:6bc4
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: chr-am02.as215887.net
+    remote_port: 20207
+    public_key: 3GBZ95hfa8TObNlFc7OZ+EiQ/sCSiRicuFHVHxjEFwA=
+
 - name: COLBY-AMS1
   asn: 4242422558
   ipv6: fe80::2558:4
@@ -47,30 +59,15 @@
     remote_port: 20207
     public_key: EdWVXZMdujdL/jX5FZDjkPQPVaLoWt4C8FowNRbuaTU=
 
-- name: MARSHALL-AMS1
-  asn: 4242420694
-  ipv6: fc00:0:0:20::2
-  local_ipv6: fc00:0:0:20::1/64
-  multiprotocol: true
-  extended_nexthop: true
+- name: PIVIPI-NL1
+  asn: 4242420129
+  ipv6: fe80::129:1
   sessions:
     - ipv6
   wireguard:
-    remote_address: 95.165.102.26
-    remote_port: 50694
-    public_key: kNcRVZ3Ohke+AG3Fcel7FXHeVjj/AcfLBCYOyxrFBAs=
-
-- name: RAOULBROUNS-AMS01
-  asn: 4242421612
-  ipv6: fe80::5400:04ff:fecb:5ff1
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: dn42bgp.raoulbrouns.nl
-    remote_port: 51821
-    public_key: wR6/EisJIMiDa0v+akDxBOkAo7tDOLsiIPhQAnEQzVo=
+    remote_address: nl1.420129.xyz
+    remote_port: 20207
+    public_key: iZfLBtF6BiQvdKXx4Yl02u+OL6ls35gSpWCRmB9q4lU=
 
 - name: SIRAYUKI-AMS1
   asn: 4242421216
