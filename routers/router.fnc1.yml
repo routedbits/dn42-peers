@@ -1,4 +1,16 @@
 ---
+- name: ARCENOTAS-NODE
+  asn: 4242420625
+  ipv6: fe80::625
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: arcenotas.com
+    remote_port: 20207
+    public_key: 8l+9N8cEygZTv/yhqb4giA230o2/DGn2P6wytYVHrHw=
+
 - name: DNSENSE-SFO
   asn: 4242423117
   ipv6: fe80::3117:0207/128
