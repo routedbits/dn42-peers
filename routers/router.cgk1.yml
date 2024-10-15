@@ -1,1 +1,12 @@
 ---
+- name: SARANG
+  asn: 4242421830
+  ipv6: fe80::6060
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 202.138.249.237
+    remote_port: 52345
+    public_key: jE4tRDgVIKLpsuAQqDTeYnOkXWtB19rg/Fkube/UEg8=
