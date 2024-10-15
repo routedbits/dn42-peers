@@ -60,6 +60,6 @@ jobs:
 
       - uses: thollander/actions-comment-pull-request@v3
         with:
-          filePath: .github/deploy_started.txt
-          comment_tag: ${{ matrix.limit }}
-          pr_number: ${{ github.event.number }}
+          file-path: .github/deploy_started.txt
+          comment-tag: ${{ matrix.limit }}
+          pr-number: ${{ github.event.number }}
