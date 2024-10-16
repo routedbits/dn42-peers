@@ -8,5 +8,5 @@
     - ipv6
   wireguard:
     remote_address: 202.138.249.237
-    remote_port: 52345
-    public_key: jE4tRDgVIKLpsuAQqDTeYnOkXWtB19rg/Fkube/UEg8=
+    remote_port: 52346
+    public_key: 0blXg25EbtE3afFbqKeSXjhfQgib+8KLB1q0X0s2lkI=
