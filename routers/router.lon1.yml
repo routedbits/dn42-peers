@@ -83,6 +83,18 @@
     remote_port: 20207
     public_key: IsuXPz73qeUi+HfGlkkJnPxSqQKd5drx2dkjuHuuL1k=
 
+- name: SIDINGSMEDIA-UKSE1
+  asn: 4242421755
+  ipv6: fe80::1755:207
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: core1.router.net.ukse1.sidingsmedia.com
+    remote_port: 20207
+    public_key: bj7f6S9zexxpzNzLxLQ+Z74RHVKUUzaa4Ju7kQOw8zU=
+
 - name: SUNNET-LON1
   asn: 4242423088
   ipv6: fe80::3088:197
