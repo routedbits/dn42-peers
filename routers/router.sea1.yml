@@ -23,6 +23,16 @@
     remote_port: 20207
     public_key: pEgl/q/fxrcdnqEur25ZKrIkOvoISDVBrU80R86jY1Q=
 
+- name: DEBOERDN2000-CA
+  asn: 4242423328
+  ipv6: fe80::3309:e3d8:8bd4:b2ab
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: openvpn.dirkhome.ca
+    remote_port: 51820
+    public_key: Mwnj2IvUsqtPvCX/umqhjYICkgxlpW5XeXl4hBg4yjA=
+
 - name: FMEPNET-SEA0
   asn: 4242423703
   ipv4: 172.20.159.235
