@@ -1,4 +1,16 @@
 ---
+- name: ANGELS-FR
+  asn: 4242420690
+  ipv6: fe80::269:9ff:fe00:0
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 2a01:e0a:354:721::900
+    remote_port: 20690
+    public_key: S4w75jtnXhnPJuY7FrRuCuO/Oq3/dT0NJ6jW+6bUH3w=
+
 - name: COLBY-GRA1
   asn: 4242422558
   ipv6: fe80::2558:6008
