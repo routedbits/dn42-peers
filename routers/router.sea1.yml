@@ -26,6 +26,8 @@
 - name: DEBOERDN2000-CA
   asn: 4242423328
   ipv6: fe80::3309:e3d8:8bd4:b2ab
+  multiprotocol: true
+  extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
