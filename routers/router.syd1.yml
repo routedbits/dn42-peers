@@ -47,18 +47,6 @@
     remote_port: 20207
     public_key: Syd/jYnhMvDrvp1POVCLuAlagWjV9X/A5DCbEBpdFBc=
 
-- name: JACK-SYD01
-  asn: 4242422971
-  ipv4: 172.23.159.65
-  ipv6: fe80::2971:1
-  multiprotocol: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: syd01.dn42.jackscott.xyz
-    remote_port: 50207
-    public_key: 5b/QZxY2406E+it3M7k1r7jOzs7a0sogz47faHfCblc=
-
 - name: LINE-NZ
   asn: 4242429999
   ipv4: 172.20.160.1
