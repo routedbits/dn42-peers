@@ -118,19 +118,6 @@
     remote_port: 20207
     public_key: Lqmjk6hqNdReob93K6iYnzwvbWadJKaT/cL96ij2Fm4=
 
-- name: SUNNET-FRA1
-  asn: 4242423088
-  ipv6: fe80::3088:195
-  local_ipv6: fe80::abcd/64
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 2a0f:9441:47:88::2
-    remote_port: 20207
-    public_key: TWQhJYK+ynNz7A4GMAQSHAyUUKTnAYrBfWTzzjzhAFs=
-
 - name: TATK-FRA
   asn: 4242423152
   ipv6: fe80::3152:3
