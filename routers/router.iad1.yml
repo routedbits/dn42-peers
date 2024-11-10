@@ -21,3 +21,15 @@
     - ipv6
   wireguard:
     public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=
+
+- name: SADDLE-US-QAS-1
+  asn: 211535
+  ipv4: 172.23.66.193
+  sessions:
+    - ipv4
+  wireguard:
+    remote_address: us-qas-1.saddle.network
+    remote_port: 51820
+    public_key: itmJ4Z8V1aNN368P6kMzuQM+GdzWbBKZjJiXrgSeGlw=
+  
+  
