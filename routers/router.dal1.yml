@@ -1,4 +1,16 @@
 ---
+- name: BSDROCKER
+  asn: 4242421022
+  ipv6: fe80::1022
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dal-us-01.bsdrocker.com
+    remote_port: 42207
+    public_key: sySXNTqAoUdDn0ZZge4X3EjHCoG+AVQB+O3e1NT+TVQ=
+
 - name: IVANG-DAL
   asn: 4242420490
   ipv4: 172.21.78.130
