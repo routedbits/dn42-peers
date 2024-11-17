@@ -1,16 +1,4 @@
 ---
-- name: CDUBS-SEA
-  asn: 4242420566
-  ipv6: fe80::566
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: dn01.surgebytes.com
-    remote_port: 30207
-    public_key: UWUpplE7TIDUH901bmcalWneyWXpfhszr1DeaNteEG4=
-
 - name: COLBY-PDX1
   asn: 4242422558
   ipv6: fe80::2558:2

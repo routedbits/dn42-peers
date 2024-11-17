@@ -1,4 +1,16 @@
 ---
+- name: CDUBS-SCL
+  asn: 4242420566
+  ipv6: fe80::566:2
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn02.sjc.surgebytes.com
+    remote_port: 30207
+    public_key: sbWdgs9DcI7EMQcOZEi7HcRDoRaNPBWveyVOrFyrNUk=
+
 - name: SIDEREAL-PHX1
   asn: 4242422016
   ipv6: fe80::2016
