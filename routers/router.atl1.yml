@@ -1,4 +1,16 @@
 ---
+- name: FIBERPLZ
+  asn: 4242420389
+  ipv4: 172.20.132.2
+  ipv6: fe80::dda9
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42.fiberoptic.ninja
+    remote_port: 51809
+    public_key: ZacdnI4XHUC+7CCvV1qFnZagbZt8e1ZntILfPMVmjgU=
+
 - name: VENTILAAR-ATL04
   asn: 4242422246
   ipv6: fe80::2246
