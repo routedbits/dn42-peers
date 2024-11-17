@@ -47,6 +47,18 @@
     remote_port: 20207
     public_key: O4qWRgbJVdOM8ktyUQyT1s11WkR16JTgtnn42m9A2R8=
 
+- name: JOE-SEA01
+  asn: 4242420157
+  ipv6: fe80::157
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 107.174.240.107
+    remote_port: 30207
+    public_key: 9vBrb8Jq3WmifgCjncMzLZvdkoDi3FoSvHjJGsUMwGg=
+
 - name: KIYOMI-SEA
   asn: 4242421350
   ipv6: fe80::1350
