@@ -21,6 +21,19 @@
     remote_port: 20207
     public_key: u4WJMAoCHIOeh/+6NWMytNygp+/wrMogB+rwyVzXoEg=
 
+- name: JOE-CHI01
+  asn: 4242420157
+  ipv6: fe80::157
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 107.175.0.120
+    remote_port: 30207
+    public_key: PfhGU0DMRu5Wnf0JfNQnnOWpyiqNjZ+wUCG2p6zwui8=
+
+
 - name: TECH9_US-CHI01
   asn: 4242421588
   ipv4: 172.20.16.139/32
