@@ -35,6 +35,18 @@
     remote_port: 20207
     public_key: Kz7mZN2ACCXSFKMiZDIVdVRmEPSnVfbEOqsxsDZ6hAw=
 
+- name: JOE-SJC01
+  asn: 4242420157
+  ipv6: fe80::157
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 107.174.192.228
+    remote_port: 30207
+    public_key: sl9vN6wmKuB3aGjBYx2ukjABc66EAn0p5VJsg0XjjjM=
+
 - name: KIOUBIT-US3
   asn: 4242423914
   ipv6: fe80::ade0
