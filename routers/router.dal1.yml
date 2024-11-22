@@ -1,13 +1,13 @@
 ---
 - name: BSDROCKER
   asn: 4242421022
-  ipv6: fe80::1022
+  ipv6: fd2e:5e5e:83ad::1022:207
   multiprotocol: true
   extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
-    remote_address: dal-us-01.bsdrocker.com
+    remote_address: '173.255.200.199'
     remote_port: 42207
     public_key: sySXNTqAoUdDn0ZZge4X3EjHCoG+AVQB+O3e1NT+TVQ=
 
