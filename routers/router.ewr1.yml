@@ -1,4 +1,16 @@
 ---
+- name: CDUBS-NJ
+  asn: 4242420566
+  ipv6: fe80::566:5
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn05.ny.surgebytes.com
+    remote_port: 30207
+    public_key: vQDQOtmLRIEr8V0BqFjd7nmzboFZNZom3RfJXQIUNhI=
+
 - name: COLBY-NYC1
   asn: 4242422558
   ipv6: fe80::2558:3

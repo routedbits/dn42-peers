@@ -33,6 +33,18 @@
     remote_port: 23709
     public_key: Fw+pNtP7sPbrUMI2YTFcf5Fr1vtuuJoAmSTDd/ak5TU=
 
+- name: JOE-TYO01
+  asn: 4242420157
+  ipv6: fe80::157
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 154.19.187.182
+    remote_port: 30207
+    public_key: 8/TRCsEGBnmYwePBlnyajoPYSVoPJ46aNmH40mGAXFk=
+
 - name: SERNET-KR-SEL1
   asn: 4242423947
   ipv6: fe80::3947:5
