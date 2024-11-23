@@ -3,6 +3,7 @@
   asn: 4242421022
   ipv4: 172.22.240.90
   ipv6: fd2e:5e5e:83ad::1022:207
+  local_ipv6: fdb1:e72a:343d::5
   multiprotocol: true
   sessions:
     - ipv6
