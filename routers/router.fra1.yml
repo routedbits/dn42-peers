@@ -165,4 +165,4 @@
   wireguard:
     remote_address: fra.dn42.sfsarfe.com
     remote_port: 20207
-    public_key: d81xiE0KNXKqUIw9RIPQi0kg8AGH8sJpe7RvDPTEHRs=#
+    public_key: d81xiE0KNXKqUIw9RIPQi0kg8AGH8sJpe7RvDPTEHRs=
