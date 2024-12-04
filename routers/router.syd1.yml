@@ -47,6 +47,18 @@
     remote_port: 20207
     public_key: Syd/jYnhMvDrvp1POVCLuAlagWjV9X/A5DCbEBpdFBc=
 
+- name: IMMIBIS-SYD1
+  asn: 4242421855
+  ipv6: fe80::1855
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 2402:1f00:8100:400::2274
+    remote_port: 41064
+    public_key: XHyhhDkP0J0j+jcsqlyvMvHEDdtp/fJfNltIaWqnLnY=
+
 - name: LINE-NZ
   asn: 4242429999
   ipv4: 172.20.160.1
