@@ -39,7 +39,7 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: hk1.vm.libecho.top
+    remote_address: 2401:2660:1000:210:847d:9add:b11c:c5bb
     remote_port: 20207
     public_key: hQgRGnAP4xBHym+R/jf7ScjGbBDz5RXi5gF6CF7RiWg=
 
