@@ -2,14 +2,14 @@
 - name: BARAGOON-FRA
   asn: 4242421732
   ipv4: 172.23.32.136
-  ipv6: fe80::6128:13bd:755c:ce1f
+  ipv6: fe80::1732
   multiprotocol: true
   sessions:
     - ipv6
   wireguard:
     remote_address: chr-fr01.as215887.net
     remote_port: 20207
-    public_key: YSgTvXVczh9GO/f2FZsS988/bjDHDAej7Ikml5qJvSA=
+    public_key: SpFk6mynvJCrMvAf/uD8OOCm+2KlAb91tdXkWNbbNV8=
 
 - name: CDUBS-FRA
   asn: 4242420566
