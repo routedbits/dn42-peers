@@ -84,6 +84,18 @@
     remote_port: 20207
     public_key: Jcm1aWOwNR806xj6bjiyrfyTp6Sto8etYBsdQ2OnAGQ=
 
+- name: PUDUNET-SYD
+  asn: 4242422227
+  ipv6: fe80::9898
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 159.196.84.15
+    remote_port: 20207
+    public_key: 2CQ/TsiwAHmjhQi8DBqHk1JE8aiZykB/t3knbFpZAxM=
+
 - name: RIVENSBANE-AU1
   asn: 4242421815
   ipv6: fe80::1815
