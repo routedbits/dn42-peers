@@ -1,4 +1,16 @@
 ---
+- name: ATOLM-US1
+  asn: 4242420585
+  ipv6: fe80::585
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us1.dn42.atolm.net
+    remote_port: 20207
+    public_key: 7EJmDH1NZogALJkHYPaSx6yRwxBzVuNqCVL7OCGvJng=
+
 - name: CDUBS-SCL
   asn: 4242420566
   ipv6: fe80::566:2
