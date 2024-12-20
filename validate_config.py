@@ -182,6 +182,8 @@ def validate_ip(addr, af, attrib):
             return f"{attrib}: '{addr}' is not an IPv4 address"
         if not ip.subnet_of(ipaddress.ip_network("172.20.0.0/14")):
             return f"{attrib}: '{addr}' is not within 172.20.0.0/14"
+        if ip.num_addresses > 2 and  ip.broadcast_address == ipaddress.ip_interface(addr).ip:
+            return f"{attrib}: '{addr}' cannot be the broadcast address"
 
     if af == "ipv6":
         if ip.version != 6:
@@ -189,6 +191,8 @@ def validate_ip(addr, af, attrib):
         if not ip.is_link_local and not ip.subnet_of(ipaddress.ip_network("fc00::/7")):
             return f"{attrib}: '{addr}' is not within fe80::/10 or fc00::/7"
 
+    if ip.num_addresses > 2 and ip.network_address == ipaddress.ip_interface(addr).ip:
+        return f"{attrib}: '{addr}' cannot be the subnet address"
 
 def validate_sessions(sessions, peer):
     errors = []
