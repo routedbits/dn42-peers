@@ -11,16 +11,6 @@
     remote_port: 40207
     public_key: EA5yNAPbCXbV2vlxx1tC/X1KEmkHgTDEt5HMv+4SvSQ=
 
-- name: SADDLE-US-QAS-1
-  asn: 211535
-  ipv4: 172.23.66.194
-  sessions:
-    - ipv4
-  wireguard:
-    remote_address: us-qas-1.saddle.network
-    remote_port: 51820
-    public_key: itmJ4Z8V1aNN368P6kMzuQM+GdzWbBKZjJiXrgSeGlw=
-
 - name: TECH9_US-QAS01
   asn: 4242421588
   ipv4: 172.20.16.143
