@@ -111,9 +111,20 @@ class TestValidateConfig(unittest.TestCase):
         }
         self.assertEqual(validate_ip(**ipv6_address_not_in_range), f"{ipv6_address_not_in_range['attrib']}: '{ipv6_address_not_in_range['addr']}' is not within fe80::/10 or fc00::/7")
 
+         # ensure the IP address is not the subnet or broadcast address
+        ipv4_subnet_address = {'addr': '172.20.0.0/24', 'af': 'ipv4', 'attrib': 'test'}
+        self.assertEqual(validate_ip(**ipv4_subnet_address), f"{ipv4_subnet_address['attrib']}: '{ipv4_subnet_address['addr']}' cannot be the subnet address")
+
+        ipv4_broadcast_address = {'addr': '172.20.0.255/24', 'af': 'ipv4', 'attrib': 'test'}
+        self.assertEqual(validate_ip(**ipv4_broadcast_address), f"{ipv4_broadcast_address['attrib']}: '{ipv4_broadcast_address['addr']}' cannot be the broadcast address")
+
+        ipv6_subnet_address = {'addr': 'fd00:42::/48', 'af': 'ipv6', 'attrib': 'test'}
+        self.assertEqual(validate_ip(**ipv6_subnet_address), f"{ipv6_subnet_address['attrib']}: '{ipv6_subnet_address['addr']}' cannot be the subnet address")
+
+
         valid_addresses_or_prefixes = [
             { 'addr': '172.20.1.1', 'af': 'ipv4', 'attrib': 'test'}, # IPv4 address
-            { 'addr': '172.20.0.0/24', 'af': 'ipv4', 'attrib': 'test'}, # IPv4 prefix
+            { 'addr': '172.20.0.1/24', 'af': 'ipv4', 'attrib': 'test'}, # IPv4 prefix
             { 'addr': 'fe80::100', 'af': 'ipv6', 'attrib': 'test'}, # Link Local address
             { 'addr': 'fe80::100/64', 'af': 'ipv6', 'attrib': 'test'}, # Link Local prefix
             { 'addr': 'fd00::100', 'af': 'ipv6', 'attrib': 'test'}, # ULA Address
