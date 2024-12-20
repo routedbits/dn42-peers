@@ -21,18 +21,6 @@
     remote_port: 10207
     public_key: FeuGGxrYAimEdDPyPz96t74PxoTv/QNCW1UT0Bi37nA=
 
-- name: NICHOLASSYSTEMS
-  asn: 4242423885
-  ipv4: 172.22.98.32
-  ipv6: fdf6:f32e:9196::/48
-  multiprotocol: true
-  sessions:
-    - ipv4
-  wireguard:
-    remote_address: 37.202.207.206
-    remote_port: 53885
-    public_key: Bf0mpBjtlK8fI0UNFJEBBD588EbZluvt7gJuhvAOsU4=
-
 - name: RIVENSBANE-CH0
   asn: 4242421815
   ipv6: fe80::1815
