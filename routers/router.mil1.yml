@@ -9,18 +9,6 @@
   wireguard:
     public_key: 1pT6AuQJkQdoASgXi84gWSlu6cCZI/tMH+kUYSd3v0I=
 
-- name: NICHOLASSYSTEMS
-  asn: 4242423885
-  ipv4: 172.22.98.32
-  ipv6: fdf6:f32e:9196::/48
-  multiprotocol: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 37.202.207.206
-    remote_port: 53885
-    public_key: Bf0mpBjtlK8fI0UNFJEBBD588EbZluvt7gJuhvAOsU4=
-
 - name: RIVENSBANE-CH0
   asn: 4242421815
   ipv6: fe80::1815
