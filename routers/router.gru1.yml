@@ -27,7 +27,6 @@
   ipv6: fe80::2608
   multiprotocol: true
   sessions:
-    - ipv4
     - ipv6
   wireguard:
     remote_address: 64.181.170.30
