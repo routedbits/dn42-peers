@@ -159,6 +159,12 @@ class TestValidateConfig(unittest.TestCase):
         for session in sessions_valid:
             self.assertEqual(validate_sessions(**session), [])
 
+        session_ipv4_multiprotocol = {
+            'sessions': ['ipv4'],
+            'peer': {'multiprotocol': True, 'ipv4': '192.168.1.1'}
+        }
+        self.assertEqual(validate_sessions(**session_ipv4_multiprotocol), ["sessions: 'ipv4' cannot be used with multiprotocol"])
+
     def test_validate_wireguard(self):
         not_dict = []
         self.assertEqual(validate_wireguard(not_dict), f"wireguard: '{not_dict}' must be type dictionary")

@@ -203,6 +203,10 @@ def validate_sessions(sessions, peer):
     if "ipv6" in sessions and "ipv6" not in peer:
         errors.append("ipv6 required when sessions['ipv6']")
 
+    if "ipv4" in sessions and "multiprotocol" in peer:
+        if peer["multiprotocol"]:
+            errors.append("sessions: 'ipv4' cannot be used with multiprotocol")
+
     return errors
 
 
