@@ -9,18 +9,6 @@
   wireguard:
     public_key: 1pT6AuQJkQdoASgXi84gWSlu6cCZI/tMH+kUYSd3v0I=
 
-- name: NETZR-TLV
-  asn: 215751
-  ipv4: 172.20.237.193
-  ipv6: fe80::15eb:861b:1ad8:229
-  sessions:
-    - ipv6
-  multiprotocol: true
-  wireguard:
-    remote_address: tlv.dn42.kolo.dev
-    remote_port: 10207
-    public_key: FeuGGxrYAimEdDPyPz96t74PxoTv/QNCW1UT0Bi37nA=
-
 - name: NICHOLASSYSTEMS
   asn: 4242423885
   ipv4: 172.22.98.32
