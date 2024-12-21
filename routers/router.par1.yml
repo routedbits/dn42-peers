@@ -33,6 +33,16 @@
     remote_port: 20207
     public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
 
+- name: PIVIPI-PAR1
+  asn: 4242420129
+  ipv6: fe80::129:4
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: fr1.420129.xyz
+    remote_port: 20207
+    public_key: uT+GQ291rjmK9/lBStKfcUdstf2PAcvoQfbdJYRc7A0=
+
 - name: SNAILZ-PAR
   asn: 4242420284
   ipv4: 172.20.177.98
