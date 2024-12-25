@@ -46,3 +46,12 @@
     remote_address: us-chi01.dn42.tech9.io
     remote_port: 58438
     public_key: 0kb8ffMcbx8oXZ3Ii5khOuCzmRqM2Cy0IslmrWtRGSk=
+- name: KIX-9PFS
+  asn: 4242422002
+  ipv6: fe80::2002:5
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: 8t5mCXvaxp28MdWDiZFwxzXzx4lM1GQ7bq7GJXwwgVs=

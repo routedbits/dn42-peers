@@ -33,3 +33,12 @@
     - ipv6
   wireguard:
     public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=
+- name: US2-9PFS
+  asn: 4242422002
+  ipv6: fe80::2002:2
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: 3KFJmmvS7ZYQcd3FRZvJBskEHYW/SLG/dxtUfDvwj1Y=
