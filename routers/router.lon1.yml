@@ -118,3 +118,15 @@
     remote_address: rt0.uk.tatk.network
     remote_port: 20207
     public_key: jvng3/Q+uAlmk64ol9gDHImR1GvGVMvkOmYO7USMYX0=
+
+- name: UK1-9PFS
+  asn: 4242422002
+  ipv6: fe80::2002:3
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: sDvoqtg1OcmNCXuuES+wKHyrSqANDElI2iLQQnZByzo=
+    remote_address: 86.22.44.20
+    remote_port: 20207

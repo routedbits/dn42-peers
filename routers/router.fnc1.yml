@@ -107,3 +107,15 @@
     remote_address: rt1.us.tatk.network
     remote_port: 20207
     public_key: 8EjYngEiwoUaIMjHlOTysiy2SZsQzBxEy7epNK3zMGk=
+
+- name: US3-9PFS
+  asn: 4242422002
+  ipv6: fe80::2002:4
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: oYVbaUTF3+6hiaQQsUqvwdzUD+USsXnwdaDDgxuGF0E=
+    remote_address: 157.130.130.70
+    remote_port: 20207
