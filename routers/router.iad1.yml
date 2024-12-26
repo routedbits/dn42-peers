@@ -43,3 +43,5 @@
     - ipv6
   wireguard:
     public_key: 3KFJmmvS7ZYQcd3FRZvJBskEHYW/SLG/dxtUfDvwj1Y=
+    remote_address: 24.131.132.53
+    remote_port: 20207

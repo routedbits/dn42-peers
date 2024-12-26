@@ -57,3 +57,5 @@
     - ipv6
   wireguard:
     public_key: 8t5mCXvaxp28MdWDiZFwxzXzx4lM1GQ7bq7GJXwwgVs=
+    remote_address: 195.252.199.45
+    remote_port: 30207
