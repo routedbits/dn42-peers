@@ -6,3 +6,4 @@ idna==3.10
 PyYAML==6.0.2
 requests==2.32.3
 urllib3==2.2.3
+routedbits @ git+https://github.com/routedbits/routedbits-python.git@5d9c55f
