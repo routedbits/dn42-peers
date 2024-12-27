@@ -59,18 +59,6 @@
     remote_port: 30207
     public_key: 9vBrb8Jq3WmifgCjncMzLZvdkoDi3FoSvHjJGsUMwGg=
 
-- name: KIYOMI-SEA
-  asn: 4242421350
-  ipv6: fe80::1350
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: sea.jvav.tech
-    remote_port: 20207
-    public_key: VCYdDHIKBDfHe+drn2CG6pw56HBzDeoRt6wAx6GUg0Y=
-
 - name: LUKASBECKERIT-YXE
   asn: 4242423372
   ipv6: fe80::3372/64
