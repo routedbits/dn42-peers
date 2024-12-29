@@ -24,16 +24,6 @@
     remote_port: 59162
     public_key: itmJ4Z8V1aNN368P6kMzuQM+GdzWbBKZjJiXrgSeGlw=
 
-- name: YZGUY-IAD
-  asn: 4242421669
-  ipv6: fe80::1669
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=
-
 - name: US2-9PFS
   asn: 4242422002
   ipv6: fe80::2002:2
@@ -45,3 +35,13 @@
     public_key: 3KFJmmvS7ZYQcd3FRZvJBskEHYW/SLG/dxtUfDvwj1Y=
     remote_address: 24.131.132.53
     remote_port: 20207
+
+- name: YZGUY-IAD
+  asn: 4242421669
+  ipv6: fe80::1669
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: 2BEC3CFKpAiIK3wTStbVuHyy894p5g2JLLTajdBsUF8=
