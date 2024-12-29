@@ -31,9 +31,9 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: au-sydney.dn42.hpg.nz
+    remote_address: syd1.au.dn42.hpg.nz
     remote_port: 20207
-    public_key: cQk3rnAfDl0XbRHBmedAP79MEgm0N28XDsWMMGyDOjk=
+    public_key: h/au/IeQRCyxoVFvd/rOf/28syM5bN3SclURVNeO0Dc=
 
 - name: IMLONGHAO-AU1
   asn: 4242421888
