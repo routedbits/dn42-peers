@@ -58,6 +58,13 @@ def main():
                     post_annotation(e, filename, peer["__line__"])
                     errors.append(f"{filename}:{peer['__line__']} {e}")
 
+            # ensure all peers are in alphabetial order
+            peer_names = [peer['name'] for peer in peers]
+            if peer_names != sorted(peer_names):
+                err = "Peers must be in alphabetical order by name"
+                post_annotation(err, filename, 1)
+                errors.append(f"{filename}:1 {err}")
+
         else:
             logging.debug("No peers found")
 
