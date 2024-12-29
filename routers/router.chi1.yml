@@ -33,6 +33,17 @@
     remote_port: 30207
     public_key: PfhGU0DMRu5Wnf0JfNQnnOWpyiqNjZ+wUCG2p6zwui8=
 
+- name: KIX-9PFS
+  asn: 4242422002
+  ipv6: fe80::2002:5
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: 8t5mCXvaxp28MdWDiZFwxzXzx4lM1GQ7bq7GJXwwgVs=
+    remote_address: 195.252.199.45
+    remote_port: 30207
 
 - name: TECH9_US-CHI01
   asn: 4242421588
@@ -46,15 +57,3 @@
     remote_address: us-chi01.dn42.tech9.io
     remote_port: 58438
     public_key: 0kb8ffMcbx8oXZ3Ii5khOuCzmRqM2Cy0IslmrWtRGSk=
-
-- name: KIX-9PFS
-  asn: 4242422002
-  ipv6: fe80::2002:5
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    public_key: 8t5mCXvaxp28MdWDiZFwxzXzx4lM1GQ7bq7GJXwwgVs=
-    remote_address: 195.252.199.45
-    remote_port: 30207

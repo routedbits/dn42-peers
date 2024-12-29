@@ -9,6 +9,16 @@
     remote_port: 20207
     public_key: s3IVH2xJ3oRekd4x4Bc2H2pb0YZD11FT7Unxttc7GCU=
 
+- name: DUSTSTARS-DN42-LAX1
+  asn: 4242421771
+  ipv6: fe80::afaf:bfbf:cdcf:1d
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 148.135.56.215
+    remote_port: 32590
+    public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
+
 - name: IMLONGHAO-US2
   asn: 4242421888
   ipv6: fe80::1888
@@ -66,15 +76,3 @@
     remote_address: us-lax1.dn42.sherpherd.top
     remote_port: 20207
     public_key: 2bQVZJjhIEaEelqwaQ+tbWDERbXjtXyidvYQL5COxyo=
-
-- name: DUSTSTARS-DN42-LAX1
-  asn: 4242421771
-  ipv6: fe80::afaf:bfbf:cdcf:1d
-  multiprotocol: false
-  extended_nexthop: false
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 148.135.56.215
-    remote_port: 32590
-    public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=

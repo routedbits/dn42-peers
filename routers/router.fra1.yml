@@ -106,6 +106,18 @@
     remote_port: 20207
     public_key: KCd+kXNhe48hwOWng77V9E94PszQBqQvJW42c1P+6nk=
 
+- name: SFS-FRA
+  asn: 4242421780
+  ipv6: fe80::102
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: fra.dn42.sfsarfe.com
+    remote_port: 20207
+    public_key: d81xiE0KNXKqUIw9RIPQi0kg8AGH8sJpe7RvDPTEHRs=
+
 - name: SIDEREAL-FSN1
   asn: 4242422016
   ipv6: fe80::2016
@@ -154,15 +166,3 @@
     remote_address: vpn.xenot.fr
     remote_port: 58104
     public_key: MDOUBkJTxNHMZq2Bt0pYa6VOzVz+rzN1HKkUo9UADgk=
-
-- name: SFS-FRA
-  asn: 4242421780
-  ipv6: fe80::102
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: fra.dn42.sfsarfe.com
-    remote_port: 20207
-    public_key: d81xiE0KNXKqUIw9RIPQi0kg8AGH8sJpe7RvDPTEHRs=
