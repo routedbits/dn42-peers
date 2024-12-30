@@ -41,18 +41,9 @@ def main():
 
             node_type = node_types[router]
 
-            # collect and ensure peer addrs are unique per router
-            peer_ipv4_addrs = [peer["ipv4"] for peer in peers if "ipv4" in peer]
-            peer_ipv6_addrs = [peer["ipv6"] for peer in peers if "ipv6" in peer]
-
             for peer in peers:
                 peer_errors = list(validate(node_type, peer))
-
-                if not validate_unique_peers(peer_ipv4_addrs):
-                    peer_errors.append("ipv4 address must be unique per router")
-
-                if not validate_unique_peers(peer_ipv6_addrs):
-                    peer_errors.append("ipv6 address must be unique per router")
+                peer_errors += validate_unique_peers(peer, peers)
 
                 for e in peer_errors:
                     post_annotation(e, filename, peer["__line__"])
@@ -149,12 +140,18 @@ def validate(node_type, peer):
     return filter(None, errors)
 
 
-def validate_unique_peers(peer_ip_addrs):
-    if len(set(peer_ip_addrs)) < len(peer_ip_addrs):
-        return False
+def validate_unique_peers(this_peer, peers):
+    errors = []
 
-    return True
+    for p in peers:
+        if this_peer["name"] == p["name"]: continue
 
+        for af in ['ipv4', 'ipv6']:
+            if af in this_peer and af in p:
+                if this_peer[af] == p[af]:
+                    errors.append(f"{af} address ({this_peer[af]}) must be unique per router: conflict with {p['name']}")
+
+    return filter(None, errors)
 
 def validate_asn(number):
     # Build ASN cache
