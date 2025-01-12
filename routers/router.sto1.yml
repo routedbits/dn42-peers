@@ -22,3 +22,13 @@
     remote_address: rumsk.dn42.chmod.by
     remote_port: 40207
     public_key: h5Hc7y5FdwC8vUKRoO+hph/I2bfQmLqDmEjJbbBHfSk=
+
+- name: PIVIPI-SE1
+  asn: 4242420129
+  ipv6: fe80::129:5
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: ipv4.se1.420129.xyz
+    remote_port: 20207
+    public_key: tS6j+/aroaMYT/mbzv4xDGI7bc6/LAgwc/KKrw/LIVI=
