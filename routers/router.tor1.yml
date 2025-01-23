@@ -21,6 +21,18 @@
     remote_port: 50207
     public_key: IInxetX7cU8xPQ/yYil0fX67oyOn7th7VdIQAwkiqmM=
 
+- name: GREMLIN-TOR1
+  asn: 4242422053
+  ipv6: fe80::2053:207
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 173.246.158.118
+    remote_port: 59595
+    public_key: ZilfsoClJmFd8M1fan9Dcu/p6cgEkPgJ+nFm7cMMHn8=
+
 - name: HIGHDEF-YMQ
   asn: 4242421080
   ipv6: fe80::123
@@ -78,15 +90,3 @@
     remote_address: dn42.toztech.com
     remote_port: 20207
     public_key: BCf9UhL6ANrtHyKAzfFhrrT27SBh7CCUkpOXZ9CrlBM=
-
-- name: GREMLIN-TOR1
-  asn: 4242422053
-  ipv6: fe80::2053:207
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 173.246.158.118
-    remote_port: 59595
-    public_key: ZilfsoClJmFd8M1fan9Dcu/p6cgEkPgJ+nFm7cMMHn8=
