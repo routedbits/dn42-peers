@@ -7,6 +7,6 @@
     - ipv4
     - ipv6
   wireguard:
-    remote_address: cowgl.xyz
+    remote_address: cowgl.us.kg
     remote_port: 30207
     public_key: mGGBczSVKW+7UKRquI2GkbKrfxiATv9r4uF5WTP+vWI=
