@@ -23,6 +23,16 @@
     remote_port: 30207
     public_key: 5bPq2lxiqdLuNPFK3YPthCFp7QxV+R0HAOosfSR4PTE=
 
+- name: DUSTSTARS-DN42-FRA1
+  asn: 4242421771
+  ipv6: fe80::afaf:bfbf:cdcf:1d
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: frank1-v4.exploro.one
+    remote_port: 32595
+    public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
+
 - name: HIGHDEF-FRA
   asn: 4242421080
   ipv6: fe80::117

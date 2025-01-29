@@ -31,6 +31,16 @@
     remote_port: 20207
     public_key: v7QTxS85pDHQ2cmNCaRiiztVeA5w9g+LnuYGglLyqT8=
 
+- name: DUSTSTARS-DN42-SIN1
+  asn: 4242421771
+  ipv6: fe80::afaf:bfbf:cdcf:1d
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: sg1.exploro.one
+    remote_port: 32588
+    public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
+
 - name: IMLONGHAO-SG1
   asn: 4242421888
   ipv6: fe80::1888

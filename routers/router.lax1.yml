@@ -15,7 +15,7 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: 148.135.56.215
+    remote_address: lax1-dn42.exploro.one
     remote_port: 32590
     public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
 
