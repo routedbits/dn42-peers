@@ -9,6 +9,18 @@
   wireguard:
     public_key: 1pT6AuQJkQdoASgXi84gWSlu6cCZI/tMH+kUYSd3v0I=
 
+- name: DAV26-MIL1
+  asn: 4242420726
+  ipv4: 172.22.131.130
+  ipv6: fd07:5ff3:ca7b::1/128
+  multiprotocol: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42.dc26.eu
+    remote_port: 23880
+    public_key: HpsmmMN+CRoqHK3KE7beLrnTGWZOacJk3ivm98N6ukA=
+
 - name: RIVENSBANE-CH0
   asn: 4242421815
   ipv6: fe80::1815
