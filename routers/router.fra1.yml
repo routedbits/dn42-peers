@@ -96,7 +96,7 @@
 
 - name: MDR-DE
   asn: 4242420401
-  ipv6: fe80:401:2
+  ipv6: fe80::401:2
   multiprotocol: true
   extended_nexthop: true
   sessions:
