@@ -81,18 +81,6 @@
     remote_port: 20207
     public_key: B1xSG/XTJRLd+GrWDsB06BqnIq8Xud93YVh/LYYYtUY=
 
-- name: MDR-DE
-  asn: 4242420401
-  ipv6: fe80:401:2
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: de01.dn42.markround.com
-    remote_port: 50207
-    public_key: V8Smxr7QfvSGJ8tPe9zoKbJxe4Nk6dzN37z9atnZ5Wc=
-
 - name: LUTOMA-FRA
   asn: 64719
   interface: wg4264719
@@ -105,6 +93,18 @@
     remote_address: 2603:c020:8001:ed42::42
     remote_port: 43178
     public_key: x8FhufXIjV9KrHcMYzOhhytLF3TFFSAMH7OClTxZxn0=
+
+- name: MDR-DE
+  asn: 4242420401
+  ipv6: fe80:401:2
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: de01.dn42.markround.com
+    remote_port: 50207
+    public_key: V8Smxr7QfvSGJ8tPe9zoKbJxe4Nk6dzN37z9atnZ5Wc=
 
 - name: PIVIPI-DE1
   asn: 4242420129
