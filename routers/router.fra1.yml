@@ -92,7 +92,7 @@
     remote_address: de01.dn42.markround.com
     remote_port: 50207
     public_key: V8Smxr7QfvSGJ8tPe9zoKbJxe4Nk6dzN37z9atnZ5Wc=
-    
+
 - name: LUTOMA-FRA
   asn: 64719
   interface: wg4264719
