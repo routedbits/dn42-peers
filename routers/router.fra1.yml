@@ -116,18 +116,6 @@
     remote_port: 20207
     public_key: N9rGceoiFcc/obnHrqMAmVlrb/E2Br55+doekTKwNF8=
 
-- name: SERNET-DE-FRA1
-  asn: 4242423947
-  ipv6: fe80::3947:6
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: de-fra1.dn42.sherpherd.top
-    remote_port: 20207
-    public_key: KCd+kXNhe48hwOWng77V9E94PszQBqQvJW42c1P+6nk=
-
 - name: SFS-FRA
   asn: 4242421780
   ipv6: fe80::102

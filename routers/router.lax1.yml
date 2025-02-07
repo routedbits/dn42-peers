@@ -52,15 +52,3 @@
     - ipv6
   wireguard:
     public_key: UyNSBSItFrMl46v5WI1Uj5VwZCzzCpGQz31AeLxbZxQ=
-
-- name: SERNET-US-LAX1
-  asn: 4242423947
-  ipv6: fe80::3947:4
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: us-lax1.dn42.sherpherd.top
-    remote_port: 20207
-    public_key: 2bQVZJjhIEaEelqwaQ+tbWDERbXjtXyidvYQL5COxyo=

@@ -60,18 +60,6 @@
     remote_port: 42691
     public_key: SODW7Q2gThSlNEnJrKJHSe8zd4nW8SHjxJuQ2YXyWE0=
 
-- name: SERNET-US-NYC1
-  asn: 4242423947
-  ipv6: fe80::3947:7
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: us-nyc1.dn42.sherpherd.top
-    remote_port: 20207
-    public_key: PXkGrHooCFnB6N8bD6isgVjhl9GvzD2CLqlA+e2XikM=
-
 - name: STARSTORM-NYC1
   asn: 4242420275
   ipv4: 172.20.159.98
