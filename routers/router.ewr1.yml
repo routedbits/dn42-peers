@@ -72,6 +72,18 @@
     remote_port: 21845
     public_key: MZHb2cL0jNZyH1uM01ic3ut3cUZEXC+hiJMthR7s0Ww=
 
+- name: STEPNEM-NYC1
+  asn: 4242421282
+  ipv6: fe80::1282
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us-nyc1.dn42.smrk.net
+    remote_port: 20207
+    public_key: 3oEmrr4/Wi1c46CZI1HcnJcMw4cj76AmzMvxnL6N/S8=
+
 - name: TATK-NYC1
   asn: 4242423152
   ipv6: fe80::3152:4

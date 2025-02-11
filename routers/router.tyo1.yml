@@ -57,6 +57,18 @@
     remote_port: 20207
     public_key: 8yPUQU9Vg6rmZ03F+JyQjGUzIIZnt8AA6xqTmbBxClg=
 
+- name: STEPNEM-TYO1
+  asn: 4242421282
+  ipv6: fe80::1282
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: jp-tyo1.dn42.smrk.net
+    remote_port: 20207
+    public_key: sgHPjsqtu7vh5U5T1DaXtinC9RHrWQpVzxm4qEnzpyw=
+
 - name: SUNNET-TYO1
   asn: 4242423088
   ipv6: fe80::3088:190
