@@ -69,6 +69,18 @@
     remote_port: 20207
     public_key: rZplEr9wAbCW8GU8bAQ9OsDX1Y009W6pNkiLhw7aWls=
 
+- name: STEPNEM-AMS1
+  asn: 4242421282
+  ipv6: fe80::1282
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: nl-ams1.dn42.smrk.net
+    remote_port: 20207
+    public_key: uxA5j1YEzX22gs+ELGYWqCKV5Tr5nmrXLkA/0mUA4Vg=
+
 - name: TATK-AMS
   asn: 4242423152
   ipv6: fe80::3152:2
