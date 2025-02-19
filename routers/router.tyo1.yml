@@ -45,6 +45,18 @@
     remote_port: 30207
     public_key: 8/TRCsEGBnmYwePBlnyajoPYSVoPJ46aNmH40mGAXFk=
 
+- name: SDUBS-JP
+  asn: 4242420202
+  ipv6: fe80::202:3
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn03.to.jp.sdubs.vip
+    remote_port: 20207
+    public_key: jkhbCLVZQ8BRoPOfdC+e3+jDYE+/OqPlZzTh9p9i8FA=
+
 - name: SERNET-KR-SEL1
   asn: 4242423947
   ipv6: fe80::3947:5

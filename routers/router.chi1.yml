@@ -45,6 +45,18 @@
     remote_address: 195.252.199.45
     remote_port: 30207
 
+- name: SDUBS-CHI
+  asn: 4242420202
+  ipv6: fe80::202:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn01.il.us.sdubs.vip
+    remote_port: 20207
+    public_key: Y9WXsLsmsSeyEIUj2ibVfQblBduMfTBej/MIzj9BrAE=
+
 - name: TECH9_US-CHI01
   asn: 4242421588
   ipv4: 172.20.16.139/32
