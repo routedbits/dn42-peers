@@ -56,6 +56,18 @@
   wireguard:
     public_key: 0GSNudioxk6PFrrFm3hDIAOoZvzourR6buMDv6QEnkc=
 
+- name: SDUBS-DAL
+  asn: 4242420202
+  ipv6: fe80::202:6
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn06.tx.us.sdubs.vip
+    remote_port: 20207
+    public_key: BmeHi2lwxF0sX0w9IT5qk7q9A+deonRdN3XqnOpzvCw=
+
 - name: TECH9_US-DAL01
   asn: 4242421588
   ipv4: 172.20.16.140
