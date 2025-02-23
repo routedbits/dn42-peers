@@ -81,6 +81,18 @@
     remote_port: 11803
     public_key: q/QilWIGJduw/i/qCzxUzwQk+gnqchlKx+9tqCb/3Sw=
 
+- name: SDUBS-LON
+  asn: 4242420202
+  ipv6: fe80::202:7
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn07.lon.uk.sdubs.vip
+    remote_port: 20207
+    public_key: NNzS8SVIMmPHaYIsdy9BkE0oG+2y+71bWLDbSp48cw0=
+
 - name: SFS-UK
   asn: 4242421780
   ipv6: fe80::102
