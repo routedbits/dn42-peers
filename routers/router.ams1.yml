@@ -47,6 +47,16 @@
     remote_port: 20207
     public_key: EdWVXZMdujdL/jX5FZDjkPQPVaLoWt4C8FowNRbuaTU=
 
+- name: LE-FAY-NL
+  asn: 4242421495
+  ipv6: fe80::1
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: vtnet0.nl-myb-1.le-fay.org
+    remote_port: 12004
+    public_key: Hy81+bxn3nq0d/eZmNFsGqs+4XO+y9hW9Y+3vUPd3XU=
+
 - name: PIVIPI-NL1
   asn: 4242420129
   ipv6: fe80::129:1

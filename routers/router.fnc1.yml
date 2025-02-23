@@ -71,6 +71,16 @@
     remote_port: 20207
     public_key: dZzVdXbQPnWPpHk8QfW/p+MfGzAkMBuWpxEIXzQCggY=
 
+- name: LE-FAY-FRE
+  asn: 4242421495
+  ipv6: fe80::1
+  sessions:
+    - ipv6
+  wireguard:
+    public_key: vbc+OXhkqsm8i+OikHCLLQ7cm2SoGpkvEJ2yH2fKEGs=
+    remote_address: vtnet0.fre-myb-1.le-fay.org
+    remote_port: 12003
+
 - name: LIKI-FM1
   asn: 4242420927
   ipv4: 172.21.77.35
