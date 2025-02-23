@@ -37,7 +37,7 @@ jobs:
       - name: Get the report
         id: report
         run: |
-          markdown="$(cat report.txt | awk '/^=/{found=1; next} found')"
+          markdown="$(cat .prune-report.txt | awk '/^=/{found=1; next} found')"
           echo "## Prune peers with invalid configuration" > .prune-report.md
           echo $markdown >> .prune-report.md
 
