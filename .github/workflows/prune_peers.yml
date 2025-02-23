@@ -1,0 +1,52 @@
+# Prune peers with configurations that have become invalid
+name: Prune Invalid Peers
+
+on:
+  # schedule:
+  #   - cron: '0 5 * * *'  # 5am UTC daily
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  prune:
+    name: Prune invalid peers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Prune invalid peers from repository
+        id: prune
+        run: python3 prune.py
+
+      - name: Get report
+        id: report
+        env:
+          PRUNE_STEP: ${{ steps.prune.outputs.stdout }}
+        run: echo $PRUNE_STEP | awk '/^=/{found=1; next} found'
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: prune invalid peers"
+          branch: actions/prune-peers
+          delete-branch: true
+          title: 'chore: prune invalid peers'
+          body: |
+            ## Prune peers with invalid configuration
+            ${{ steps.report.outputs.stdout }}
