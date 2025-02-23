@@ -49,3 +49,12 @@ class Registry(object):
         path = f'/aut-num/AS{asn}?raw'
         resp = self._request('GET', path).json()[f'aut-num/AS{asn}']
         return self._transform_response(resp)
+
+    def persons(self):
+        path = '/person'
+        return self._request('GET', path).json()['person']
+
+    def person(self, name):
+        path = f'/person/{name}?raw'
+        resp = self._request('GET', path).json()[f'person/{name}']
+        return self._transform_response(resp)
