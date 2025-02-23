@@ -42,6 +42,7 @@ jobs:
 
           echo "markdown_report<<EOF" >> $GITHUB_OUTPUT
           echo "$markdown" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
