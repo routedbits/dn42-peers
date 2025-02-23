@@ -33,9 +33,10 @@ jobs:
       - name: Prune invalid peers from repository
         id: prune
         run: |
-          output=$(python3 -u prune.py | tee /dev/tty)
-          markdown="$(echo $output | awk '/^=/{found=1; next} found')"
+          output=$(python3 -u prune.py)
+          echo $output
 
+          markdown="$(echo $output | awk '/^=/{found=1; next} found')"
           echo "markdown_report>>EOF" >> $GITHUB_OUTPUT
           echo "$markdown" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
