@@ -39,7 +39,7 @@ jobs:
         run: |
           markdown="$(cat prune-report.txt | awk '/^=/{found=1; next} found')"
           echo "## Prune peers with invalid configuration" > prune-report.md
-          echo $markdown >> prune-report.md
+          echo "$markdown" >> prune-report.md
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
