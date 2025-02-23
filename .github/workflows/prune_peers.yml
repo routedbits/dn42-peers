@@ -32,13 +32,13 @@ jobs:
 
       - name: Prune invalid peers from repository
         id: prune
-        run: python3 prune.py
+        run: |
+          output=$(python3 -u prune.py | tee /dev/tty)
+          markdown="$(echo $output | awk '/^=/{found=1; next} found')"
 
-      - name: Get report
-        id: report
-        env:
-          PRUNE_STEP: ${{ steps.prune.outputs.stdout }}
-        run: echo $PRUNE_STEP | awk '/^=/{found=1; next} found'
+          echo "markdown_report>>EOF" >> $GITHUB_OUTPUT
+          echo "$markdown" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
@@ -49,4 +49,4 @@ jobs:
           title: 'chore: prune invalid peers'
           body: |
             ## Prune peers with invalid configuration
-            ${{ steps.report.outputs.stdout }}
+            ${{ steps.prune.outputs.markdown_report }}
