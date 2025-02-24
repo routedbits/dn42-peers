@@ -40,6 +40,7 @@ jobs:
           markdown="$(cat prune-report.txt | awk '/^=/{found=1; next} found')"
           echo "## Prune peers with invalid configuration" > prune-report.md
           echo "$markdown" >> prune-report.md
+          echo -e "\n\n*Mark this PR ready for review to trigger checks*" >> prune-report.md
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
@@ -49,3 +50,5 @@ jobs:
           delete-branch: true
           title: 'chore: prune invalid peers'
           body-path: prune-report.md
+          labels: maintenance
+          draft: true
