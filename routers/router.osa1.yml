@@ -1,1 +1,12 @@
 ---
+- name: COWGL
+  asn: 4242423999
+  ipv4: 172.22.144.64
+  ipv6: fd36:62be:ef51::1
+  sessions:
+    - ipv4
+    - ipv6
+  wireguard:
+    remote_address: 203.217.110.41
+    remote_port: 30207
+    public_key: mGGBczSVKW+7UKRquI2GkbKrfxiATv9r4uF5WTP+vWI=
