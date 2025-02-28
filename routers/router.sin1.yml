@@ -53,18 +53,6 @@
     remote_port: 20207
     public_key: vBcYFxMLwcsVScQ0LqkGDEIbbykskatmqWHlPGEUrE8=
 
-- name: LIBECHO-HK1
-  asn: 4242421604
-  ipv6: fe80::1604
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 2401:2660:1000:210:847d:9add:b11c:c5bb
-    remote_port: 20207
-    public_key: hQgRGnAP4xBHym+R/jf7ScjGbBDz5RXi5gF6CF7RiWg=
-
 - name: SERNET-HK1
   asn: 4242423947
   ipv6: fe80::3947:1
