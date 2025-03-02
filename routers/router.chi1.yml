@@ -21,6 +21,18 @@
     remote_port: 20207
     public_key: u4WJMAoCHIOeh/+6NWMytNygp+/wrMogB+rwyVzXoEg=
 
+- name: JLYO-CHI01
+  asn: 4242421860
+  ipv6: fe80::1860:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: 66.42.116.154
+    remote_port: 20207
+    public_key: dOeA0vauCMjBbHv6DCRfdG/nZnFjW+MSV47EslmDYx8=
+
 - name: JOE-CHI01
   asn: 4242420157
   ipv6: fe80::157
