@@ -70,3 +70,15 @@
     remote_address: yxe.beckerit.cc
     remote_port: 20207
     public_key: okxcWYCduqtZfKfZVTLc4cCMxOXBYvUEkl8OLzxe3hQ=
+
+- name: MDR-USWEST01
+  asn: 4242420401
+  ipv6: fe80::401:2
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: uswest01.dn42.markround.com
+    remote_port: 50207
+    public_key: HQy5+GyAOSYGpZ9hwbNxLHrSOvKZtJ3yZUazImiM5Bs=
