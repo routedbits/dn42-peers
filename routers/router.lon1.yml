@@ -77,7 +77,7 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: 2a00:1098:6b::2
+    remote_address: uk-myb-2.le-fay.org
     remote_port: 11803
     public_key: q/QilWIGJduw/i/qCzxUzwQk+gnqchlKx+9tqCb/3Sw=
 

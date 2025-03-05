@@ -78,7 +78,7 @@
     - ipv6
   wireguard:
     public_key: vbc+OXhkqsm8i+OikHCLLQ7cm2SoGpkvEJ2yH2fKEGs=
-    remote_address: vtnet0.fre-myb-1.le-fay.org
+    remote_address: fre-myb-1.le-fay.org
     remote_port: 12003
 
 - name: LIKI-FM1
