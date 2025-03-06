@@ -55,7 +55,7 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: 2402:1f00:8100:400::2274
+    remote_address: vps-ee4631fb.vps.ovh.ca
     remote_port: 41064
     public_key: XHyhhDkP0J0j+jcsqlyvMvHEDdtp/fJfNltIaWqnLnY=
 
