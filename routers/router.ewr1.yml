@@ -70,6 +70,18 @@
     remote_port: 42691
     public_key: SODW7Q2gThSlNEnJrKJHSe8zd4nW8SHjxJuQ2YXyWE0=
 
+- name: SDUBS-TOR
+  asn: 4242420202
+  ipv6: fe80::202:8
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn08.tor.ca.sdubs.vip
+    remote_port: 20207
+    public_key: J00zT+kRv9CuTklUWakBNAF9ld+nx34SsjpkS9G+ljU=
+
 - name: STARSTORM-NYC1
   asn: 4242420275
   ipv4: 172.20.159.98
