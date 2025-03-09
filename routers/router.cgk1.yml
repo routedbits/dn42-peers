@@ -7,7 +7,7 @@
     - ipv4
     - ipv6
   wireguard:
-    remote_address: router.cgk1.routedbits.com
+    remote_address: 36.67.70.198
     remote_port: 50011
     public_key: ZBKQ+Zf0qjFrUOuS2Ex4AczXhKYsH33E6NL9Iy6sgko=
 
