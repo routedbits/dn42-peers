@@ -10,3 +10,15 @@
     remote_address: 202.138.249.237
     remote_port: 52346
     public_key: 0blXg25EbtE3afFbqKeSXjhfQgib+8KLB1q0X0s2lkI=
+
+- name: DALONET-CGK
+  asn: 4242420011
+  ipv4: 172.20.10.35
+  ipv6: fdee:5ba9:6069:3::1/64
+  sessions:
+    - ipv4
+    - ipv6
+  wireguard:
+    remote_address: 172.20.19.66
+    remote_port: 51821
+    public_key: ZBKQ+Zf0qjFrUOuS2Ex4AczXhKYsH33E6NL9Iy6sgko=
