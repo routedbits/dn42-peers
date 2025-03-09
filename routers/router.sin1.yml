@@ -43,18 +43,6 @@
     remote_port: 20207
     public_key: vBcYFxMLwcsVScQ0LqkGDEIbbykskatmqWHlPGEUrE8=
 
-- name: MDR-AP01
-  asn: 4242420401
-  ipv6: fe80::401:2
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: ap01.dn42.markround.com
-    remote_port: 50207
-    public_key: hxKPfgcJqROFCs8AF8unVj3ie0UYYTmJIfEu01YVVmM=
-
 - name: SERNET-HK1
   asn: 4242423947
   ipv6: fe80::3947:1
