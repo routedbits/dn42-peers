@@ -236,6 +236,10 @@ def validate_wireguard(wg, require_ipv4=False):
             #  if require_ipv4 address must be IPv4 address
             if require_ipv4 and not isinstance(remote_address, ipaddress.IPv4Address):
                 errors.append(require_ipv4_error)
+
+            # ensure the address is not a private address
+            if remote_address.is_private:
+                errors.append("wireguard.remote_address must be public")
         except ValueError:
             try:
                 # skip resolving AAAA record if we require an IPv4
@@ -243,11 +247,17 @@ def validate_wireguard(wg, require_ipv4=False):
                     raise dns.exception.DNSException
 
                 # if not an IP address; attempt to resolve AAAA record
-                dns.resolver.resolve(wg["remote_address"], "AAAA")
+                for rdata in dns.resolver.resolve(wg["remote_address"], "AAAA"):
+                    # ensure resolved entries are not private addresses
+                    if ipaddress.ip_address(rdata.address).is_private:
+                        errors.append("wireguard.remote_address must be public")
             except dns.exception.DNSException:
                 try:
                     # if no AAAA record; attempt to resolve A record
-                    dns.resolver.resolve(wg["remote_address"], "A")
+                    for rdata in dns.resolver.resolve(wg["remote_address"], "A"):
+                        # ensure resolved entries are not private addresses
+                        if ipaddress.ip_address(rdata.address).is_private:
+                            errors.append("wireguard.remote_address must be public")
                 except dns.exception.DNSException:
                     errors.append(
                         require_ipv4_error if require_ipv4
