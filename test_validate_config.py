@@ -194,7 +194,7 @@ class TestValidateConfig(unittest.TestCase):
         self.assertIn(remote_address_invalid_msg, validate_wireguard(remote_address_not_ip))
 
         remote_address_valid_ip = {
-            'remote_address': '192.0.2.1'
+            'remote_address': '1.0.2.1'
         }
         self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_ip))
 
@@ -209,7 +209,7 @@ class TestValidateConfig(unittest.TestCase):
         self.assertNotIn(remote_address_invalid_msg, validate_wireguard(remote_address_valid_fqdn))
 
         no_remote_port_with_address = {
-            'remote_address': '192.0.2.1',
+            'remote_address': '1.0.2.1',
         }
         self.assertIn("wireguard.remote_port: must exist when remote_address defined", validate_wireguard(no_remote_port_with_address))
 
@@ -219,33 +219,33 @@ class TestValidateConfig(unittest.TestCase):
         self.assertIn("wireguard.remote_address: must exist when remote_port defined", validate_wireguard(no_address_with_remote_port))
 
         remote_port_not_int = {
-            'remote_address': '192.0.2.1',
+            'remote_address': '1.0.2.1',
             'remote_port': 'abc123'
         }
         self.assertIn("wireguard.remote_port: must be an integer", validate_wireguard(remote_port_not_int))
 
         remote_port_out_of_range = [
-            {'remote_address': '192.0.2.1', 'remote_port': -1}, # below range
-            {'remote_address': '192.0.2.1', 'remote_port': 100000}, # above range           
+            {'remote_address': '1.0.2.1', 'remote_port': -1}, # below range
+            {'remote_address': '1.0.2.1', 'remote_port': 100000}, # above range           
         ]
         for remote_port in remote_port_out_of_range:
             self.assertIn("wireguard.remote_port: must be between 0 and 65535", validate_wireguard(remote_port))
 
         no_public_key = {
-            'remote_address': '192.0.2.1',
+            'remote_address': '1.0.2.1',
             'remote_port': 30000
         }
         self.assertIn("wireguard.public_key: must exist", validate_wireguard(no_public_key))
 
         public_key_not_valid = {
-            'remote_address': '192.0.2.1',
+            'remote_address': '1.0.2.1',
             'remote_port': 30000,
             'public_key': 'abc123'
         }
         self.assertIn("wireguard.public_key: is not a valid WireGuard public key", validate_wireguard(public_key_not_valid))
 
         wireguard_valid = {
-            'remote_address': '192.0.2.1',
+            'remote_address': '1.0.2.1',
             'remote_port': 30000,
             'public_key': 'vLfdP6SrkTfOnn/iYPM/ytMIU/vseZVNoAdgNbo1yV4='
         }
@@ -253,8 +253,8 @@ class TestValidateConfig(unittest.TestCase):
 
         require_ipv4_error = "wireguard.remote_address must be an IPv4 address or have a valid DNS A record for an IPv4 only router"
         require_ipv4_test_cases = [
-            { 'remote_address': '192.0.2.1', 'result': [] },
-            { 'remote_address': '2001:db8::1', 'result': [require_ipv4_error] },
+            { 'remote_address': '1.0.2.1', 'result': [] },
+            { 'remote_address': '2000::1', 'result': [require_ipv4_error] },
             { 'remote_address': 'one.one.one.one', 'result': [] }, # DNS that has both AAAA and A records
             { 'remote_address': 'ip6only.me', 'result': [require_ipv4_error] }, # DNS that only has AAAA record
         ]
