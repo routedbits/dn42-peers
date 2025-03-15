@@ -21,16 +21,16 @@ class TestValidateConfig(unittest.TestCase):
 
     def test_validate_unique_peers(self):
         not_unique = [
-            '192.0.2.1/24',
-            '192.0.2.1/24'
+            {'name': 'peer_a', 'ipv4': '192.0.2.1'},
+            {'name': 'peer_b', 'ipv4': '192.0.2.1'}
         ]
-        self.assertFalse(validate_unique_peers(not_unique))
+        self.assertEqual(list(validate_unique_peers(not_unique[0], not_unique)), [f"ipv4 address ({not_unique[0]['ipv4']}) must be unique per router: conflict with peer_b"])
 
         unique = [
-            '192.0.2.1/24',
-            '192.0.2.2/24'
+            {'name': 'peer_a', 'ipv4': '192.0.2.1'},
+            {'name': 'peer_b', 'ipv4': '192.0.2.2'}
         ]
-        self.assertTrue(validate_unique_peers(unique))
+        self.assertEqual(list(validate_unique_peers(unique[0], unique)), [])
         
     def test_validate_asn(self):        
         private_asn = 65000
