@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import argparse
 import dns.resolver
 import github_action_utils as github
 import ipaddress
@@ -22,7 +23,7 @@ class SafeLineLoader(SafeLoader):
 
 valid_asns = []
 
-def main():
+def main(args):
     errors = []
     file_count = 0
 
@@ -30,7 +31,11 @@ def main():
 
     node_types = { node["hostname"]: node["type"] for node in RoutedBits().nodes(minimal=True) }
 
-    for yaml_file in sorted(os.listdir("routers")):
+    nodes = sorted(os.listdir("routers"))
+    if args.router:
+        nodes = [f"{args.router}.yml"]
+
+    for yaml_file in nodes:
         filename = f"routers/{yaml_file}"
         router = yaml_file[:-4]
         peers = read_yaml(filename)
@@ -282,4 +287,7 @@ def validate_wireguard(wg, require_ipv4=False):
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='Validate dn42-peers')
+    parser.add_argument('--router', help='Run validation against specific router')
+    args = parser.parse_args()
+    main(args)
