@@ -71,15 +71,17 @@
     remote_port: 20207
     public_key: dZzVdXbQPnWPpHk8QfW/p+MfGzAkMBuWpxEIXzQCggY=
 
-- name: LE-FAY-FRE
+- name: LE-FAY-FRE-MYB-1
   asn: 4242421495
-  ipv6: fe80::1
+  ipv6: fe80::1495:2
+  multiprotocol: true
+  extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
-    public_key: vbc+OXhkqsm8i+OikHCLLQ7cm2SoGpkvEJ2yH2fKEGs=
+    public_key: bmeECYuEeIMPIJxATRKRuKkFdCRFM22UJv7ibdhRgk4=
     remote_address: fre-myb-1.le-fay.org
-    remote_port: 12003
+    remote_port: 20207
 
 - name: LIKI-FM1
   asn: 4242420927

@@ -71,15 +71,17 @@
     remote_port: 20207
     public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
 
-- name: LE-FRAY-EDEN-LON
+- name: LE-FAY-UK-MYB-2
   asn: 4242421495
-  ipv6: fe80::1
+  ipv6: fe80::1495:5
+  multiprotocol: true
+  extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
     remote_address: uk-myb-2.le-fay.org
-    remote_port: 11803
-    public_key: q/QilWIGJduw/i/qCzxUzwQk+gnqchlKx+9tqCb/3Sw=
+    remote_port: 20207
+    public_key: BrEXQDrUpcyNb1ELwBypAgsNB/OsKMqIEfyQ5uZKWFU=
 
 - name: SDUBS-LON
   asn: 4242420202

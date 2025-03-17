@@ -47,15 +47,17 @@
     remote_port: 20207
     public_key: 6Cylr9h1xFduAO+5nyXhFI1XJ0+Sw9jCpCDvcqErF1s=
 
-- name: LE-FAY-NY
+- name: LE-FAY-NY-CZY-1
   asn: 4242421495
-  ipv6: fe80::1
+  ipv6: fe80::1495:3
+  multiprotocol: true
+  extended_nexthop: true
   sessions:
     - ipv6
   wireguard:
-    public_key: QTebjRAkrUyvHW5N30Roe5hdIPqmXSIYT5F33d3c8jQ=
+    public_key: rWSfYev6qfFkGMpK8j8VkDhrxXbPymc5ZNkxCd+f+ig=
     remote_address: ny-czy-1.le-fay.org
-    remote_port: 12018
+    remote_port: 20207
 
 - name: LUTOMA-NYC
   asn: 64719
