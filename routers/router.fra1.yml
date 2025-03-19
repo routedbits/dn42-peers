@@ -93,6 +93,18 @@
     remote_port: 20207
     public_key: B1xSG/XTJRLd+GrWDsB06BqnIq8Xud93YVh/LYYYtUY=
 
+- name: LARE-DE01
+  asn: 4242423035
+  ipv6: fe80::3035:130
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: de01.dn42.lare.cc
+    remote_port: 20207
+    public_key: OL2LE2feDsFV+fOC4vo4u/1enuxf3m2kydwGRE2rKVs=
+
 - name: LUTOMA-FRA
   asn: 64719
   interface: wg4264719

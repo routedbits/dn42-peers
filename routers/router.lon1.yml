@@ -71,6 +71,18 @@
     remote_port: 20207
     public_key: sLbzTRr2gfLFb24NPzDOpy8j09Y6zI+a7NkeVMdVSR8=
 
+- name: LARE-UK01
+  asn: 4242423035
+  ipv6: fe80::3035:138
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: uk01.dn42.lare.cc
+    remote_port: 20207
+    public_key: RJaU1kRfiOREvKihiDMFpNrEGpN8td3z+UvHxabOlR0=
+
 - name: LE-FAY-UK-MYB-2
   asn: 4242421495
   ipv6: fe80::1495:5

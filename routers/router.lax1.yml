@@ -55,6 +55,18 @@
     remote_port: 20207
     public_key: 7HzHyeA2M7yo/zVmc+e0zG+I7j2SnIx+7ZpXOca93mg=
 
+- name: LARE-USW1
+  asn: 4242423035
+  ipv6: fe80::3035:132
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: usw1.dn42.lare.cc
+    remote_port: 20207
+    public_key: Qd2XCotubH4QrQIdTZjYG4tFs57DqN7jawO9vGz+XWM=
+
 - name: MAIYUN-AB06
   asn: 4242420893
   ipv6: fe80::893
