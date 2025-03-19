@@ -57,6 +57,18 @@
     remote_address: 195.252.199.45
     remote_port: 30207
 
+- name: LARE-USE2
+  asn: 4242423035
+  ipv6: fe80::3035:137
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: use2.dn42.lare.cc
+    remote_port: 20207
+    public_key: AREskFoxP2cd6DXoJ7druDsiWKX+8TwrkQqfi4JxRRw=
+
 - name: SDUBS-CHI
   asn: 4242420202
   ipv6: fe80::202:1
