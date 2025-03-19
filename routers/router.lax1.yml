@@ -19,6 +19,18 @@
     remote_port: 32590
     public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
 
+- name: IEDON-LAX
+  asn: 4242422189
+  ipv6: fe80::2189:ef
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: us-lax.dn42.kuu.moe
+    remote_port: 41578
+    public_key: DIw4TKAQelurK10Sh1qE6IiDKTqL1yciI5ItwBgcHFA=
+
 - name: IMLONGHAO-US2
   asn: 4242421888
   ipv6: fe80::1888
