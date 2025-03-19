@@ -21,6 +21,18 @@
     remote_port: 20207
     public_key: iJXjwJGGrUTQy/P3OXmZ5lM4cjrDAd9K+vonZVUZjxY=
 
+- name: IEDON-TYO
+  asn: 4242422189
+  ipv6: fe80::2189:ee
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: jp-tyo.dn42.kuu.moe
+    remote_port: 36050
+    public_key: u2ImAJn9ewce9YHN6HaqrR3Sr4Xsy5UaaJOLJ7gkSzs=
+
 - name: JK-NETWORK-TYO
   asn: 4242422717
   ipv6: fe80::2717

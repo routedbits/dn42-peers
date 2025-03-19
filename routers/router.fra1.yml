@@ -45,6 +45,18 @@
     remote_port: 20207
     public_key: oiSSSOMYxiiM0eQP9p8klwEfNn34hkNNv4S289WUciU=
 
+- name: IEDON-FRA
+  asn: 4242422189
+  ipv6: fe80::2189:e9
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: de-fra.dn42.iedon.net
+    remote_port: 33778
+    public_key: FHp0OR4UpAS8/Ra0FUNffTk18soUYCa6NcvZdOgxY0k=
+
 - name: IMLONGHAO-DE1
   asn: 4242421888
   ipv6: fe80::1888

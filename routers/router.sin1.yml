@@ -31,6 +31,18 @@
     remote_port: 32588
     public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
 
+- name: IEDON-SIN
+  asn: 4242422189
+  ipv6: fe80::2189:119
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: sg-sin.dn42.iedon.net
+    remote_port: 59216
+    public_key: XAmCHa9+dnC6uba+gFn5ucl7B69k8vmIAgJm3a8XlGQ=
+
 - name: IMLONGHAO-SG1
   asn: 4242421888
   ipv6: fe80::1888
