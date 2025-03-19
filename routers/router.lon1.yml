@@ -47,18 +47,6 @@
     remote_port: 30207
     public_key: zv3W8vQqexOgbtntVyDYZt3+a8yHBpI3dP1+XCXz1yA=
 
-- name: COLBY-BHX1
-  asn: 4242422558
-  ipv6: fe80::2558:5
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: uk-bhx1.dn42.derix.au
-    remote_port: 20207
-    public_key: pmJ4rrY1jei9Z4gvbuiiIp8RRqVh/fBStpYt6X11NRM=
-
 - name: KIOUBIT-UK1
   asn: 4242423914
   ipv6: fe80::ade0
@@ -82,18 +70,6 @@
     remote_address: uk01.dn42.lare.cc
     remote_port: 20207
     public_key: RJaU1kRfiOREvKihiDMFpNrEGpN8td3z+UvHxabOlR0=
-
-- name: LE-FAY-UK-MYB-2
-  asn: 4242421495
-  ipv6: fe80::1495:5
-  multiprotocol: true
-  extended_nexthop: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: uk-myb-2.le-fay.org
-    remote_port: 20207
-    public_key: BrEXQDrUpcyNb1ELwBypAgsNB/OsKMqIEfyQ5uZKWFU=
 
 - name: SDUBS-LON
   asn: 4242420202
