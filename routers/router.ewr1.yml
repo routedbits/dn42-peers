@@ -68,7 +68,7 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: 23.95.146.112
+    remote_address: us-nyc.dn42.lutoma.org
     remote_port: 42691
     public_key: SODW7Q2gThSlNEnJrKJHSe8zd4nW8SHjxJuQ2YXyWE0=
 
