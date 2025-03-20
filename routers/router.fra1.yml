@@ -114,7 +114,7 @@
   sessions:
     - ipv6
   wireguard:
-    remote_address: 2603:c020:8001:ed42::42
+    remote_address: de-fra.dn42.lutoma.org
     remote_port: 43178
     public_key: x8FhufXIjV9KrHcMYzOhhytLF3TFFSAMH7OClTxZxn0=
 

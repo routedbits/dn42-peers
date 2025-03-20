@@ -95,19 +95,6 @@
     remote_port: 42496
     public_key: 3Fr6ubidGi0X5WZs2Hd9k+dLtjdEVrguM8r8f2ecU2g=
 
-- name: LUTOMA-LAX
-  asn: 64719
-  interface: wg4264719
-  ipv4: 172.22.119.11
-  ipv6: fe80::acab
-  multiprotocol: true
-  sessions:
-    - ipv6
-  wireguard:
-    remote_address: 198.52.125.186
-    remote_port: 42630
-    public_key: R6k4nj41gdCplmSnHLpEdp5p6iqMey7toCRxHjhPiGE=
-
 - name: TATK-SFO
   asn: 4242423152
   ipv6: fe80::3152:6
