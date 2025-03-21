@@ -1,4 +1,16 @@
 ---
+- name: BURBLE-US-ASH1
+  asn: 4242422601
+  ipv6: fe80::42:2601:37:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42-us-ash1.burble.com
+    remote_port: 20207
+    public_key: iIDJWQv4Ltupy+tCh9DkK/N92ygCB3pwAJvxCMQQ8Xw=
+
 - name: KITAUJI
   asn: 4242422314
   ipv6: fe80::1747

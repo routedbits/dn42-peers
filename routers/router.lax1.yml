@@ -1,4 +1,16 @@
 ---
+- name: BURBLE-US-LAX1
+  asn: 4242422601
+  ipv6: fe80::42:2601:2a:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42-us-lax1.burble.com
+    remote_port: 20207
+    public_key: d8hSaeWW+7S5ju8iZKUCNoe9fuYDlcs+KciOYndJ4ho=
+
 - name: COLBY-LAX1
   asn: 4242422558
   ipv6: fe80::2558:7

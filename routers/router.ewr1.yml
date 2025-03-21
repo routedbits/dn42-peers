@@ -1,4 +1,16 @@
 ---
+- name: BURBLE-US-NYC1
+  asn: 4242422601
+  ipv6: fe80::42:2601:29:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42-us-nyc1.burble.com
+    remote_port: 20207
+    public_key: whOe3+HnHzZ8URLVrhAfjy5qp5iorREgqI6yPX+wADA=
+
 - name: CDUBS-NJ
   asn: 4242420566
   ipv6: fe80::566:5
