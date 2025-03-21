@@ -11,6 +11,18 @@
     remote_port: 20207
     public_key: SpFk6mynvJCrMvAf/uD8OOCm+2KlAb91tdXkWNbbNV8=
 
+- name: BURBLE-DE-FRA1
+  asn: 4242422601
+  ipv6: fe80::42:2601:31:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42-de-fra1.burble.com
+    remote_port: 20207
+    public_key: GcgrqCBy81S25NeXTfApooFBRB6isTiB638o6SwiYi0=
+
 - name: CDUBS-FRA
   asn: 4242420566
   ipv6: fe80::566:14

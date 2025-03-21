@@ -11,6 +11,18 @@
     remote_port: 50207
     public_key: Bg91m2vr46p8oqCqB4j5JQwRoYyb/rwR3iy5X0hany4=
 
+- name: BURBLE-SE-STO1
+  asn: 4242422601
+  ipv6: fe80::42:2601:2d:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42-se-sto1.burble.com
+    remote_port: 20207
+    public_key: yfNnXQH/KdTeMcvkBpDufDytnz7n+UMJuISXpmud4Ts=
+
 - name: CHMOD
   asn: 4242422665
   ipv6: fe80::2665:130

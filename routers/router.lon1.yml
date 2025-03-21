@@ -35,6 +35,18 @@
     remote_port: 51009
     public_key: x/cvEG6uyatJEao1ob2aPGi7QGqY+2ShdtB/FTGlmAs=
 
+- name: BURBLE-UK-LON1
+  asn: 4242422601
+  ipv6: fe80::42:2601:35:1
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn42-uk-lon1.burble.com
+    remote_port: 20207
+    public_key: xGqhujkO2mPb5J3vtbvCe2LAvkCQ5AhiDFYaCTLhpxk=
+
 - name: CDUBS-LON
   asn: 4242420566
   ipv6: fe80::566:11
