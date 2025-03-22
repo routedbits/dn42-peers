@@ -88,3 +88,15 @@
     - ipv6
   wireguard:
     public_key: UyNSBSItFrMl46v5WI1Uj5VwZCzzCpGQz31AeLxbZxQ=
+
+- name: SDUBS-LAX1
+  asn: 4242420202
+  ipv6: fe80::202:10
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn10.lax.us.sdubs.vip
+    remote_port: 20207
+    public_key: 7Iif3zxkWZXdBr4jTvTftpZ7B16LyHb4ivPnKMuhoC4=
