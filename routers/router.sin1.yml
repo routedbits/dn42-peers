@@ -55,6 +55,18 @@
     remote_port: 20207
     public_key: vBcYFxMLwcsVScQ0LqkGDEIbbykskatmqWHlPGEUrE8=
 
+- name: SDUBS-SIN1
+  asn: 4242420202
+  ipv6: fe80::202:9
+  multiprotocol: true
+  extended_nexthop: true
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: dn09.sg.sg.sdubs.vip
+    remote_port: 20207
+    public_key: XewX6S4HPoa40yaGmJvDjk8pX4WxczFTdoPLGvg3oU0=
+
 - name: SERNET-HK1
   asn: 4242423947
   ipv6: fe80::3947:1
