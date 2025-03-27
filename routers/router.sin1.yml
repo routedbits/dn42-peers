@@ -21,7 +21,7 @@
   wireguard:
     public_key: ocG/0wXtmuXA9OF5pMVolBIsFfE1K3JILX3MC3J5pGI=
 
-- name: DUSTSTARS-DN42-SIN1
+- name: DUSTSTARS-SIN1
   asn: 4242421771
   ipv6: fe80::afaf:bfbf:cdcf:1d
   sessions:

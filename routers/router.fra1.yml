@@ -35,7 +35,7 @@
     remote_port: 30207
     public_key: 5bPq2lxiqdLuNPFK3YPthCFp7QxV+R0HAOosfSR4PTE=
 
-- name: DUSTSTARS-DN42-FRA1
+- name: DUSTSTARS-FRA1
   asn: 4242421771
   ipv6: fe80::afaf:bfbf:cdcf:1d
   sessions:
