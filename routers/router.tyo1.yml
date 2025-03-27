@@ -9,6 +9,16 @@
     remote_port: 20207
     public_key: bx1/IAZAsKOghvXHpVGrSJVqpH4oeLvwYvS+Lyrgyx0=
 
+- name: DUSTSTARS-TYO1
+  asn: 4242421771
+  ipv6: fe80::afaf:bfbf:cdcf:1d
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: tokyo1.exploro.one
+    remote_port: 32586
+    public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
+
 - name: HIGHDEF-TYO
   asn: 4242421080
   ipv6: fe80::124
