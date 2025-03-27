@@ -11,6 +11,16 @@
     remote_port: 20207
     public_key: Lhg2KWIFATOatdf/qLyTmAs0XEImX2oPzqoZKCMMlw8=
 
+- name: DUSTSTARS-SYD1
+  asn: 4242421771
+  ipv6: fe80::afaf:bfbf:cdcf:1d
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: sydney1.exploro.one
+    remote_port: 32582
+    public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
+
 - name: HIGHDEF-SYD
   asn: 4242421080
   ipv6: fe80::1080:125

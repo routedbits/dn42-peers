@@ -21,7 +21,7 @@
     remote_port: 20207
     public_key: s3IVH2xJ3oRekd4x4Bc2H2pb0YZD11FT7Unxttc7GCU=
 
-- name: DUSTSTARS-DN42-LAX1
+- name: DUSTSTARS-LAX1
   asn: 4242421771
   ipv6: fe80::afaf:bfbf:cdcf:1d
   sessions:
