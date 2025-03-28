@@ -1,4 +1,14 @@
 ---
+- name: DUSTSTARS-GRU1
+  asn: 4242421771
+  ipv6: fe80::afaf:bfbf:cdcf:1d
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: saopaulo1.exploro.one
+    remote_port: 32581
+    public_key: wHTCO2N+h7Z8J7vgw7MsmZdVMDTy3eGfnuqqQuSf/AQ=
+
 - name: LUKASBECKERIT-GRU
   asn: 4242423372
   ipv6: fe80::3372
