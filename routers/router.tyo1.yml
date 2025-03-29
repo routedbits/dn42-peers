@@ -9,6 +9,18 @@
     remote_port: 20207
     public_key: bx1/IAZAsKOghvXHpVGrSJVqpH4oeLvwYvS+Lyrgyx0=
 
+- name: COWGL-TYO
+  asn: 4242423999
+  ipv4: 172.22.144.65
+  ipv6: fd36:62be:ef51:1::1
+  sessions:
+    - ipv4
+    - ipv6
+  wireguard:
+    remote_address: 138.3.209.153
+    remote_port: 30207
+    public_key: mMGGxtEqsagrx1Raw57C2H3Stl6ch/cUuF7y08eVgBE=
+
 - name: DUSTSTARS-TYO1
   asn: 4242421771
   ipv6: fe80::afaf:bfbf:cdcf:1d
