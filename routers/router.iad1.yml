@@ -11,6 +11,16 @@
     remote_port: 20207
     public_key: iIDJWQv4Ltupy+tCh9DkK/N92ygCB3pwAJvxCMQQ8Xw=
 
+- name: DUSTSTARS-IAD1
+  asn: 4242421771
+  ipv6: fe80::afaf:bfbf:cdcf:1d
+  sessions:
+    - ipv6
+  wireguard:
+    remote_address: ashburn1.exploro.one
+    remote_port: 32581
+    public_key: Ja4PiD78pdsfuuW/9BLxhhidYb/TcY0WTATTbLHkZT0=
+
 - name: KITAUJI
   asn: 4242422314
   ipv6: fe80::1747
