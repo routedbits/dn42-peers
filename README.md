@@ -1,5 +1,14 @@
 # RoutedBits: DN42 Peering Configuration
 
+**Try our new self-service automatic peering at
+https://dn42.routedbits.io !**
+
+**This repository has been retired**. Already a peer? No problem.
+Log into the new site and self-manage any existing configurations. Please 
+[contact us](https://dn42.routedbits.io/contact) with any issues.
+
+---
+
 This repository contains the peering configuration for each of our
 DN42 routers.
 
